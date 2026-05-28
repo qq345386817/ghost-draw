@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ghost-draw.luopeike.com/sitemap.xml

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="App Store">
+  <defs>
+    <linearGradient id="g" x1="10" x2="54" y1="8" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#36c5ff"/>
+      <stop offset="1" stop-color="#1473e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#g)"/>
+  <path fill="#fff" d="M22.9 45.5c-1.7 0-2.7-1.8-1.8-3.2l8.2-14.2-2.7-4.7c-.8-1.4.2-3.2 1.8-3.2.8 0 1.5.4 1.9 1.1l1.4 2.4 1.4-2.4c.4-.7 1.1-1.1 1.9-1.1 1.7 0 2.7 1.8 1.8 3.2L26.7 44.4c-.4.7-1.1 1.1-1.9 1.1h-1.9Zm16.3 0c-.8 0-1.5-.4-1.9-1.1l-3.8-6.6h-12c-1.2 0-2.1-.9-2.1-2.1s.9-2.1 2.1-2.1h9.6l2.4-4.2 7.5 12.9c.8 1.4-.2 3.2-1.8 3.2Zm5.3-7.7h-4.8l-2.4-4.2h7.2c1.2 0 2.1.9 2.1 2.1s-.9 2.1-2.1 2.1Z"/>
+</svg>
