@@ -181,6 +181,7 @@ p {
   border: 10px solid #16131d;
   border-radius: 34px;
   background: #f8f3ea;
+  color: #17151f;
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
 }
 
@@ -366,32 +367,54 @@ p {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f8f4ef;
+    --muted: #d9d1e5;
+    --panel: rgba(35, 29, 47, 0.82);
+    --line: rgba(255, 255, 255, 0.16);
+    --violet-deep: #c4b5fd;
+    --shadow: 0 22px 70px rgba(0, 0, 0, 0.38);
+  }
+
   body {
     background:
       radial-gradient(circle at 12% 8%, rgba(124, 58, 237, 0.28), transparent 28rem),
       radial-gradient(circle at 84% 20%, rgba(32, 217, 210, 0.2), transparent 25rem),
       #111018;
-    color: #f8f4ef;
+    color: var(--ink);
   }
 
-  .lead,
-  .section-intro {
-    color: #d9d1e5;
+  .lead {
+    color: var(--muted);
   }
 
   .feature,
   .button,
   .challenge-card,
   .mini-card {
-    background: rgba(35, 29, 47, 0.82);
+    background: var(--panel);
   }
 
   .canvas-card {
     background: #211a2d;
   }
 
+  .phone .challenge-card,
+  .phone .mini-card {
+    background: rgba(255, 255, 255, 0.84);
+    color: #17151f;
+  }
+
+  .phone .canvas-card {
+    background: #fffaf2;
+  }
+
+  .phone .mini-card span {
+    color: #686270;
+  }
+
   .language-switch select {
     background: rgba(35, 29, 47, 0.9);
-    color: #f8f4ef;
+    color: var(--ink);
   }
 }
