@@ -1,17 +1,18 @@
 :root {
   color-scheme: light dark;
-  --ink: #17151f;
-  --muted: #686270;
-  --paper: #fbf8f2;
-  --paper-soft: #f1e9dc;
-  --panel: rgba(255, 255, 255, 0.78);
-  --line: rgba(35, 29, 47, 0.14);
-  --violet: #7c3aed;
-  --violet-deep: #4c1d95;
-  --cyan: #20d9d2;
-  --gold: #f2b84b;
-  --coral: #f97373;
-  --shadow: 0 22px 70px rgba(55, 32, 87, 0.18);
+  --ink: #10131a;
+  --muted: #5f6874;
+  --paper: #f7f9fb;
+  --paper-soft: #eef3f7;
+  --panel: rgba(255, 255, 255, 0.86);
+  --line: rgba(16, 19, 26, 0.12);
+  --primary: #17c8e8;
+  --primary-deep: #075b74;
+  --cyan: #22d3ee;
+  --mint: #5eead4;
+  --gold: #f8c84a;
+  --coral: #ff4366;
+  --shadow: 0 22px 70px rgba(7, 91, 116, 0.16);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -22,9 +23,9 @@
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 15% 12%, rgba(124, 58, 237, 0.14), transparent 28rem),
-    radial-gradient(circle at 84% 18%, rgba(32, 217, 210, 0.16), transparent 26rem),
-    linear-gradient(135deg, #fffaf1 0%, #f8f1ff 46%, #eefdfb 100%);
+    radial-gradient(circle at 14% 10%, rgba(34, 211, 238, 0.18), transparent 28rem),
+    radial-gradient(circle at 86% 18%, rgba(94, 234, 212, 0.16), transparent 26rem),
+    linear-gradient(135deg, #fbfdff 0%, #f3f7fb 48%, #eafcff 100%);
   color: var(--ink);
 }
 
@@ -61,7 +62,7 @@ a {
   width: 36px;
   height: 36px;
   border-radius: 9px;
-  box-shadow: 0 8px 20px rgba(76, 29, 149, 0.2);
+  box-shadow: 0 8px 20px rgba(7, 91, 116, 0.2);
 }
 
 .nav {
@@ -84,6 +85,24 @@ a {
   color: var(--ink);
 }
 
+.nav-store {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid rgba(23, 200, 232, 0.34);
+  border-radius: 999px;
+  background: rgba(23, 200, 232, 0.12);
+  color: var(--primary-deep);
+  font-weight: 800;
+}
+
+.nav-store img {
+  width: 18px;
+  height: 18px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 430px);
@@ -94,7 +113,7 @@ a {
 
 .kicker {
   margin: 0 0 14px;
-  color: var(--violet-deep);
+  color: var(--primary-deep);
   font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -125,7 +144,7 @@ p {
 
 .lead {
   max-width: 680px;
-  color: #3b3546;
+  color: #334155;
   font-size: 1.2rem;
 }
 
@@ -153,7 +172,7 @@ p {
 }
 
 .button.primary {
-  background: #111827;
+  background: #10131a;
   color: white;
 }
 
@@ -169,7 +188,7 @@ p {
   padding: 22px;
   border: 1px solid rgba(255, 255, 255, 0.62);
   border-radius: 28px;
-  background: linear-gradient(160deg, #20172f 0%, #362157 45%, #0a6b70 100%);
+  background: linear-gradient(160deg, #10131a 0%, #123544 45%, #08a7c9 100%);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -180,8 +199,8 @@ p {
   padding: 16px;
   border: 10px solid #16131d;
   border-radius: 34px;
-  background: #f8f3ea;
-  color: #17151f;
+  background: #f7f9fb;
+  color: #10131a;
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
 }
 
@@ -190,14 +209,14 @@ p {
   height: 5px;
   margin: 0 auto 18px;
   border-radius: 999px;
-  background: #1c1824;
+  background: #10131a;
 }
 
 .challenge-card,
 .canvas-card,
 .mini-card {
   border-radius: 12px;
-  border: 1px solid rgba(31, 22, 48, 0.1);
+  border: 1px solid rgba(16, 19, 26, 0.1);
   background: rgba(255, 255, 255, 0.82);
   padding: 14px;
 }
@@ -211,16 +230,16 @@ p {
   position: relative;
   height: 250px;
   margin: 14px 0;
-  background: #fffaf2;
+  background: #ffffff;
 }
 
 .stroke {
   position: absolute;
   height: 7px;
   border-radius: 999px;
-  background: var(--violet);
+  background: var(--primary);
   transform-origin: left center;
-  box-shadow: 0 0 18px rgba(124, 58, 237, 0.25);
+  box-shadow: 0 0 18px rgba(23, 200, 232, 0.3);
 }
 
 .stroke.one {
@@ -292,7 +311,7 @@ p {
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--panel);
-  box-shadow: 0 12px 34px rgba(35, 29, 47, 0.08);
+  box-shadow: 0 12px 34px rgba(7, 91, 116, 0.08);
 }
 
 .feature p,
@@ -310,13 +329,32 @@ p {
 .download-panel {
   padding: 24px;
   border-radius: 16px;
-  background: #17151f;
+  background: #10131a;
   color: white;
   box-shadow: var(--shadow);
 }
 
-.download-panel p {
+  .download-panel p {
   color: rgba(255, 255, 255, 0.72);
+}
+
+.download-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 30px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: 0 12px 34px rgba(7, 91, 116, 0.08);
+}
+
+.download-strip p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .download-panel .button {
@@ -368,19 +406,19 @@ p {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --ink: #f8f4ef;
-    --muted: #d9d1e5;
-    --panel: rgba(35, 29, 47, 0.82);
+    --ink: #f8fbff;
+    --muted: #c9d7df;
+    --panel: rgba(16, 19, 26, 0.82);
     --line: rgba(255, 255, 255, 0.16);
-    --violet-deep: #c4b5fd;
+    --primary-deep: #67e8f9;
     --shadow: 0 22px 70px rgba(0, 0, 0, 0.38);
   }
 
   body {
     background:
-      radial-gradient(circle at 12% 8%, rgba(124, 58, 237, 0.28), transparent 28rem),
-      radial-gradient(circle at 84% 20%, rgba(32, 217, 210, 0.2), transparent 25rem),
-      #111018;
+      radial-gradient(circle at 12% 8%, rgba(34, 211, 238, 0.22), transparent 28rem),
+      radial-gradient(circle at 84% 20%, rgba(94, 234, 212, 0.14), transparent 25rem),
+      #0b0f16;
     color: var(--ink);
   }
 
@@ -396,17 +434,17 @@ p {
   }
 
   .canvas-card {
-    background: #211a2d;
+    background: #111827;
   }
 
   .phone .challenge-card,
   .phone .mini-card {
     background: rgba(255, 255, 255, 0.84);
-    color: #17151f;
+    color: #10131a;
   }
 
   .phone .canvas-card {
-    background: #fffaf2;
+    background: #ffffff;
   }
 
   .phone .mini-card span {
@@ -414,7 +452,12 @@ p {
   }
 
   .language-switch select {
-    background: rgba(35, 29, 47, 0.9);
+    background: rgba(16, 19, 26, 0.9);
     color: var(--ink);
+  }
+
+  .nav-store {
+    color: #67e8f9;
+    background: rgba(34, 211, 238, 0.12);
   }
 }
