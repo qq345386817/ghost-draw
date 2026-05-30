@@ -1,27 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ghost-draw.luopeike.com/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/index.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/help.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/help.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/help.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/help.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/support.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/support.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/support.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/privacy-policy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/privacy-policy.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/de/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/de/help.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/de/support.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/de/privacy-policy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/es/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/es/help.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/es/support.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/es/privacy-policy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/fr/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/fr/help.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/fr/support.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/fr/privacy-policy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ja/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ja/help.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ja/support.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ja/privacy-policy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ko/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ko/help.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ko/support.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ko/privacy-policy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/pt-BR/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/pt-BR/help.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/pt-BR/support.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hans/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hans/help.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hans/support.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hant/index.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hant/help.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hant/support.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
