@@ -1,218 +1,578 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ghost-draw.luopeike.com/index.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://ghost-draw.luopeike.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/pt-BR/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hans/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hant/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/help.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/help.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/de/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/help.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/es/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/help.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/fr/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/help.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ja/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/help.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ko/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/help.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/pt-BR/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/help.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hans/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/help.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hant/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/help.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/support.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/privacy-policy.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/de/index.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/de/help.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/support.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/de/support.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/de/privacy-policy.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/es/index.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/es/help.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/support.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/es/support.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/es/privacy-policy.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/fr/index.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/fr/help.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/support.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/fr/support.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/fr/privacy-policy.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/ja/index.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/ja/help.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/support.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/ja/support.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/ja/privacy-policy.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/ko/index.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/ko/help.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/support.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/ko/support.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/ko/privacy-policy.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/pt-BR/index.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/pt-BR/help.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/support.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/pt-BR/support.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/zh-Hans/index.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/zh-Hans/help.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/support.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/zh-Hans/support.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/zh-Hant/index.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ghost-draw.luopeike.com/zh-Hant/help.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/support.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/zh-Hant/support.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/support.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/de/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/es/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/fr/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ja/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/ko/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html</loc>
-    <lastmod>2026-05-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ghost-draw.luopeike.com/de/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ghost-draw.luopeike.com/es/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ghost-draw.luopeike.com/fr/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ghost-draw.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ghost-draw.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ghost-draw.luopeike.com/pt-BR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ghost-draw.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ghost-draw.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ghost-draw.luopeike.com/privacy-policy.html" />
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
