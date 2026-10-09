@@ -50,6 +50,10 @@ Dibuja un tema y comparte el enlace de repetición. Tus amigos pueden abrir ese 
 
 ## Privacidad y estadísticas
 
+Al compartir un enlace de repetición, se suben los trazos, títulos, comentarios y una vista previa opcional. Cualquiera con el enlace puede verlos. Los enlaces no caducan automáticamente; eliminar un registro local o de iCloud no retira el enlace. Contacta con soporte para solicitar su retirada.
+
+Los envíos a Destacados incluyen un identificador aleatorio de creador para recordar su estado. El apodo solo se muestra si activas la atribución pública. Los Me gusta usan otro identificador aleatorio para evitar votos duplicados. Estos identificadores están separados de los de estadísticas.
+
 Activadas por defecto. Registramos acciones de dibujo, revelado y compartir. Los identificadores aleatorios se cifran con un hash antes de almacenarlos. No incluimos dibujos, títulos, apodos ni identificadores de hardware. Desactivarlas detiene el envío y elimina los eventos pendientes.
 
 Los eventos de uso se conservan hasta 90 días. Esto no hace caducar tus enlaces públicos de repetición.

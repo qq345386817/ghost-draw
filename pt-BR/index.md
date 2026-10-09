@@ -50,6 +50,10 @@ Desenhe um tema e compartilhe o link do replay. Seus amigos podem abrir o mesmo 
 
 ## Privacidade e estatísticas
 
+Ao compartilhar um link de replay, os traços, títulos, comentários e uma prévia opcional são enviados. Qualquer pessoa com o link pode vê-los. Os links não expiram automaticamente; apagar um registro local ou do iCloud não remove o link compartilhado. Fale com o suporte para solicitar a remoção.
+
+Envios para destaque incluem um identificador aleatório de criador separado para lembrar o status. O apelido aparece apenas se a atribuição pública estiver ativada. Curtidas usam outro identificador aleatório para evitar votos duplicados. Esses identificadores são separados dos usados nas estatísticas.
+
 Ativadas por padrão. Registramos ações de desenho, revelação e compartilhamento. Identificadores aleatórios recebem um hash antes de serem armazenados. Não incluímos desenhos, títulos, apelidos nem identificadores de hardware. Desativar interrompe o envio e apaga eventos pendentes.
 
 Os eventos de uso são mantidos por até 90 dias. Isso não faz seus links públicos de replay expirarem.

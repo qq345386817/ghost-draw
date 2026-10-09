@@ -50,6 +50,10 @@ Draw a prompt and share its replay link. Friends can open the same prompt and ma
 
 ## Privacy & statistics
 
+When you share a replay link, drawing strokes, titles, comments and an optional preview image are uploaded. Anyone with the link can view them. Links do not expire automatically; deleting a local or iCloud gallery record does not withdraw a shared link. Contact support for removal requests.
+
+Featured submissions include a separate random creator identifier to remember submission status. A nickname is shown only when you enable public attribution. Likes use another random identifier to prevent duplicate votes. These identifiers are separate from usage-statistics identifiers.
+
 On by default. We record drawing, reveal and sharing events with random identifiers hashed before storage. We do not include drawings, titles, nicknames or hardware identifiers. Turn this off to stop sending and clear pending events.
 
 Usage events are retained for up to 90 days. This does not expire your public replay links.

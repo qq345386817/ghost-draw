@@ -50,6 +50,10 @@ Zeichne ein Thema und teile den Replay-Link. Freunde können das gleiche Thema �
 
 ## Datenschutz & Statistik
 
+Beim Teilen eines Replay-Links werden Striche, Titel, Kommentare und gegebenenfalls ein Vorschaubild hochgeladen. Wer den Link kennt, kann sie ansehen. Links laufen nicht automatisch ab; das Löschen eines lokalen oder iCloud-Eintrags zieht den Link nicht zurück. Für Löschanfragen kontaktiere den Support.
+
+Highlight-Einreichungen enthalten eine eigene zufällige Ersteller-ID, um den Status zu merken. Ein Spitzname wird nur mit aktivierter öffentlicher Namensnennung angezeigt. Likes nutzen eine weitere zufällige ID gegen doppelte Stimmen. Diese IDs sind von der Nutzungsstatistik getrennt.
+
 Standardmäßig aktiviert. Wir erfassen Zeichen-, Aufdeck- und Teilvorgänge. Zufällige Kennungen werden vor der Speicherung gehasht. Zeichnungen, Titel, Spitznamen und Hardwarekennungen sind nicht enthalten. Ausschalten stoppt die Übertragung und entfernt wartende Ereignisse.
 
 Nutzungsereignisse werden bis zu 90 Tage gespeichert. Öffentliche Replay-Links laufen dadurch nicht ab.

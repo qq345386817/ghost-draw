@@ -50,6 +50,10 @@ Dessinez un sujet et partagez le lien de relecture. Vos amis peuvent ouvrir ce s
 
 ## Confidentialité et statistiques
 
+Le partage d’un lien de relecture téléverse les traits, titres, commentaires et, éventuellement, une image d’aperçu. Toute personne ayant le lien peut les consulter. Les liens n’expirent pas automatiquement ; supprimer un dessin local ou iCloud ne retire pas le lien partagé. Contactez l’assistance pour demander son retrait.
+
+Les propositions à la une incluent un identifiant de créateur aléatoire distinct pour mémoriser leur statut. Le pseudo apparaît seulement si vous activez l’attribution publique. Les mentions J’aime utilisent un autre identifiant aléatoire pour éviter les votes en double. Ces identifiants sont séparés de ceux des statistiques.
+
 Activées par défaut. Nous enregistrons les actions de dessin, de révélation et de partage. Les identifiants aléatoires sont hachés avant stockage. Aucun dessin, titre, pseudonyme ou identifiant matériel n'est inclus. Désactiver arrête l'envoi et supprime les événements en attente.
 
 Les événements d’utilisation sont conservés jusqu’à 90 jours. Vos liens publics de relecture ne sont pas concernés.
