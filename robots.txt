@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
-
+Disallow: /*?*replay=
+Disallow: /src/
+Disallow: /scripts/
+Disallow: /tests/
 Sitemap: https://ghost-draw.luopeike.com/sitemap.xml
-Host: ghost-draw.luopeike.com

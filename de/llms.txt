@@ -1,0 +1,22 @@
+# Ghost Draw
+
+> Kostenloses Blindzeichen-Spiel im Browser: unsichtbare Linien, freie Zeichnungen, tägliche Aufgaben und Replays zum Teilen mit Freunden. Ohne Download oder Konto.
+
+Zeichne, ohne die Linien zu sehen, und lass den Geist jeden Strich aufdecken. Wähle das Tagesmotiv oder eine eigene Idee und lade Freunde zum gleichen Motiv ein.
+
+Zum Spielen im Browser ist JavaScript erforderlich. Du kannst weiterhin die Anleitung lesen oder die App für iPhone und iPad herunterladen.
+
+## Pages
+
+- [Zeichnen](https://ghost-draw.luopeike.com/de/): Kostenloses Blindzeichen-Spiel im Browser: unsichtbare Linien, freie Zeichnungen, tägliche Aufgaben und Replays zum Teilen mit Freunden. Ohne Download oder Konto.
+- [Hilfe](https://ghost-draw.luopeike.com/de/help): So funktioniert Ghost Draw: frei zeichnen, Tagesaufgaben lösen, unsichtbare Linien enthüllen, lokal speichern und dasselbe Thema mit Freunden teilen.
+- [Datenschutz](https://ghost-draw.luopeike.com/de/privacy-policy): Ghost Draw Datenschutz: lokale Browser-Zeichnungen, optionales iCloud in der App, öffentliche Replay-Links und abschaltbare Nutzungsstatistik.
+- [Support](https://ghost-draw.luopeike.com/de/support)
+
+## Product summary
+
+- [Deutsch](https://ghost-draw.luopeike.com/de/index.md): Kostenloses Blindzeichen-Spiel im Browser: unsichtbare Linien, freie Zeichnungen, tägliche Aufgaben und Replays zum Teilen mit Freunden. Ohne Download oder Konto.
+
+## Optional
+
+- [App Store](https://apps.apple.com/app/id6773654307): Die App bietet natives Zeichnen und eine optionale iCloud-Synchronisierung der Galerie. Das Webspiel funktioniert unabhängig; die Installation ist freiwillig.

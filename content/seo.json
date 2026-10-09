@@ -1,0 +1,392 @@
+{
+  "en": {
+    "homeTitle": "Free blind drawing game & daily challenges",
+    "homeDescription": "Play a free blind drawing game online. Draw with hidden ink, reveal every stroke, try daily drawing challenges and share replays with friends. No download or account.",
+    "helpTitle": "Blind drawing guide for web & iPhone | Ghost Draw",
+    "helpDescription": "Learn blind drawing in the browser or iPhone app: free drawing, daily prompts, stroke replay, local gallery and sharing the same challenge with friends.",
+    "privacyDescription": "Ghost Draw privacy: browser-local drawings and drafts, optional iCloud in the app, public replay sharing and usage statistics with an off switch.",
+    "steps": [
+      [
+        "1. Choose an idea",
+        "Start with free drawing or a daily drawing challenge. In free mode, you can give your picture a title."
+      ],
+      [
+        "2. Draw with hidden ink",
+        "Use a mouse, finger or pen. Your pointer moves, but the lines stay invisible until the reveal."
+      ],
+      [
+        "3. Reveal your own strokes",
+        "Summon the ghost to replay the lines you drew. This is your drawing, not an AI-generated replacement."
+      ],
+      [
+        "4. Keep or share the result",
+        "Revealing saves the drawing data in this browser's gallery. Share an image or create a public replay link; friends can open it and try the same prompt."
+      ]
+    ],
+    "faq": [
+      [
+        "Can I play this drawing game online for free?",
+        "Yes. The browser game is free and needs no download or account. It includes free drawing, daily prompts, a local gallery and replay sharing."
+      ],
+      [
+        "How can friends play a blind drawing challenge together?",
+        "Draw a prompt and share its replay link. Friends can open the same prompt and make their own version. This is an asynchronous same-prompt challenge, not a live multiplayer room."
+      ]
+    ],
+    "supportTitle": "Web & app support | Ghost Draw",
+    "supportDescription": "Contact Ghost Draw for help with the browser game or iPhone app, replay links, drawings or privacy requests.",
+    "supportBody": "For a bug report, include the steps, your browser version or app/iOS version, and a screenshot if useful. For replay or privacy questions, email support.",
+    "jsRequired": "The browser game needs JavaScript. You can still read the guide or get the iPhone and iPad app."
+  },
+  "zh-Hans": {
+    "homeTitle": "免费在线盲画小游戏与每日绘画挑战",
+    "homeDescription": "在浏览器里免费玩幽灵画手：看不见笔迹的画画小游戏，支持自由绘画、每日绘画挑战、逐笔揭晓、本地画廊和回放分享。和朋友挑战同一个题目，无需下载或注册。",
+    "helpTitle": "在线盲画与 iPhone 使用帮助 | 幽灵画手",
+    "helpDescription": "了解幽灵画手的网页版和 iPhone App：自由绘画、每日题目、隐藏笔迹、幽灵回放、本地画廊，以及邀请朋友挑战同题的方法。",
+    "privacyDescription": "幽灵画手隐私说明：浏览器本地画作与草稿、App 可选的 iCloud 同步、公开回放分享，以及可关闭和删除的使用统计。",
+    "steps": [
+      [
+        "1. 选一个创意",
+        "选择自由绘画或每日绘画挑战。自由模式下，可以为画作自定义标题。"
+      ],
+      [
+        "2. 用隐藏笔迹作画",
+        "使用鼠标、手指或触控笔。指针会移动，但画出的线条在揭晓前不会显示。"
+      ],
+      [
+        "3. 揭晓自己的笔画",
+        "召唤幽灵后，刚才画出的线条会依次播放。它回放的是你的画作，不是 AI 生成的替代图片。"
+      ],
+      [
+        "4. 保存或分享结果",
+        "揭晓会把绘画数据保存到当前浏览器的画廊。可以分享图片或生成公开回放链接；朋友打开链接后，也能挑战同一个题目。"
+      ]
+    ],
+    "faq": [
+      [
+        "这个在线画画小游戏可以免费玩吗？",
+        "可以。网页版免费，无需下载或注册，包含自由绘画、每日题目、本地画廊和回放分享。"
+      ],
+      [
+        "怎样和朋友一起玩盲画挑战？",
+        "先画一个题目，再把回放链接发给朋友。朋友可以打开同一个题目，画出自己的版本。这是异步的同题挑战，不是实时多人房间。"
+      ]
+    ],
+    "supportTitle": "网页版与 App 支持 | 幽灵画手",
+    "supportDescription": "联系幽灵画手，获取网页版或 iPhone App 的使用帮助，反馈回放链接、画作或隐私相关问题。",
+    "supportBody": "反馈问题时，请说明操作步骤、浏览器版本或 App/iOS 版本；必要时可以附上截图。回放或隐私相关问题也可以通过邮件联系。",
+    "jsRequired": "网页版游戏需要启用 JavaScript。你仍然可以阅读使用帮助，或下载 iPhone 与 iPad App。"
+  },
+  "zh-Hant": {
+    "homeTitle": "免費線上盲畫小遊戲與每日繪畫挑戰",
+    "homeDescription": "在瀏覽器免費玩 Ghost Draw：看不見筆跡的繪畫小遊戲，支援自由繪畫、每日挑戰、逐筆揭曉、本機畫廊與回放分享。和朋友挑戰相同題目，無需下載或註冊。",
+    "helpTitle": "線上盲畫與 iPhone 使用說明 | Ghost Draw",
+    "helpDescription": "了解 Ghost Draw 網頁版與 iPhone App：自由繪畫、每日題目、隱藏筆跡、回放、本機畫廊，以及邀請朋友挑戰同題的方法。",
+    "privacyDescription": "Ghost Draw 隱私說明：瀏覽器本機作品與草稿、App 選用的 iCloud 同步、公開回放分享，以及可關閉與刪除的使用統計。",
+    "steps": [
+      [
+        "1. 選一個創意",
+        "選擇自由繪畫或每日挑戰。自由模式下，可以自訂作品名稱。"
+      ],
+      [
+        "2. 用隱藏筆跡作畫",
+        "使用滑鼠、手指或觸控筆。指標會移動，但畫出的線條在揭曉前不會顯示。"
+      ],
+      [
+        "3. 揭曉自己的筆畫",
+        "呼喚幽靈後，剛才畫出的線條會依序播放。它回放的是你的作品，不是 AI 生成的替代圖片。"
+      ],
+      [
+        "4. 儲存或分享結果",
+        "揭曉會將繪畫資料儲存到目前瀏覽器的畫廊。你可以分享圖片或建立公開回放連結；朋友開啟後，也能挑戰相同題目。"
+      ]
+    ],
+    "faq": [
+      [
+        "這個線上繪畫小遊戲可以免費玩嗎？",
+        "可以。網頁版免費，無需下載或註冊，包含自由繪畫、每日題目、本機畫廊和回放分享。"
+      ],
+      [
+        "如何和朋友一起玩盲畫挑戰？",
+        "先畫一個題目，再將回放連結傳給朋友。朋友可以開啟相同題目，畫出自己的版本。這是非同步的同題挑戰，不是即時多人房間。"
+      ]
+    ],
+    "supportTitle": "網頁版與 App 支援 | 靈魂畫手",
+    "supportDescription": "聯絡靈魂畫手，取得網頁版或 iPhone App 的使用協助，回報回放連結、作品或隱私相關問題。",
+    "supportBody": "回報問題時，請說明操作步驟、瀏覽器版本或 App/iOS 版本；必要時可以附上截圖。回放或隱私相關問題也可以透過電子郵件聯絡。",
+    "jsRequired": "網頁版遊戲需要啟用 JavaScript。你仍然可以閱讀使用說明，或下載 iPhone 與 iPad App。"
+  },
+  "ja": {
+    "homeTitle": "無料のブラインドお絵描きゲーム・毎日のお題",
+    "homeDescription": "ブラウザで無料のブラインドお絵描き。見えない線で自由に描き、毎日のお題に挑戦し、一筆ずつ公開。リプレイを友だちと共有できます。ダウンロード・登録不要。",
+    "helpTitle": "ブラウザと iPhone のお絵描きガイド | Ghost Draw",
+    "helpDescription": "Ghost Draw の自由描画、毎日のお題、見えない線の公開、ローカルギャラリー、友だちとの同じお題の共有について。ブラウザと iPhone に対応。",
+    "privacyDescription": "Ghost Draw のプライバシー：ブラウザ内の絵と下書き、アプリの任意の iCloud 同期、公開リプレイ、オフにできる利用状況の統計。",
+    "steps": [
+      [
+        "1. アイデアを選ぶ",
+        "自由に描くか、毎日のお題に挑戦しましょう。自由描画では作品名も付けられます。"
+      ],
+      [
+        "2. 見えない線で描く",
+        "マウス・指・ペンで描けます。ポインターは動きますが、線は公開するまで見えません。"
+      ],
+      [
+        "3. 自分の線を公開する",
+        "ゴーストを呼ぶと、描いた線が順番に再生されます。AI が代わりに作る画像ではありません。"
+      ],
+      [
+        "4. 保存して共有する",
+        "公開した絵のデータはこのブラウザのギャラリーに保存されます。画像や公開リプレイのリンクを共有すると、友だちも同じお題に挑戦できます。"
+      ]
+    ],
+    "faq": [
+      [
+        "このオンラインお絵描きゲームは無料ですか？",
+        "はい。ブラウザ版は無料で、ダウンロードも登録も不要です。自由描画・毎日のお題・ローカルギャラリー・リプレイ共有を利用できます。"
+      ],
+      [
+        "友だちと同じお題で遊ぶには？",
+        "お題を描いてリプレイのリンクを送ると、友だちは同じお題を開いて自分の絵を描けます。同時に接続する対戦ルームではなく、別々のタイミングで遊ぶ形式です。"
+      ]
+    ],
+    "supportTitle": "ウェブ版・アプリのサポート | Ghost Draw",
+    "supportDescription": "Ghost Draw のブラウザゲーム、iPhone アプリ、リプレイのリンク、作品やプライバシーについてのお問い合わせ。",
+    "supportBody": "不具合の報告では、操作手順とブラウザまたはアプリ・iOS のバージョンをお知らせください。必要に応じてスクリーンショットを添えてください。リプレイやプライバシーについてもメールでご相談いただけます。",
+    "jsRequired": "ブラウザで遊ぶには JavaScript が必要です。ガイドを読むか、iPhone・iPad アプリを利用できます。"
+  },
+  "ko": {
+    "homeTitle": "무료 블라인드 그림 게임과 매일 그림 챌린지",
+    "homeDescription": "브라우저에서 무료로 블라인드 그림을 그려 보세요. 자유 그림, 매일 주제, 숨긴 선의 공개, 로컬 갤러리와 친구에게 보내는 리플레이 링크. 다운로드나 가입이 필요 없습니다.",
+    "helpTitle": "웹 및 iPhone 블라인드 그림 가이드 | Ghost Draw",
+    "helpDescription": "Ghost Draw의 자유 그림, 매일 주제, 숨긴 선의 공개, 리플레이, 로컬 갤러리와 친구에게 같은 주제를 공유하는 방법을 알아보세요.",
+    "privacyDescription": "Ghost Draw 개인정보 안내: 브라우저의 그림과 초안, 앱의 선택적 iCloud 동기화, 공개 리플레이 공유, 끄거나 삭제할 수 있는 사용 통계.",
+    "steps": [
+      [
+        "1. 아이디어 고르기",
+        "자유롭게 그리거나 매일 그림 주제에 도전하세요. 자유 모드에서는 그림 제목도 정할 수 있습니다."
+      ],
+      [
+        "2. 숨긴 선으로 그리기",
+        "마우스, 손가락 또는 펜을 사용하세요. 포인터는 움직이지만 선은 공개하기 전까지 보이지 않습니다."
+      ],
+      [
+        "3. 직접 그린 선 공개하기",
+        "유령을 부르면 그린 선이 순서대로 재생됩니다. AI가 대신 만든 이미지가 아니라 직접 그린 그림입니다."
+      ],
+      [
+        "4. 저장하거나 공유하기",
+        "공개하면 그림 데이터가 이 브라우저의 갤러리에 저장됩니다. 이미지나 공개 리플레이 링크를 공유하면 친구도 같은 주제로 그릴 수 있습니다."
+      ]
+    ],
+    "faq": [
+      [
+        "이 온라인 그림 게임은 무료인가요?",
+        "네. 브라우저 버전은 무료이며 다운로드나 가입이 필요 없습니다. 자유 그림, 매일 주제, 로컬 갤러리와 리플레이 공유를 제공합니다."
+      ],
+      [
+        "친구와 같은 주제로 도전하려면 어떻게 하나요?",
+        "주제에 맞춰 그림을 그린 뒤 리플레이 링크를 보내세요. 친구는 같은 주제를 열고 자신의 그림을 그릴 수 있습니다. 실시간 멀티플레이 방이 아니라 각자 다른 시간에 참여하는 도전입니다."
+      ]
+    ],
+    "supportTitle": "웹 및 앱 지원 | Ghost Draw",
+    "supportDescription": "Ghost Draw 브라우저 게임, iPhone 앱, 리플레이 링크, 그림 또는 개인정보 관련 문의를 보내세요.",
+    "supportBody": "오류를 신고할 때는 발생 단계와 브라우저 또는 앱/iOS 버전을 알려 주세요. 도움이 되는 스크린샷도 첨부할 수 있습니다. 리플레이나 개인정보 관련 질문은 이메일로 보내 주세요.",
+    "jsRequired": "브라우저에서 플레이하려면 JavaScript가 필요합니다. 가이드를 읽거나 iPhone 및 iPad 앱을 이용할 수 있습니다."
+  },
+  "de": {
+    "homeTitle": "Blindzeichnen online: Spiel und tägliche Aufgaben",
+    "homeDescription": "Kostenloses Blindzeichen-Spiel im Browser: unsichtbare Linien, freie Zeichnungen, tägliche Aufgaben und Replays zum Teilen mit Freunden. Ohne Download oder Konto.",
+    "helpTitle": "Blindzeichnen im Web und auf dem iPhone | Ghost Draw",
+    "helpDescription": "So funktioniert Ghost Draw: frei zeichnen, Tagesaufgaben lösen, unsichtbare Linien enthüllen, lokal speichern und dasselbe Thema mit Freunden teilen.",
+    "privacyDescription": "Ghost Draw Datenschutz: lokale Browser-Zeichnungen, optionales iCloud in der App, öffentliche Replay-Links und abschaltbare Nutzungsstatistik.",
+    "steps": [
+      [
+        "1. Eine Idee wählen",
+        "Zeichne frei oder versuche die tägliche Zeichenaufgabe. Im freien Modus kannst du deiner Zeichnung einen Titel geben."
+      ],
+      [
+        "2. Mit unsichtbarer Tinte zeichnen",
+        "Nutze Maus, Finger oder Stift. Der Zeiger bewegt sich, doch die Linien bleiben bis zur Enthüllung unsichtbar."
+      ],
+      [
+        "3. Deine eigenen Linien enthüllen",
+        "Rufe den Ghost, um deine Striche nacheinander abzuspielen. Das Ergebnis ist deine Zeichnung, kein KI-generiertes Ersatzbild."
+      ],
+      [
+        "4. Speichern oder teilen",
+        "Die Enthüllung speichert die Zeichnungsdaten in der Galerie dieses Browsers. Teile ein Bild oder einen öffentlichen Replay-Link; Freunde können dasselbe Thema ausprobieren."
+      ]
+    ],
+    "faq": [
+      [
+        "Kann ich dieses Zeichenspiel kostenlos online spielen?",
+        "Ja. Das Browser-Spiel ist kostenlos und benötigt weder Download noch Konto. Es bietet freies Zeichnen, Tagesaufgaben, eine lokale Galerie und geteilte Replays."
+      ],
+      [
+        "Wie können Freunde dieselbe Blindzeichen-Aufgabe spielen?",
+        "Zeichne ein Thema und teile den Replay-Link. Freunde können das gleiche Thema öffnen und ihre eigene Version zeichnen. Das ist eine zeitversetzte Aufgabe, kein Live-Mehrspielerraum."
+      ]
+    ],
+    "supportTitle": "Hilfe für Web und App | Ghost Draw",
+    "supportDescription": "Ghost Draw kontaktieren: Hilfe zum Browser-Spiel, zur iPhone-App, zu Replay-Links, Zeichnungen oder Datenschutzfragen.",
+    "supportBody": "Beschreibe bei Fehlern die Schritte und nenne die Browser-Version oder App-/iOS-Version. Ein Screenshot kann helfen. Für Fragen zu Replays oder Datenschutz sende eine E-Mail.",
+    "jsRequired": "Zum Spielen im Browser ist JavaScript erforderlich. Du kannst weiterhin die Anleitung lesen oder die App für iPhone und iPad herunterladen."
+  },
+  "fr": {
+    "homeTitle": "Jeu de dessin à l’aveugle et défis quotidiens",
+    "homeDescription": "Un jeu de dessin à l’aveugle gratuit dans le navigateur : dessin libre, défis quotidiens, révélation des traits et relectures à partager. Sans téléchargement ni compte.",
+    "helpTitle": "Guide du dessin à l’aveugle sur web et iPhone | Ghost Draw",
+    "helpDescription": "Découvrez le dessin libre, les sujets du jour, les traits invisibles, la relecture, la galerie locale et les défis à partager entre amis dans Ghost Draw.",
+    "privacyDescription": "Confidentialité de Ghost Draw : dessins locaux, iCloud facultatif dans l’app, liens publics de relecture et statistiques d’utilisation désactivables.",
+    "steps": [
+      [
+        "1. Choisir une idée",
+        "Dessinez librement ou essayez le sujet du jour. En mode libre, vous pouvez donner un titre à votre dessin."
+      ],
+      [
+        "2. Dessiner avec une encre invisible",
+        "Utilisez une souris, un doigt ou un stylet. Le pointeur bouge, mais les traits restent cachés jusqu’à la révélation."
+      ],
+      [
+        "3. Révéler vos propres traits",
+        "Appelez le fantôme pour rejouer vos traits dans l’ordre. C’est votre dessin, pas une image de remplacement générée par IA."
+      ],
+      [
+        "4. Garder ou partager le résultat",
+        "La révélation enregistre les données du dessin dans la galerie de ce navigateur. Partagez une image ou un lien public de relecture ; vos amis pourront essayer le même sujet."
+      ]
+    ],
+    "faq": [
+      [
+        "Ce jeu de dessin en ligne est-il gratuit ?",
+        "Oui. Le jeu web est gratuit, sans téléchargement ni compte. Il propose le dessin libre, les sujets du jour, une galerie locale et le partage des relectures."
+      ],
+      [
+        "Comment jouer au même défi de dessin entre amis ?",
+        "Dessinez un sujet et partagez le lien de relecture. Vos amis peuvent ouvrir ce sujet et créer leur propre version. Le défi se joue à des moments différents, pas dans une salle multijoueur en direct."
+      ]
+    ],
+    "supportTitle": "Assistance web et app | Ghost Draw",
+    "supportDescription": "Contactez Ghost Draw pour le jeu web, l’app iPhone, les liens de relecture, les dessins ou les questions de confidentialité.",
+    "supportBody": "Pour un bug, indiquez les étapes et la version du navigateur ou de l’app/iOS. Ajoutez une capture si elle est utile. Pour les relectures ou la confidentialité, contactez-nous par e-mail.",
+    "jsRequired": "Le jeu web nécessite JavaScript. Vous pouvez lire le guide ou télécharger l’app pour iPhone et iPad."
+  },
+  "es": {
+    "homeTitle": "Juego de dibujo a ciegas y retos diarios",
+    "homeDescription": "Juego gratis de dibujo a ciegas en el navegador: dibujo libre, retos diarios, revelado de trazos y repeticiones para compartir con amigos. Sin descargar ni registrarte.",
+    "helpTitle": "Guía de dibujo a ciegas en web y iPhone | Ghost Draw",
+    "helpDescription": "Conoce el dibujo libre, los temas diarios, los trazos invisibles, la repetición, la galería local y los retos con amigos de Ghost Draw.",
+    "privacyDescription": "Privacidad de Ghost Draw: dibujos locales, iCloud opcional en la app, enlaces públicos de repetición y estadísticas de uso que puedes desactivar.",
+    "steps": [
+      [
+        "1. Elegir una idea",
+        "Dibuja libremente o prueba el reto diario. En modo libre puedes poner un título a tu dibujo."
+      ],
+      [
+        "2. Dibujar con tinta invisible",
+        "Usa un ratón, un dedo o un lápiz. El puntero se mueve, pero los trazos permanecen ocultos hasta el revelado."
+      ],
+      [
+        "3. Revelar tus propios trazos",
+        "Invoca al fantasma para reproducir tus trazos en orden. Es tu dibujo, no una imagen alternativa generada por IA."
+      ],
+      [
+        "4. Guardar o compartir",
+        "Al revelar, los datos del dibujo se guardan en la galería de este navegador. Comparte una imagen o un enlace público de repetición; tus amigos podrán intentar el mismo tema."
+      ]
+    ],
+    "faq": [
+      [
+        "¿Puedo jugar a este juego de dibujo gratis en línea?",
+        "Sí. El juego web es gratis, sin descarga ni cuenta. Incluye dibujo libre, temas diarios, una galería local y repeticiones para compartir."
+      ],
+      [
+        "¿Cómo pueden los amigos jugar al mismo reto de dibujo?",
+        "Dibuja un tema y comparte el enlace de repetición. Tus amigos pueden abrir ese tema y crear su propia versión. Es un reto en momentos distintos, no una sala multijugador en directo."
+      ]
+    ],
+    "supportTitle": "Soporte para web y app | Ghost Draw",
+    "supportDescription": "Contacta con Ghost Draw para ayuda con el juego web, la app de iPhone, enlaces de repetición, dibujos o privacidad.",
+    "supportBody": "Para informar de un error, indica los pasos y la versión del navegador o de la app/iOS. Añade una captura si ayuda. Para preguntas sobre repeticiones o privacidad, escribe al soporte.",
+    "jsRequired": "El juego web necesita JavaScript. Puedes leer la guía o descargar la app para iPhone y iPad."
+  },
+  "pt-BR": {
+    "homeTitle": "Jogo de desenho às cegas e desafios diários",
+    "homeDescription": "Jogo grátis de desenho às cegas no navegador: desenho livre, desafios diários, revelação dos traços e replays para compartilhar com amigos. Sem baixar ou criar conta.",
+    "helpTitle": "Guia de desenho às cegas na web e no iPhone | Ghost Draw",
+    "helpDescription": "Conheça o desenho livre, os temas diários, os traços invisíveis, o replay, a galeria local e os desafios com amigos do Ghost Draw.",
+    "privacyDescription": "Privacidade do Ghost Draw: desenhos locais, iCloud opcional no app, links públicos de replay e estatísticas de uso que podem ser desativadas.",
+    "steps": [
+      [
+        "1. Escolha uma ideia",
+        "Desenhe livremente ou tente o desafio do dia. No modo livre, você pode dar um título ao desenho."
+      ],
+      [
+        "2. Desenhe com tinta invisível",
+        "Use mouse, dedo ou caneta. O ponteiro se move, mas os traços ficam ocultos até a revelação."
+      ],
+      [
+        "3. Revele seus próprios traços",
+        "Invoque o fantasma para reproduzir os traços em ordem. O resultado é seu desenho, não uma imagem substituta gerada por IA."
+      ],
+      [
+        "4. Guarde ou compartilhe",
+        "A revelação salva os dados do desenho na galeria deste navegador. Compartilhe uma imagem ou um link público de replay; seus amigos poderão tentar o mesmo tema."
+      ]
+    ],
+    "faq": [
+      [
+        "Posso jogar este jogo de desenho online de graça?",
+        "Sim. O jogo no navegador é grátis, sem download ou conta. Ele oferece desenho livre, temas diários, galeria local e compartilhamento de replays."
+      ],
+      [
+        "Como os amigos podem participar do mesmo desafio?",
+        "Desenhe um tema e compartilhe o link do replay. Seus amigos podem abrir o mesmo tema e criar sua própria versão. É um desafio em momentos diferentes, não uma sala multiplayer ao vivo."
+      ]
+    ],
+    "supportTitle": "Suporte para web e app | Ghost Draw",
+    "supportDescription": "Fale com o Ghost Draw sobre o jogo web, o app de iPhone, links de replay, desenhos ou questões de privacidade.",
+    "supportBody": "Para relatar um erro, descreva os passos e informe a versão do navegador ou do app/iOS. Inclua uma captura de tela se ajudar. Para dúvidas sobre replays ou privacidade, envie um e-mail.",
+    "jsRequired": "O jogo no navegador precisa de JavaScript. Você ainda pode ler o guia ou baixar o app para iPhone e iPad."
+  },
+  "ru": {
+    "homeTitle": "Рисование вслепую онлайн и ежедневные задания",
+    "homeDescription": "Бесплатная игра в рисование вслепую в браузере: свободные рисунки, задания дня, раскрытие штрихов и повторы для друзей. Без скачивания и регистрации.",
+    "helpTitle": "Рисование вслепую в браузере и на iPhone | Ghost Draw",
+    "helpDescription": "Как пользоваться Ghost Draw: свободное рисование, темы дня, невидимые линии, повтор, локальная галерея и задания на одну тему с друзьями.",
+    "privacyDescription": "Приватность Ghost Draw: рисунки в браузере, необязательный iCloud в приложении, публичные повторы и отключаемая статистика использования.",
+    "steps": [
+      [
+        "1. Выберите идею",
+        "Рисуйте свободно или попробуйте задание дня. В свободном режиме можно придумать название рисунка."
+      ],
+      [
+        "2. Рисуйте невидимыми линиями",
+        "Используйте мышь, палец или перо. Указатель двигается, но линии остаются скрытыми до раскрытия."
+      ],
+      [
+        "3. Раскройте свои штрихи",
+        "Позовите призрака, чтобы воспроизвести штрихи по порядку. Это ваш рисунок, а не замена, созданная ИИ."
+      ],
+      [
+        "4. Сохраните или поделитесь",
+        "При раскрытии данные рисунка сохраняются в галерее этого браузера. Отправьте изображение или публичную ссылку на повтор: друзья смогут нарисовать свою версию на ту же тему."
+      ]
+    ],
+    "faq": [
+      [
+        "Можно ли играть в эту онлайн-игру бесплатно?",
+        "Да. Игра в браузере бесплатна, не требует скачивания и аккаунта. Доступны свободное рисование, темы дня, локальная галерея и отправка повторов."
+      ],
+      [
+        "Как рисовать на одну тему с друзьями?",
+        "Нарисуйте тему и отправьте ссылку на повтор. Друзья смогут открыть эту тему и создать свою версию. Каждый играет в своё время; комнаты для совместной игры в реальном времени нет."
+      ]
+    ],
+    "supportTitle": "Помощь с веб-игрой и приложением | Ghost Draw",
+    "supportDescription": "Свяжитесь с Ghost Draw по вопросам игры в браузере, приложения iPhone, ссылок на повтор, рисунков или приватности.",
+    "supportBody": "При сообщении об ошибке опишите шаги и укажите версию браузера или приложения/iOS. При необходимости приложите снимок экрана. Вопросы о повторах и приватности можно отправить по электронной почте.",
+    "jsRequired": "Для игры в браузере нужен JavaScript. Вы можете прочитать руководство или скачать приложение для iPhone и iPad."
+  }
+}

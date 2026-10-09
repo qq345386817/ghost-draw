@@ -1,0 +1,22 @@
+# 幽灵画手
+
+> 在浏览器里免费玩幽灵画手：看不见笔迹的画画小游戏，支持自由绘画、每日绘画挑战、逐笔揭晓、本地画廊和回放分享。和朋友挑战同一个题目，无需下载或注册。
+
+画的时候看不见笔迹，召唤幽灵后，每一笔都会逐步揭晓。你可以挑战每日题目，也可以自由发挥，再邀请朋友画同一个题目。
+
+网页版游戏需要启用 JavaScript。你仍然可以阅读使用帮助，或下载 iPhone 与 iPad App。
+
+## Pages
+
+- [绘画](https://ghost-draw.luopeike.com/zh-Hans/): 在浏览器里免费玩幽灵画手：看不见笔迹的画画小游戏，支持自由绘画、每日绘画挑战、逐笔揭晓、本地画廊和回放分享。和朋友挑战同一个题目，无需下载或注册。
+- [帮助](https://ghost-draw.luopeike.com/zh-Hans/help): 了解幽灵画手的网页版和 iPhone App：自由绘画、每日题目、隐藏笔迹、幽灵回放、本地画廊，以及邀请朋友挑战同题的方法。
+- [隐私](https://ghost-draw.luopeike.com/zh-Hans/privacy-policy): 幽灵画手隐私说明：浏览器本地画作与草稿、App 可选的 iCloud 同步、公开回放分享，以及可关闭和删除的使用统计。
+- [支持](https://ghost-draw.luopeike.com/zh-Hans/support)
+
+## Product summary
+
+- [简体中文](https://ghost-draw.luopeike.com/zh-Hans/index.md): 在浏览器里免费玩幽灵画手：看不见笔迹的画画小游戏，支持自由绘画、每日绘画挑战、逐笔揭晓、本地画廊和回放分享。和朋友挑战同一个题目，无需下载或注册。
+
+## Optional
+
+- [App Store](https://apps.apple.com/app/id6773654307): App 提供原生绘画体验，并支持可选的 iCloud 画廊同步。网页版可以独立使用，下载 App 是可选的。

@@ -1,0 +1,22 @@
+# Ghost Draw
+
+> ブラウザで無料のブラインドお絵描き。見えない線で自由に描き、毎日のお題に挑戦し、一筆ずつ公開。リプレイを友だちと共有できます。ダウンロード・登録不要。
+
+線が見えないまま絵を描き、ゴーストを呼ぶと一筆ずつ現れます。毎日のお題や自由な発想で遊び、友だちにも同じお題を描いてもらいましょう。
+
+ブラウザで遊ぶには JavaScript が必要です。ガイドを読むか、iPhone・iPad アプリを利用できます。
+
+## Pages
+
+- [描く](https://ghost-draw.luopeike.com/ja/): ブラウザで無料のブラインドお絵描き。見えない線で自由に描き、毎日のお題に挑戦し、一筆ずつ公開。リプレイを友だちと共有できます。ダウンロード・登録不要。
+- [ヘルプ](https://ghost-draw.luopeike.com/ja/help): Ghost Draw の自由描画、毎日のお題、見えない線の公開、ローカルギャラリー、友だちとの同じお題の共有について。ブラウザと iPhone に対応。
+- [プライバシー](https://ghost-draw.luopeike.com/ja/privacy-policy): Ghost Draw のプライバシー：ブラウザ内の絵と下書き、アプリの任意の iCloud 同期、公開リプレイ、オフにできる利用状況の統計。
+- [サポート](https://ghost-draw.luopeike.com/ja/support)
+
+## Product summary
+
+- [日本語](https://ghost-draw.luopeike.com/ja/index.md): ブラウザで無料のブラインドお絵描き。見えない線で自由に描き、毎日のお題に挑戦し、一筆ずつ公開。リプレイを友だちと共有できます。ダウンロード・登録不要。
+
+## Optional
+
+- [App Store](https://apps.apple.com/app/id6773654307): アプリはネイティブの描画体験と、任意の iCloud ギャラリー同期に対応します。ブラウザ版は単独で使え、アプリのインストールは任意です。

@@ -1,0 +1,14 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self' https://ghostdraw-api.luopeike.com; base-uri 'self'; frame-ancestors 'none'; form-action 'self'
+/content/*
+  X-Robots-Tag: noindex
+/*.md
+  X-Robots-Tag: noindex
+  Content-Type: text/markdown; charset=utf-8
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+/*/llms.txt
+  Content-Type: text/plain; charset=utf-8

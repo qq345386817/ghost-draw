@@ -1,0 +1,22 @@
+# 靈魂畫手
+
+> 在瀏覽器免費玩 Ghost Draw：看不見筆跡的繪畫小遊戲，支援自由繪畫、每日挑戰、逐筆揭曉、本機畫廊與回放分享。和朋友挑戰相同題目，無需下載或註冊。
+
+畫的時候看不見筆跡，召喚幽靈後，每一筆都會逐步揭曉。你可以挑戰每日題目，也可以自由發揮，再邀請朋友畫同一個題目。
+
+網頁版遊戲需要啟用 JavaScript。你仍然可以閱讀使用說明，或下載 iPhone 與 iPad App。
+
+## Pages
+
+- [繪圖](https://ghost-draw.luopeike.com/zh-Hant/): 在瀏覽器免費玩 Ghost Draw：看不見筆跡的繪畫小遊戲，支援自由繪畫、每日挑戰、逐筆揭曉、本機畫廊與回放分享。和朋友挑戰相同題目，無需下載或註冊。
+- [幫助](https://ghost-draw.luopeike.com/zh-Hant/help): 了解 Ghost Draw 網頁版與 iPhone App：自由繪畫、每日題目、隱藏筆跡、回放、本機畫廊，以及邀請朋友挑戰同題的方法。
+- [隱私](https://ghost-draw.luopeike.com/zh-Hant/privacy-policy): Ghost Draw 隱私說明：瀏覽器本機作品與草稿、App 選用的 iCloud 同步、公開回放分享，以及可關閉與刪除的使用統計。
+- [支援](https://ghost-draw.luopeike.com/zh-Hant/support)
+
+## Product summary
+
+- [繁體中文](https://ghost-draw.luopeike.com/zh-Hant/index.md): 在瀏覽器免費玩 Ghost Draw：看不見筆跡的繪畫小遊戲，支援自由繪畫、每日挑戰、逐筆揭曉、本機畫廊與回放分享。和朋友挑戰相同題目，無需下載或註冊。
+
+## Optional
+
+- [App Store](https://apps.apple.com/app/id6773654307): App 提供原生繪畫體驗，並支援選用的 iCloud 畫廊同步。網頁版可獨立使用，下載 App 並非必要。

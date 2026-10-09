@@ -1,0 +1,22 @@
+# Ghost Draw
+
+> Un jeu de dessin à l’aveugle gratuit dans le navigateur : dessin libre, défis quotidiens, révélation des traits et relectures à partager. Sans téléchargement ni compte.
+
+Dessinez sans voir les traits, puis laissez le fantôme les révéler un à un. Essayez le sujet du jour ou votre propre idée, et invitez un ami à dessiner la même chose.
+
+Le jeu web nécessite JavaScript. Vous pouvez lire le guide ou télécharger l’app pour iPhone et iPad.
+
+## Pages
+
+- [Dessiner](https://ghost-draw.luopeike.com/fr/): Un jeu de dessin à l’aveugle gratuit dans le navigateur : dessin libre, défis quotidiens, révélation des traits et relectures à partager. Sans téléchargement ni compte.
+- [Aide](https://ghost-draw.luopeike.com/fr/help): Découvrez le dessin libre, les sujets du jour, les traits invisibles, la relecture, la galerie locale et les défis à partager entre amis dans Ghost Draw.
+- [Confidentialité](https://ghost-draw.luopeike.com/fr/privacy-policy): Confidentialité de Ghost Draw : dessins locaux, iCloud facultatif dans l’app, liens publics de relecture et statistiques d’utilisation désactivables.
+- [Assistance](https://ghost-draw.luopeike.com/fr/support)
+
+## Product summary
+
+- [Français](https://ghost-draw.luopeike.com/fr/index.md): Un jeu de dessin à l’aveugle gratuit dans le navigateur : dessin libre, défis quotidiens, révélation des traits et relectures à partager. Sans téléchargement ni compte.
+
+## Optional
+
+- [App Store](https://apps.apple.com/app/id6773654307): L'app offre une expérience de dessin native et une synchronisation iCloud facultative de la galerie. Le jeu web fonctionne seul ; installer l'app reste un choix.

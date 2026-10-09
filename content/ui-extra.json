@@ -1,0 +1,592 @@
+{
+  "en": {
+    "defaultTitle": "My ghost drawing",
+    "title": "Drawing title",
+    "undo": "Undo",
+    "redo": "Redo",
+    "dotted": "Dots",
+    "reveal": "Summon the ghost",
+    "again": "Draw again",
+    "pause": "Pause",
+    "restore": "Continue",
+    "clearConfirm": "Clear this drawing?",
+    "restoreTitle": "Continue your drawing?",
+    "restoreBody": "A drawing is saved in this browser. Keep its original prompt and continue, or start fresh.",
+    "strokeCount": "{count} strokes",
+    "strokeOne": "1 stroke",
+    "verdict": "A little chaos. Completely yours.",
+    "share": "Share",
+    "copy": "Copy link",
+    "copied": "Link copied",
+    "linkReady": "Your replay link is ready.",
+    "download": "Download image",
+    "deleteData": "Download drawing data",
+    "uploadError": "The replay link could not be created. Your drawing is still here. Please try again.",
+    "storageError": "This browser could not save the drawing. Download it before leaving.",
+    "tooLarge": "This drawing is too detailed for a replay link. You can still download the image or data.",
+    "loadError": "This replay could not be loaded. Please try again.",
+    "loading": "Loading replay",
+    "emptyFeatured": "Featured replays are temporarily unavailable.",
+    "publicLink": "Anyone with your replay link can watch the drawing. It is uploaded only when you share a link.",
+    "privacyStats": "Privacy & statistics",
+    "analyticsTitle": "Usage statistics",
+    "analyticsSwitch": "Send usage statistics",
+    "analyticsBody": "On by default. We record drawing, reveal and sharing events with random identifiers hashed before storage. We do not include drawings, titles, nicknames or hardware identifiers. Turn this off to stop sending and clear pending events.",
+    "analyticsClear": "Delete sent usage statistics",
+    "analyticsCleared": "Statistics were deleted and collection is off.",
+    "analyticsNotice": "Usage statistics are on. You can turn them off in Privacy & statistics.",
+    "guideTitle": "What is blind drawing?",
+    "guideBody": "Draw something without seeing the ink, then let the ghost reveal every stroke. Try a daily prompt or your own idea, and invite a friend to draw the same thing.",
+    "faq": [
+      [
+        "Does Ghost Draw use AI to make my drawing?",
+        "No. Ghost Draw records your own strokes and plays them back. It does not generate a replacement picture."
+      ],
+      [
+        "Where are my drawings saved?",
+        "The website saves drafts and finished drawings in this browser. They are not automatically synced with the iPhone app or another browser. Clearing site data removes them."
+      ],
+      [
+        "Can friends play the same prompt?",
+        "Yes. A shared replay can open the same prompt in the web game. Friends can draw their own version without signing in."
+      ],
+      [
+        "What does the iPhone app add?",
+        "The app offers a native drawing experience and optional iCloud gallery sync. The browser game can be played independently; installing the app is optional."
+      ]
+    ],
+    "analyticsRetention": "Usage events are retained for up to 90 days. This does not expire your public replay links.",
+    "serviceLogs": "Turning off usage statistics does not disable essential replay requests. Cloudflare may process technical request information, including IP addresses and errors, for security and service operation; this is not stored in our usage-event table."
+  },
+  "zh-Hans": {
+    "defaultTitle": "我的幽灵画作",
+    "title": "画作标题",
+    "undo": "撤销",
+    "redo": "重做",
+    "dotted": "点线",
+    "reveal": "召唤幽灵",
+    "again": "再画一次",
+    "pause": "暂停",
+    "restore": "继续绘画",
+    "clearConfirm": "清空这幅画？",
+    "restoreTitle": "继续上次的绘画？",
+    "restoreBody": "这个浏览器里保存了一份草稿。你可以保留原题继续画，也可以开始新的一幅。",
+    "strokeCount": "{count} 笔",
+    "strokeOne": "1 笔",
+    "verdict": "有点离谱，但每一笔都是你的。",
+    "share": "分享",
+    "copy": "复制链接",
+    "copied": "链接已复制",
+    "linkReady": "回放链接已生成。",
+    "download": "下载图片",
+    "deleteData": "下载绘画数据",
+    "uploadError": "暂时无法生成回放链接。画作仍保留在这里，请稍后重试。",
+    "storageError": "浏览器未能保存这幅画。离开前请先下载。",
+    "tooLarge": "这幅画的数据较多，暂时无法生成回放链接。你仍然可以下载图片或数据。",
+    "loadError": "暂时无法加载这段回放，请重试。",
+    "loading": "正在加载回放",
+    "emptyFeatured": "精选回放暂时无法加载。",
+    "publicLink": "拿到回放链接的人都能观看画作。只有你点击分享链接时，绘画数据才会上传。",
+    "privacyStats": "隐私与统计",
+    "analyticsTitle": "使用统计",
+    "analyticsSwitch": "发送使用统计",
+    "analyticsBody": "默认开启。我们记录绘画、揭晓和分享等事件，随机标识在存储前会进行哈希处理；不包含画作、标题、昵称或设备硬件标识。关闭后停止发送，并清除待发送事件。",
+    "analyticsClear": "删除已发送的使用统计",
+    "analyticsCleared": "已删除统计，统计开关已关闭。",
+    "analyticsNotice": "使用统计已开启，可在“隐私与统计”中关闭。",
+    "guideTitle": "什么是盲画？",
+    "guideBody": "画的时候看不见笔迹，召唤幽灵后，每一笔都会逐步揭晓。你可以挑战每日题目，也可以自由发挥，再邀请朋友画同一个题目。",
+    "faq": [
+      [
+        "幽灵画手会用 AI 替我画画吗？",
+        "不会。幽灵画手记录你自己画出的笔画，再按顺序播放，不会生成一张替代作品。"
+      ],
+      [
+        "网页画作保存在哪里？",
+        "草稿和完成的画作保存在当前浏览器里，不会自动同步到 iPhone App 或另一个浏览器。清除网站数据会移除这些记录。"
+      ],
+      [
+        "朋友可以挑战同一个题目吗？",
+        "可以。共享回放可以打开网页里的同题挑战，朋友无需登录就能画出自己的版本。"
+      ],
+      [
+        "iPhone App 有什么不同？",
+        "App 提供原生绘画体验，并支持可选的 iCloud 画廊同步。网页版可以独立使用，下载 App 是可选的。"
+      ]
+    ],
+    "analyticsRetention": "使用事件最多保留 90 天，这不会使公开回放链接过期。",
+    "serviceLogs": "关闭使用统计不会停用回放等必要请求。Cloudflare 可能为安全和服务运行处理 IP 地址、错误等技术请求信息，这些信息不会存入我们的使用事件表。"
+  },
+  "zh-Hant": {
+    "defaultTitle": "我的幽靈畫作",
+    "title": "作品標題",
+    "undo": "復原",
+    "redo": "重做",
+    "dotted": "點線",
+    "reveal": "召喚幽靈",
+    "again": "再畫一次",
+    "pause": "暫停",
+    "restore": "繼續繪畫",
+    "clearConfirm": "清空這幅畫？",
+    "restoreTitle": "繼續上次的繪畫？",
+    "restoreBody": "這個瀏覽器儲存了一份草稿。你可以保留原題繼續畫，也可以開始新的一幅。",
+    "strokeCount": "{count} 筆",
+    "strokeOne": "1 筆",
+    "verdict": "有點離譜，但每一筆都是你的。",
+    "share": "分享",
+    "copy": "複製連結",
+    "copied": "連結已複製",
+    "linkReady": "回放連結已建立。",
+    "download": "下載圖片",
+    "deleteData": "下載繪畫資料",
+    "uploadError": "暫時無法建立回放連結。作品仍保留在這裡，請稍後重試。",
+    "storageError": "瀏覽器未能儲存這幅畫。離開前請先下載。",
+    "tooLarge": "這幅畫的資料較多，暫時無法建立回放連結。你仍可下載圖片或資料。",
+    "loadError": "暫時無法載入這段回放，請重試。",
+    "loading": "正在載入回放",
+    "emptyFeatured": "精選回放暫時無法載入。",
+    "publicLink": "取得回放連結的人都能觀看作品。只有你點選分享連結時，繪畫資料才會上傳。",
+    "privacyStats": "隱私與統計",
+    "analyticsTitle": "使用統計",
+    "analyticsSwitch": "傳送使用統計",
+    "analyticsBody": "預設開啟。我們記錄繪畫、揭曉與分享等事件，隨機識別碼在儲存前會進行雜湊處理；不包含作品、標題、暱稱或裝置硬體識別碼。關閉後停止傳送，並清除待傳送事件。",
+    "analyticsClear": "刪除已傳送的使用統計",
+    "analyticsCleared": "統計已刪除，統計開關已關閉。",
+    "analyticsNotice": "使用統計已開啟，可在「隱私與統計」中關閉。",
+    "guideTitle": "什麼是盲畫？",
+    "guideBody": "畫的時候看不見筆跡，召喚幽靈後，每一筆都會逐步揭曉。你可以挑戰每日題目，也可以自由發揮，再邀請朋友畫同一個題目。",
+    "faq": [
+      [
+        "Ghost Draw 會用 AI 替我畫畫嗎？",
+        "不會。Ghost Draw 記錄你自己畫出的筆畫，再按順序播放，不會產生替代作品。"
+      ],
+      [
+        "網頁作品儲存在哪裡？",
+        "草稿與完成的作品儲存在目前瀏覽器，不會自動同步到 iPhone App 或其他瀏覽器。清除網站資料會移除這些記錄。"
+      ],
+      [
+        "朋友可以挑戰相同題目嗎？",
+        "可以。共享回放能開啟網頁中的同題挑戰，朋友無需登入就能畫出自己的版本。"
+      ],
+      [
+        "iPhone App 有什麼不同？",
+        "App 提供原生繪畫體驗，並支援選用的 iCloud 畫廊同步。網頁版可獨立使用，下載 App 並非必要。"
+      ]
+    ],
+    "analyticsRetention": "使用事件最多保留 90 天，這不會讓公開回放連結到期。",
+    "serviceLogs": "關閉使用統計不會停用回放等必要請求。Cloudflare 可能為安全與服務運作處理 IP 位址、錯誤等技術請求資訊，這些資訊不會存入我們的使用事件表。"
+  },
+  "ja": {
+    "defaultTitle": "私のゴースト作品",
+    "title": "作品名",
+    "undo": "元に戻す",
+    "redo": "やり直す",
+    "dotted": "点線",
+    "reveal": "ゴーストを呼ぶ",
+    "again": "もう一度描く",
+    "pause": "一時停止",
+    "restore": "描き続ける",
+    "clearConfirm": "この絵を消しますか？",
+    "restoreTitle": "前の続きを描きますか？",
+    "restoreBody": "このブラウザに下書きがあります。元のお題で続けるか、新しい絵を始められます。",
+    "strokeCount": "{count} 本",
+    "strokeOne": "1 本",
+    "verdict": "ちょっと不思議。でも、全部あなたの線です。",
+    "share": "共有",
+    "copy": "リンクをコピー",
+    "copied": "リンクをコピーしました",
+    "linkReady": "リプレイのリンクができました。",
+    "download": "画像を保存",
+    "deleteData": "描画データを保存",
+    "uploadError": "リプレイのリンクを作れませんでした。絵はここに残っています。もう一度お試しください。",
+    "storageError": "ブラウザに絵を保存できませんでした。ページを閉じる前にダウンロードしてください。",
+    "tooLarge": "この絵はデータが多いため、リンクを作れません。画像やデータはダウンロードできます。",
+    "loadError": "リプレイを読み込めませんでした。もう一度お試しください。",
+    "loading": "リプレイを読み込み中",
+    "emptyFeatured": "おすすめのリプレイを読み込めません。",
+    "publicLink": "リンクを知っている人は絵を見ることができます。リンクを共有するときだけ描画データをアップロードします。",
+    "privacyStats": "プライバシーと統計",
+    "analyticsTitle": "利用状況の統計",
+    "analyticsSwitch": "利用状況を送信",
+    "analyticsBody": "初期設定はオンです。描画・公開・共有などの操作を記録し、ランダムな識別子は保存前にハッシュ化します。絵・作品名・ニックネーム・機器のハードウェア識別子は含みません。オフにすると送信を停止し、未送信の記録を削除します。",
+    "analyticsClear": "送信済みの統計を削除",
+    "analyticsCleared": "統計を削除し、送信をオフにしました。",
+    "analyticsNotice": "利用状況の統計はオンです。「プライバシーと統計」で変更できます。",
+    "guideTitle": "ブラインド描画とは？",
+    "guideBody": "線が見えないまま絵を描き、ゴーストを呼ぶと一筆ずつ現れます。毎日のお題や自由な発想で遊び、友だちにも同じお題を描いてもらいましょう。",
+    "faq": [
+      [
+        "AI が代わりに描いてくれますか？",
+        "いいえ。あなたが描いた線を記録して順番に再生します。別の画像を生成する機能ではありません。"
+      ],
+      [
+        "絵はどこに保存されますか？",
+        "下書きと完成した絵は現在のブラウザに保存されます。iPhone アプリや別のブラウザには自動同期されません。サイトのデータを消すと絵も削除されます。"
+      ],
+      [
+        "友だちも同じお題で遊べますか？",
+        "はい。共有リプレイから同じお題を開き、ログインせずに自分の絵を描けます。"
+      ],
+      [
+        "iPhone アプリとの違いは？",
+        "アプリはネイティブの描画体験と、任意の iCloud ギャラリー同期に対応します。ブラウザ版は単独で使え、アプリのインストールは任意です。"
+      ]
+    ],
+    "analyticsRetention": "利用状況の記録は最大90日間保存します。公開リプレイのリンクに有効期限を設けるものではありません。",
+    "serviceLogs": "統計をオフにしても、リプレイに必要な通信は停止しません。Cloudflare は安全性とサービス運用のために IP アドレスやエラーなどの技術情報を処理することがあります。これらは利用状況のイベント表には保存しません。"
+  },
+  "ko": {
+    "defaultTitle": "나의 유령 그림",
+    "title": "그림 제목",
+    "undo": "실행 취소",
+    "redo": "다시 실행",
+    "dotted": "점선",
+    "reveal": "유령 부르기",
+    "again": "다시 그리기",
+    "pause": "일시 정지",
+    "restore": "계속 그리기",
+    "clearConfirm": "이 그림을 지울까요?",
+    "restoreTitle": "이전 그림을 이어 그릴까요?",
+    "restoreBody": "이 브라우저에 초안이 저장되어 있습니다. 원래 주제로 이어 그리거나 새 그림을 시작할 수 있습니다.",
+    "strokeCount": "{count}획",
+    "strokeOne": "1획",
+    "verdict": "조금 엉뚱해도, 모두 내가 그린 선이에요.",
+    "share": "공유",
+    "copy": "링크 복사",
+    "copied": "링크를 복사했어요",
+    "linkReady": "재생 링크가 준비됐어요.",
+    "download": "이미지 다운로드",
+    "deleteData": "그림 데이터 다운로드",
+    "uploadError": "재생 링크를 만들지 못했어요. 그림은 그대로 남아 있으니 다시 시도해 주세요.",
+    "storageError": "브라우저에 그림을 저장하지 못했어요. 페이지를 떠나기 전에 다운로드해 주세요.",
+    "tooLarge": "그림 데이터가 많아 재생 링크를 만들 수 없어요. 이미지나 데이터는 다운로드할 수 있어요.",
+    "loadError": "재생을 불러오지 못했어요. 다시 시도해 주세요.",
+    "loading": "재생 불러오는 중",
+    "emptyFeatured": "추천 재생을 잠시 불러올 수 없어요.",
+    "publicLink": "링크를 받은 누구나 그림을 볼 수 있어요. 링크를 공유할 때만 그림 데이터가 업로드됩니다.",
+    "privacyStats": "개인정보와 통계",
+    "analyticsTitle": "사용 통계",
+    "analyticsSwitch": "사용 통계 전송",
+    "analyticsBody": "기본으로 켜져 있습니다. 그리기·공개·공유 등의 동작을 기록하고, 임의 식별자는 저장 전에 해시 처리합니다. 그림·제목·닉네임·기기 하드웨어 식별자는 포함하지 않습니다. 끄면 전송을 멈추고 대기 중인 기록을 삭제합니다.",
+    "analyticsClear": "전송한 사용 통계 삭제",
+    "analyticsCleared": "통계를 삭제하고 전송을 껐어요.",
+    "analyticsNotice": "사용 통계가 켜져 있어요. ‘개인정보와 통계’에서 끌 수 있습니다.",
+    "guideTitle": "블라인드 드로잉이란?",
+    "guideBody": "선이 보이지 않는 상태로 그린 뒤 유령을 부르면 한 획씩 나타납니다. 오늘의 주제나 자유로운 생각으로 그리고, 친구에게 같은 주제를 건네 보세요.",
+    "faq": [
+      [
+        "AI가 대신 그림을 그려 주나요?",
+        "아니요. 직접 그린 선을 기록해 순서대로 재생합니다. 다른 그림을 생성하지 않습니다."
+      ],
+      [
+        "그림은 어디에 저장되나요?",
+        "초안과 완성된 그림은 현재 브라우저에 저장됩니다. iPhone 앱이나 다른 브라우저와 자동으로 동기화되지 않으며 사이트 데이터를 지우면 기록도 삭제됩니다."
+      ],
+      [
+        "친구도 같은 주제로 그릴 수 있나요?",
+        "네. 공유 재생에서 같은 주제를 열고 로그인 없이 자기 버전을 그릴 수 있습니다."
+      ],
+      [
+        "iPhone 앱은 무엇이 다른가요?",
+        "앱은 네이티브 그리기 경험과 선택 가능한 iCloud 갤러리 동기화를 제공합니다. 웹 게임은 독립적으로 이용할 수 있고 앱 설치는 선택 사항입니다."
+      ]
+    ],
+    "analyticsRetention": "사용 이벤트는 최대 90일 동안 보관합니다. 공개 리플레이 링크의 유효기간과는 관계없습니다.",
+    "serviceLogs": "통계를 꺼도 리플레이에 필요한 요청은 중단되지 않습니다. Cloudflare는 보안과 서비스 운영을 위해 IP 주소와 오류 등의 기술 정보를 처리할 수 있습니다. 이 정보는 사용 이벤트 테이블에 저장하지 않습니다."
+  },
+  "de": {
+    "defaultTitle": "Meine Geisterzeichnung",
+    "title": "Titel der Zeichnung",
+    "undo": "Rückgängig",
+    "redo": "Wiederholen",
+    "dotted": "Punkte",
+    "reveal": "Geist herbeirufen",
+    "again": "Neu zeichnen",
+    "pause": "Pause",
+    "restore": "Weiterzeichnen",
+    "clearConfirm": "Diese Zeichnung löschen?",
+    "restoreTitle": "Deine Zeichnung fortsetzen?",
+    "restoreBody": "In diesem Browser liegt ein Entwurf. Zeichne mit dem ursprünglichen Motiv weiter oder beginne neu.",
+    "strokeCount": "{count} Striche",
+    "strokeOne": "1 Strich",
+    "verdict": "Ein bisschen Chaos. Ganz dein Werk.",
+    "share": "Teilen",
+    "copy": "Link kopieren",
+    "copied": "Link kopiert",
+    "linkReady": "Dein Wiedergabelink ist fertig.",
+    "download": "Bild herunterladen",
+    "deleteData": "Zeichnungsdaten herunterladen",
+    "uploadError": "Der Wiedergabelink konnte nicht erstellt werden. Deine Zeichnung bleibt erhalten. Versuche es erneut.",
+    "storageError": "Der Browser konnte die Zeichnung nicht speichern. Lade sie vor dem Verlassen herunter.",
+    "tooLarge": "Diese Zeichnung enthält zu viele Daten für einen Wiedergabelink. Bild und Daten kannst du weiterhin herunterladen.",
+    "loadError": "Die Wiedergabe konnte nicht geladen werden. Versuche es erneut.",
+    "loading": "Wiedergabe wird geladen",
+    "emptyFeatured": "Ausgewählte Wiedergaben sind vorübergehend nicht verfügbar.",
+    "publicLink": "Wer deinen Link hat, kann die Zeichnung ansehen. Daten werden nur beim Teilen eines Links hochgeladen.",
+    "privacyStats": "Datenschutz & Statistik",
+    "analyticsTitle": "Nutzungsstatistik",
+    "analyticsSwitch": "Nutzungsstatistik senden",
+    "analyticsBody": "Standardmäßig aktiviert. Wir erfassen Zeichen-, Aufdeck- und Teilvorgänge. Zufällige Kennungen werden vor der Speicherung gehasht. Zeichnungen, Titel, Spitznamen und Hardwarekennungen sind nicht enthalten. Ausschalten stoppt die Übertragung und entfernt wartende Ereignisse.",
+    "analyticsClear": "Gesendete Nutzungsstatistik löschen",
+    "analyticsCleared": "Statistik gelöscht und Erfassung ausgeschaltet.",
+    "analyticsNotice": "Die Nutzungsstatistik ist aktiviert. Unter Datenschutz & Statistik kannst du sie ausschalten.",
+    "guideTitle": "Was ist Blindzeichnen?",
+    "guideBody": "Zeichne, ohne die Linien zu sehen, und lass den Geist jeden Strich aufdecken. Wähle das Tagesmotiv oder eine eigene Idee und lade Freunde zum gleichen Motiv ein.",
+    "faq": [
+      [
+        "Zeichnet Ghost Draw mit KI für mich?",
+        "Nein. Ghost Draw zeichnet deine eigenen Striche auf und spielt sie ab. Es erzeugt kein Ersatzbild."
+      ],
+      [
+        "Wo werden meine Zeichnungen gespeichert?",
+        "Entwürfe und fertige Werke bleiben in diesem Browser. Sie werden nicht automatisch mit der iPhone-App oder anderen Browsern synchronisiert. Beim Löschen der Websitedaten verschwinden sie."
+      ],
+      [
+        "Können Freunde dasselbe Motiv zeichnen?",
+        "Ja. Eine geteilte Wiedergabe öffnet das gleiche Motiv im Webspiel. Freunde können ohne Anmeldung ihre eigene Version zeichnen."
+      ],
+      [
+        "Was bietet die iPhone-App zusätzlich?",
+        "Die App bietet natives Zeichnen und eine optionale iCloud-Synchronisierung der Galerie. Das Webspiel funktioniert unabhängig; die Installation ist freiwillig."
+      ]
+    ],
+    "analyticsRetention": "Nutzungsereignisse werden bis zu 90 Tage gespeichert. Öffentliche Replay-Links laufen dadurch nicht ab.",
+    "serviceLogs": "Das Ausschalten der Statistik stoppt nicht notwendige Replay-Anfragen. Cloudflare kann technische Anfragedaten einschließlich IP-Adressen und Fehlern für Sicherheit und Betrieb verarbeiten; sie werden nicht in unserer Nutzungstabelle gespeichert."
+  },
+  "fr": {
+    "defaultTitle": "Mon dessin fantôme",
+    "title": "Titre du dessin",
+    "undo": "Annuler le trait",
+    "redo": "Rétablir",
+    "dotted": "Pointillés",
+    "reveal": "Invoquer le fantôme",
+    "again": "Dessiner encore",
+    "pause": "Pause",
+    "restore": "Reprendre",
+    "clearConfirm": "Effacer ce dessin ?",
+    "restoreTitle": "Reprendre votre dessin ?",
+    "restoreBody": "Un brouillon est enregistré dans ce navigateur. Reprenez le sujet d'origine ou commencez un nouveau dessin.",
+    "strokeCount": "{count} traits",
+    "strokeOne": "1 trait",
+    "verdict": "Un peu de chaos. Entièrement votre œuvre.",
+    "share": "Partager",
+    "copy": "Copier le lien",
+    "copied": "Lien copié",
+    "linkReady": "Votre lien de relecture est prêt.",
+    "download": "Télécharger l'image",
+    "deleteData": "Télécharger les données du dessin",
+    "uploadError": "Le lien de relecture n'a pas pu être créé. Votre dessin est toujours ici. Réessayez.",
+    "storageError": "Le navigateur n'a pas pu enregistrer le dessin. Téléchargez-le avant de partir.",
+    "tooLarge": "Ce dessin contient trop de données pour un lien de relecture. Vous pouvez toujours télécharger l'image ou les données.",
+    "loadError": "Impossible de charger cette relecture. Réessayez.",
+    "loading": "Chargement de la relecture",
+    "emptyFeatured": "Les relectures sélectionnées sont momentanément indisponibles.",
+    "publicLink": "Toute personne disposant de votre lien peut voir le dessin. Les données ne sont envoyées que lorsque vous partagez un lien.",
+    "privacyStats": "Confidentialité et statistiques",
+    "analyticsTitle": "Statistiques d'utilisation",
+    "analyticsSwitch": "Envoyer les statistiques d'utilisation",
+    "analyticsBody": "Activées par défaut. Nous enregistrons les actions de dessin, de révélation et de partage. Les identifiants aléatoires sont hachés avant stockage. Aucun dessin, titre, pseudonyme ou identifiant matériel n'est inclus. Désactiver arrête l'envoi et supprime les événements en attente.",
+    "analyticsClear": "Supprimer les statistiques envoyées",
+    "analyticsCleared": "Statistiques supprimées et collecte désactivée.",
+    "analyticsNotice": "Les statistiques sont activées. Vous pouvez les désactiver dans Confidentialité et statistiques.",
+    "guideTitle": "Qu'est-ce que le dessin à l'aveugle ?",
+    "guideBody": "Dessinez sans voir les traits, puis laissez le fantôme les révéler un à un. Essayez le sujet du jour ou votre propre idée, et invitez un ami à dessiner la même chose.",
+    "faq": [
+      [
+        "Ghost Draw utilise-t-il l'IA pour dessiner à ma place ?",
+        "Non. Ghost Draw enregistre vos propres traits et les rejoue. Il ne génère pas d'image de remplacement."
+      ],
+      [
+        "Où sont enregistrés mes dessins ?",
+        "Les brouillons et dessins terminés sont conservés dans ce navigateur. Ils ne sont pas synchronisés automatiquement avec l'app iPhone ou un autre navigateur. Effacer les données du site les supprime."
+      ],
+      [
+        "Mes amis peuvent-ils dessiner le même sujet ?",
+        "Oui. Une relecture partagée ouvre le même sujet dans le jeu web. Vos amis peuvent dessiner leur version sans se connecter."
+      ],
+      [
+        "Que propose l'app iPhone en plus ?",
+        "L'app offre une expérience de dessin native et une synchronisation iCloud facultative de la galerie. Le jeu web fonctionne seul ; installer l'app reste un choix."
+      ]
+    ],
+    "analyticsRetention": "Les événements d’utilisation sont conservés jusqu’à 90 jours. Vos liens publics de relecture ne sont pas concernés.",
+    "serviceLogs": "Désactiver les statistiques ne bloque pas les requêtes nécessaires aux relectures. Cloudflare peut traiter des informations techniques, dont les adresses IP et les erreurs, pour la sécurité et le fonctionnement ; elles ne figurent pas dans notre table d’événements."
+  },
+  "es": {
+    "defaultTitle": "Mi dibujo fantasma",
+    "title": "Título del dibujo",
+    "undo": "Deshacer",
+    "redo": "Rehacer",
+    "dotted": "Puntos",
+    "reveal": "Invocar al fantasma",
+    "again": "Dibujar otra vez",
+    "pause": "Pausar",
+    "restore": "Continuar",
+    "clearConfirm": "¿Borrar este dibujo?",
+    "restoreTitle": "¿Continuar tu dibujo?",
+    "restoreBody": "Hay un borrador guardado en este navegador. Puedes seguir con el tema original o empezar uno nuevo.",
+    "strokeCount": "{count} trazos",
+    "strokeOne": "1 trazo",
+    "verdict": "Un poco de caos. Una obra muy tuya.",
+    "share": "Compartir",
+    "copy": "Copiar enlace",
+    "copied": "Enlace copiado",
+    "linkReady": "Tu enlace de repetición está listo.",
+    "download": "Descargar imagen",
+    "deleteData": "Descargar datos del dibujo",
+    "uploadError": "No se pudo crear el enlace. Tu dibujo sigue aquí. Vuelve a intentarlo.",
+    "storageError": "El navegador no pudo guardar el dibujo. Descárgalo antes de salir.",
+    "tooLarge": "Este dibujo tiene demasiados datos para un enlace. Puedes descargar la imagen o los datos.",
+    "loadError": "No se pudo cargar la repetición. Vuelve a intentarlo.",
+    "loading": "Cargando repetición",
+    "emptyFeatured": "Las repeticiones destacadas no están disponibles por el momento.",
+    "publicLink": "Cualquier persona con el enlace puede ver el dibujo. Los datos solo se suben cuando compartes un enlace.",
+    "privacyStats": "Privacidad y estadísticas",
+    "analyticsTitle": "Estadísticas de uso",
+    "analyticsSwitch": "Enviar estadísticas de uso",
+    "analyticsBody": "Activadas por defecto. Registramos acciones de dibujo, revelado y compartir. Los identificadores aleatorios se cifran con un hash antes de almacenarlos. No incluimos dibujos, títulos, apodos ni identificadores de hardware. Desactivarlas detiene el envío y elimina los eventos pendientes.",
+    "analyticsClear": "Eliminar estadísticas enviadas",
+    "analyticsCleared": "Estadísticas eliminadas y recopilación desactivada.",
+    "analyticsNotice": "Las estadísticas están activadas. Puedes desactivarlas en Privacidad y estadísticas.",
+    "guideTitle": "¿Qué es dibujar a ciegas?",
+    "guideBody": "Dibuja sin ver los trazos y deja que el fantasma los revele uno a uno. Prueba el tema diario o una idea propia e invita a un amigo a dibujar lo mismo.",
+    "faq": [
+      [
+        "¿Ghost Draw usa IA para dibujar por mí?",
+        "No. Ghost Draw registra tus propios trazos y los reproduce. No genera una imagen alternativa."
+      ],
+      [
+        "¿Dónde se guardan los dibujos?",
+        "Los borradores y dibujos terminados se guardan en este navegador. No se sincronizan automáticamente con la app de iPhone ni con otro navegador. Al borrar los datos del sitio se eliminan."
+      ],
+      [
+        "¿Mis amigos pueden dibujar el mismo tema?",
+        "Sí. Una repetición compartida puede abrir el mismo tema en el juego web. Tus amigos pueden crear su versión sin iniciar sesión."
+      ],
+      [
+        "¿Qué añade la app de iPhone?",
+        "La app ofrece dibujo nativo y sincronización opcional de la galería con iCloud. El juego web funciona de forma independiente; instalar la app es opcional."
+      ]
+    ],
+    "analyticsRetention": "Los eventos de uso se conservan hasta 90 días. Esto no hace caducar tus enlaces públicos de repetición.",
+    "serviceLogs": "Desactivar las estadísticas no desactiva las solicitudes necesarias de repetición. Cloudflare puede procesar datos técnicos, como direcciones IP y errores, para seguridad y funcionamiento; no se guardan en nuestra tabla de eventos."
+  },
+  "pt-BR": {
+    "defaultTitle": "Meu desenho fantasma",
+    "title": "Título do desenho",
+    "undo": "Desfazer",
+    "redo": "Refazer",
+    "dotted": "Pontilhado",
+    "reveal": "Invocar o fantasma",
+    "again": "Desenhar de novo",
+    "pause": "Pausar",
+    "restore": "Continuar",
+    "clearConfirm": "Apagar este desenho?",
+    "restoreTitle": "Continuar seu desenho?",
+    "restoreBody": "Há um rascunho salvo neste navegador. Continue com o tema original ou comece um desenho novo.",
+    "strokeCount": "{count} traços",
+    "strokeOne": "1 traço",
+    "verdict": "Um pouco de caos. Uma obra só sua.",
+    "share": "Compartilhar",
+    "copy": "Copiar link",
+    "copied": "Link copiado",
+    "linkReady": "Seu link de replay está pronto.",
+    "download": "Baixar imagem",
+    "deleteData": "Baixar dados do desenho",
+    "uploadError": "Não foi possível criar o link. Seu desenho continua aqui. Tente novamente.",
+    "storageError": "O navegador não conseguiu salvar o desenho. Baixe-o antes de sair.",
+    "tooLarge": "Este desenho tem dados demais para um link. Você ainda pode baixar a imagem ou os dados.",
+    "loadError": "Não foi possível carregar o replay. Tente novamente.",
+    "loading": "Carregando replay",
+    "emptyFeatured": "Os replays em destaque estão temporariamente indisponíveis.",
+    "publicLink": "Qualquer pessoa com o link pode ver o desenho. Os dados só são enviados quando você compartilha um link.",
+    "privacyStats": "Privacidade e estatísticas",
+    "analyticsTitle": "Estatísticas de uso",
+    "analyticsSwitch": "Enviar estatísticas de uso",
+    "analyticsBody": "Ativadas por padrão. Registramos ações de desenho, revelação e compartilhamento. Identificadores aleatórios recebem um hash antes de serem armazenados. Não incluímos desenhos, títulos, apelidos nem identificadores de hardware. Desativar interrompe o envio e apaga eventos pendentes.",
+    "analyticsClear": "Apagar estatísticas enviadas",
+    "analyticsCleared": "Estatísticas apagadas e coleta desativada.",
+    "analyticsNotice": "As estatísticas estão ativadas. Você pode desativá-las em Privacidade e estatísticas.",
+    "guideTitle": "O que é desenhar às cegas?",
+    "guideBody": "Desenhe sem ver os traços e deixe o fantasma revelar cada um. Experimente o tema do dia ou uma ideia sua e convide alguém para desenhar a mesma coisa.",
+    "faq": [
+      [
+        "O Ghost Draw usa IA para desenhar por mim?",
+        "Não. O Ghost Draw registra seus próprios traços e os reproduz. Ele não gera outra imagem no lugar do seu desenho."
+      ],
+      [
+        "Onde os desenhos ficam salvos?",
+        "Rascunhos e desenhos concluídos ficam neste navegador. Não são sincronizados automaticamente com o app de iPhone ou outro navegador. Apagar os dados do site remove esses registros."
+      ],
+      [
+        "Meus amigos podem desenhar o mesmo tema?",
+        "Sim. Um replay compartilhado pode abrir o mesmo tema no jogo web. Seus amigos podem criar sua versão sem fazer login."
+      ],
+      [
+        "O que o app de iPhone oferece a mais?",
+        "O app oferece desenho nativo e sincronização opcional da galeria com o iCloud. O jogo web funciona sozinho; instalar o app é opcional."
+      ]
+    ],
+    "analyticsRetention": "Os eventos de uso são mantidos por até 90 dias. Isso não faz seus links públicos de replay expirarem.",
+    "serviceLogs": "Desativar as estatísticas não bloqueia solicitações necessárias ao replay. A Cloudflare pode processar informações técnicas, como endereços IP e erros, para segurança e operação; elas não são armazenadas na nossa tabela de eventos."
+  },
+  "ru": {
+    "defaultTitle": "Мой рисунок-призрак",
+    "title": "Название рисунка",
+    "undo": "Отменить",
+    "redo": "Повторить",
+    "dotted": "Точки",
+    "reveal": "Позвать призрака",
+    "again": "Нарисовать ещё",
+    "pause": "Пауза",
+    "restore": "Продолжить",
+    "clearConfirm": "Очистить этот рисунок?",
+    "restoreTitle": "Продолжить прежний рисунок?",
+    "restoreBody": "В этом браузере сохранён черновик. Можно продолжить с прежней темой или начать новый рисунок.",
+    "strokeCount": "Штрихов: {count}",
+    "strokeOne": "1 штрих",
+    "verdict": "Немного хаоса. Зато всё — твоё.",
+    "share": "Поделиться",
+    "copy": "Скопировать ссылку",
+    "copied": "Ссылка скопирована",
+    "linkReady": "Ссылка на повтор готова.",
+    "download": "Скачать изображение",
+    "deleteData": "Скачать данные рисунка",
+    "uploadError": "Не удалось создать ссылку. Рисунок остаётся здесь. Попробуйте ещё раз.",
+    "storageError": "Браузер не смог сохранить рисунок. Скачайте его перед уходом со страницы.",
+    "tooLarge": "В рисунке слишком много данных для ссылки. Изображение и данные всё равно можно скачать.",
+    "loadError": "Не удалось загрузить повтор. Попробуйте ещё раз.",
+    "loading": "Загрузка повтора",
+    "emptyFeatured": "Избранные повторы временно недоступны.",
+    "publicLink": "Любой, у кого есть ссылка, сможет посмотреть рисунок. Данные загружаются только при создании ссылки для отправки.",
+    "privacyStats": "Приватность и статистика",
+    "analyticsTitle": "Статистика использования",
+    "analyticsSwitch": "Отправлять статистику",
+    "analyticsBody": "По умолчанию включена. Мы записываем действия рисования, раскрытия и отправки. Случайные идентификаторы хешируются перед хранением. Рисунки, названия, имена и аппаратные идентификаторы устройств не включаются. Отключение прекращает отправку и удаляет очередь событий.",
+    "analyticsClear": "Удалить отправленную статистику",
+    "analyticsCleared": "Статистика удалена, сбор отключён.",
+    "analyticsNotice": "Статистика включена. Её можно отключить в разделе «Приватность и статистика».",
+    "guideTitle": "Что такое рисование вслепую?",
+    "guideBody": "Рисуйте, не видя линий, а затем позовите призрака: он покажет каждый штрих. Выберите тему дня или свою идею и предложите другу нарисовать то же самое.",
+    "faq": [
+      [
+        "Ghost Draw использует ИИ, чтобы рисовать за меня?",
+        "Нет. Ghost Draw записывает ваши собственные штрихи и воспроизводит их. Приложение не создаёт другой рисунок вместо вашего."
+      ],
+      [
+        "Где сохраняются рисунки?",
+        "Черновики и готовые рисунки хранятся в этом браузере. Они не синхронизируются автоматически с приложением для iPhone или другим браузером. Очистка данных сайта удаляет их."
+      ],
+      [
+        "Друзья могут рисовать на ту же тему?",
+        "Да. Общий повтор позволяет открыть ту же тему в веб-игре. Друзья могут нарисовать свою версию без входа в аккаунт."
+      ],
+      [
+        "Что дополнительно даёт приложение для iPhone?",
+        "Приложение предлагает нативное рисование и необязательную синхронизацию галереи через iCloud. Веб-игра работает самостоятельно; устанавливать приложение необязательно."
+      ]
+    ],
+    "analyticsRetention": "События использования хранятся до 90 дней. Это не ограничивает срок действия публичных ссылок на повтор.",
+    "serviceLogs": "Отключение статистики не блокирует запросы, необходимые для повтора. Cloudflare может обрабатывать технические сведения, включая IP-адреса и ошибки, для безопасности и работы сервиса. Они не хранятся в нашей таблице событий."
+  }
+}

@@ -1,0 +1,14 @@
+.game-tabs, .play-layout, .library-panel, .language-label, #privacy-button {
+  display: none !important;
+}
+.guide {
+  border-top: 0;
+  padding-top: 26px;
+}
+.guide .no-js-notice {
+  margin: 14px 0;
+  color: #636c77;
+}
+@media (prefers-color-scheme: dark) {
+  .guide .no-js-notice { color: #aab1b9; }
+}

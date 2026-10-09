@@ -1,0 +1,22 @@
+# Ghost Draw
+
+> Jogo grátis de desenho às cegas no navegador: desenho livre, desafios diários, revelação dos traços e replays para compartilhar com amigos. Sem baixar ou criar conta.
+
+Desenhe sem ver os traços e deixe o fantasma revelar cada um. Experimente o tema do dia ou uma ideia sua e convide alguém para desenhar a mesma coisa.
+
+O jogo no navegador precisa de JavaScript. Você ainda pode ler o guia ou baixar o app para iPhone e iPad.
+
+## Pages
+
+- [Desenhar](https://ghost-draw.luopeike.com/pt-BR/): Jogo grátis de desenho às cegas no navegador: desenho livre, desafios diários, revelação dos traços e replays para compartilhar com amigos. Sem baixar ou criar conta.
+- [Ajuda](https://ghost-draw.luopeike.com/pt-BR/help): Conheça o desenho livre, os temas diários, os traços invisíveis, o replay, a galeria local e os desafios com amigos do Ghost Draw.
+- [Privacidade](https://ghost-draw.luopeike.com/pt-BR/privacy-policy): Privacidade do Ghost Draw: desenhos locais, iCloud opcional no app, links públicos de replay e estatísticas de uso que podem ser desativadas.
+- [Suporte](https://ghost-draw.luopeike.com/pt-BR/support)
+
+## Product summary
+
+- [Português (Brasil)](https://ghost-draw.luopeike.com/pt-BR/index.md): Jogo grátis de desenho às cegas no navegador: desenho livre, desafios diários, revelação dos traços e replays para compartilhar com amigos. Sem baixar ou criar conta.
+
+## Optional
+
+- [App Store](https://apps.apple.com/app/id6773654307): O app oferece desenho nativo e sincronização opcional da galeria com o iCloud. O jogo web funciona sozinho; instalar o app é opcional.

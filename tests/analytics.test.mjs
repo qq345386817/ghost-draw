@@ -1,0 +1,11 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {WebAnalytics} from '../src/analytics.js';
+const store=new Map();
+globalThis.localStorage={getItem:k=>store.get(k)||null,setItem:(k,v)=>store.set(k,v)};
+globalThis.document={addEventListener(){},hidden:false};globalThis.location={hostname:'ghost-draw.luopeike.com'};
+Object.defineProperty(globalThis,'navigator',{configurable:true,value:{webdriver:false}});
+const config={version:'1',build:'1',locale:'zh-Hans',analyticsEndpoint:'https://example.test/events'};
+test('opt-out clears pending data; re-enabling schedules a new flush',()=>{store.clear();const a=new WebAnalytics(config);a.track('drawing_start',{mode:'free'});assert.equal(a.queue.length,1);a.setEnabled(false);assert.equal(a.queue.length,0);assert.equal(a.timer,null);a.track('drawing_start');assert.equal(a.queue.length,0);a.setEnabled(true);assert.ok(a.timer);assert.equal(a.queue.length,1);a.setEnabled(false);});
+test('client allowlist excludes private fields and corrupt persisted data',()=>{store.clear();store.set('gd.analytics.queue','{}');const a=new WebAnalytics(config);a.track('drawing_start',{title:'private'});assert.equal(a.queue.length,0);a.track('unknown_event');assert.equal(a.queue.length,0);a.setEnabled(false);});
+test('offline events keep their original session and locale on upload',async()=>{store.clear();const id=crypto.randomUUID(),sessionID=crypto.randomUUID();store.set('gd.analytics.queue',JSON.stringify([{id,sessionID,name:'reveal_complete',occurredAt:new Date().toISOString(),properties:{mode:'free'},locale:'de',version:'old',build:'old',privateTitle:'must not leave storage'}]));let sent;const original=globalThis.fetch;globalThis.fetch=async(url,options)=>{sent=JSON.parse(options.body);return {ok:true,status:202};};try{const a=new WebAnalytics(config);await a.flush();assert.equal(sent.sessionID,sessionID);assert.equal(sent.context.locale,'de');assert.equal(sent.events[0].privateTitle,undefined);assert.equal(a.queue.length,0);a.setEnabled(false);}finally{globalThis.fetch=original;}});
