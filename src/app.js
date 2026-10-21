@@ -1,4 +1,4 @@
-import {BlindDrawing,COLORS,SOURCE_SIZE,renderArtwork,dailyIndex,replayDuration} from './drawing.js';
+import {BlindDrawing,COLORS,SOURCE_SIZE,renderArtwork,dailyChallenge,replayDuration} from './drawing.js';
 import {drawingStorage as storage} from './storage.js';
 import {WebAnalytics} from './analytics.js';
 import {Sharing,downloadData} from './sharing.js';
@@ -23,7 +23,8 @@ if(game)await startGame();
 
 async function startGame(){
   const drawing=new BlindDrawing(),canvas=document.getElementById('drawing-canvas'),cursor=document.getElementById('cursor'),title=document.getElementById('drawing-title'),status=document.getElementById('canvas-status'),actions=document.getElementById('drawing-actions');
-  const prompts=(await fetch(`/content/challenges/${config.locale}.json`).then(r=>r.json())).challenges;
+  const catalog=await fetch(`/content/challenges/${config.locale}.json`).then(r=>r.json());
+  const prompts=[...(catalog.curatedChallenges || []),...catalog.challenges,...(catalog.legacyChallenges || [])];
   const sharing=new Sharing(config,copy,storage,analytics);
   const library=new Library(config,copy,storage,analytics,sharing,async(id,customTitle)=>{
     const challenge=prompts.find(p=>p.id===id);if(!await canReset())return;
@@ -70,7 +71,7 @@ async function startGame(){
   async function canReset(){if(playing)return false;if(drawing.state==='drawing'&&drawing.strokes.length)return ask(copy.clearConfirm,copy.discard);return true;}
   for(const b of document.querySelectorAll('[data-mode]'))b.addEventListener('click',async()=>{
     if(b.dataset.mode===mode||!await canReset())return;
-    reset(b.dataset.mode,b.dataset.mode==='daily'?prompts[dailyIndex(new Date(),prompts.length)]:null);
+    reset(b.dataset.mode,b.dataset.mode==='daily'?dailyChallenge(catalog):null);
   });
   function point(e){const r=canvas.getBoundingClientRect();return {x:(e.clientX-r.left)*480/r.width,y:(e.clientY-r.top)*640/r.height};}
   function showCursor(e){const r=canvas.getBoundingClientRect();cursor.hidden=false;cursor.style.left=`${e.clientX-r.left}px`;cursor.style.top=`${e.clientY-r.top}px`;}

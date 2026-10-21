@@ -111,6 +111,13 @@ export function dailyIndex(date, count) {
   return ordinal%count;
 }
 
+export function dailyChallenge(catalog, date = new Date()) {
+  const challenges = catalog.curatedChallenges || catalog.challenges;
+  const key = `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
+  const explicit = challenges.find(item => item.id === catalog.dailyOverrides?.[key]);
+  return explicit || challenges[dailyIndex(date, challenges.length)];
+}
+
 export function replayDuration(pointCount) { return Math.min(6000,Math.max(2200,pointCount*12)); }
 
 export function makeReplayPayload(record, locale, copy) {
