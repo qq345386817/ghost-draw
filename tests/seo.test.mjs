@@ -24,6 +24,10 @@ test('all 40 Git-published pages have matching local metadata and crawlable link
     assert.equal($('meta[property="og:title"]').attr('content'),title);
     assert.equal($('meta[name="twitter:description"]').attr('content'),description);
     assert.equal($('meta[name=keywords]').length,0);
+    const script=$('script[type=module]').attr('src'),style=$('link[rel=stylesheet]').first().attr('href');
+    assert.match(script,/^\/assets\/app\.js\?v=[a-f0-9]{12}$/);
+    assert.match(style,/^\/assets\/play\.css\?v=[a-f0-9]{12}$/);
+    assert.equal(new URL(script,site).search,new URL(style,site).search,'Script and CSS must share the same content version');
     assert.equal($('footer a[hreflang]').length,10);
     if(name==='index'){
       assert.equal(description,seo[language.code].homeDescription);

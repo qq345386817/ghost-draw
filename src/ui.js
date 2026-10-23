@@ -1,5 +1,5 @@
-import {createElement,Pencil,Circle,Square,Star,Undo2,Redo2,Trash2,Play,Pause,Download,Link,Share2,X,Globe,Settings2,ArrowRight,Check,LoaderCircle,ExternalLink} from 'lucide';
-const icons={pencil:Pencil,circle:Circle,square:Square,star:Star,undo:Undo2,redo:Redo2,trash:Trash2,play:Play,pause:Pause,download:Download,link:Link,share:Share2,close:X,globe:Globe,settings:Settings2,arrow:ArrowRight,check:Check,loading:LoaderCircle,external:ExternalLink};
+import {createElement,Pencil,Circle,Square,Star,Undo2,Redo2,Trash2,Play,Pause,Download,Link,Share2,X,Globe,Settings2,ArrowRight,Check,LoaderCircle,ExternalLink,Images,Sparkles} from 'lucide';
+const icons={pencil:Pencil,circle:Circle,square:Square,star:Star,undo:Undo2,redo:Redo2,trash:Trash2,play:Play,pause:Pause,download:Download,link:Link,share:Share2,close:X,globe:Globe,settings:Settings2,arrow:ArrowRight,check:Check,loading:LoaderCircle,external:ExternalLink,gallery:Images,sparkles:Sparkles};
 export function icon(name){const svg=createElement(icons[name]||Pencil);svg.setAttribute('aria-hidden','true');return svg;}
 export function node(tag,className,text){const e=document.createElement(tag);if(className)e.className=className;if(text!==undefined)e.textContent=text;return e;}
 export function button(label,action,{symbol,primary=false,iconOnly=false}={}){

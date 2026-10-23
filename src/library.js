@@ -38,11 +38,12 @@ export class Library {
     target.replaceChildren();const entries=await this.featured().catch(()=>[]);
     if(!entries.length){target.append(node('p','muted',this.copy.emptyFeatured));return;}
     for(const item of entries.slice(0,limit||entries.length)){
-      const card=node('article','artwork-card'),open=button(this.copy.watchReplay,()=>this.official(item));open.className='artwork-open';
+      const title=this.prompts?.find(prompt=>prompt.id===item.challengeID)?.prompt||this.copy.watchReplay;
+      const card=node('article','artwork-card'),open=button(title,()=>this.official(item));open.className='artwork-open';
       const canvas=node('canvas');canvas.width=240;canvas.height=320;renderArtwork(canvas,null);canvas.setAttribute('aria-label',this.copy.loading);
       const play=node('span','artwork-play');play.append(button(this.copy.watchReplay,()=>this.official(item),{symbol:'play',primary:true,iconOnly:true}));
       // Separate the preview and replay command so interactive elements are not nested.
-      open.replaceChildren(canvas);card.append(open,play);target.append(card);
+      open.replaceChildren(canvas,node('span','artwork-title',title));card.append(open,play);target.append(card);
       loadPayload(item.payloadPath||item.replayURL).then(p=>{renderArtwork(canvas,p);canvas.setAttribute('aria-label',this.copy.watchReplay);}).catch(()=>{canvas.setAttribute('aria-label',this.copy.loadError);});
     }
   }

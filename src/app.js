@@ -26,6 +26,17 @@ async function startGame(){
   const catalog=await fetch(`/content/challenges/${config.locale}.json`).then(r=>r.json());
   const prompts=[...(catalog.curatedChallenges || []),...catalog.challenges,...(catalog.legacyChallenges || [])];
   const sharing=new Sharing(config,copy,storage,analytics);
+  // Older cached pages still have a standalone width slider.
+  const sizePicker=document.querySelector('.size-picker');
+  if(sizePicker){
+    const compactTools=matchMedia('(max-width: 640px)');
+    const updateToolLayout=()=>{sizePicker.open=!compactTools.matches;};
+    updateToolLayout();compactTools.addEventListener('change',updateToolLayout);
+    document.getElementById('size').addEventListener('input',e=>{document.getElementById('brush-size').value=e.target.value;});
+    sizePicker.addEventListener('keydown',e=>{if(e.key==='Escape'&&compactTools.matches){sizePicker.open=false;sizePicker.querySelector('summary').focus();}});
+    sizePicker.addEventListener('focusout',e=>{if(compactTools.matches&&!sizePicker.contains(e.relatedTarget))sizePicker.open=false;});
+    document.addEventListener('pointerdown',e=>{if(compactTools.matches&&!sizePicker.contains(e.target))sizePicker.open=false;});
+  }
   const library=new Library(config,copy,storage,analytics,sharing,async(id,customTitle)=>{
     const challenge=prompts.find(p=>p.id===id);if(!await canReset())return;
     if(challenge)reset('featured',challenge);else{reset('free');title.value=customTitle||'';}
@@ -45,6 +56,7 @@ async function startGame(){
   }
   function display(){
     const revealed=drawing.state==='revealed',busy=drawing.state==='revealing';
+    document.getElementById('draw-panel').dataset.state=drawing.state;
     for(const element of document.querySelectorAll('#tools button,#tools select,#tools input,[data-mode]'))element.disabled=busy||revealed;
     undo.disabled=busy||revealed||!drawing.strokes.length;redo.disabled=busy||revealed||!drawing.redoStack.length;clear.disabled=busy||revealed||!drawing.strokes.length;
     title.readOnly=mode!=='free'||busy||revealed;
@@ -63,7 +75,7 @@ async function startGame(){
   function reset(nextMode='free',nextPrompt=null,persist=true){
     if(drawing.state==='revealed')secondDrawing=true;
     cancelAnimationFrame(animation);drawing.clear();playing=false;mode=nextMode;prompt=nextPrompt;record=null;drawStarted=false;
-    title.value=prompt?.prompt||'';title.hidden=mode!=='free';
+    title.value=prompt?.prompt||'';title.hidden=mode!=='free';title.closest('.title-field').hidden=mode!=='free';
     const p=document.getElementById('prompt');p.textContent=prompt?.prompt||'';p.hidden=mode==='free';
     for(const b of document.querySelectorAll('[data-mode]'))b.setAttribute('aria-pressed',String(b.dataset.mode===mode));
     display();render();if(persist){clearTimeout(saveTimer);persistDraft();}
