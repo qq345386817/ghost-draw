@@ -62,3 +62,14 @@ test('new scripts tolerate cached standalone width-control markup',async({page})
   await page.route('**/zh-Hans/',route=>route.fulfill({contentType:'text/html',body:$.html()}));
   await page.goto('/zh-Hans/');await draw(page);await expect(page.locator('#reveal')).toBeEnabled();expect(errors).toEqual([]);
 });
+
+test('mobile size popover stays closed while the catalog is loading',async({page})=>{
+  await page.setViewportSize({width:390,height:844});let release;
+  const waiting=new Promise(resolve=>{release=resolve;});
+  await page.route('**/content/challenges/zh-Hans.json',async route=>{await waiting;await route.continue();});
+  try{
+    await page.goto('/zh-Hans/',{waitUntil:'commit'});await expect(page.locator('.size-picker')).toBeAttached();
+    expect(await page.locator('.size-picker').evaluate(picker=>picker.open)).toBe(false);
+  }finally{release();}
+  await expect(page.locator('#reveal')).toBeVisible();await expect(page.locator('#size')).not.toBeVisible();expect(errors).toEqual([]);
+});
