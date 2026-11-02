@@ -26,6 +26,27 @@ Run `npm ci` and `npm run build` locally before committing. The builder synchron
 
 The site emits WebPage/WebApplication/FAQ structured data matching visible content, canonical/hreflang links, crawlable language links and a sitemap. User replay query URLs are excluded from crawling. JSON data remains fetchable for rendering but carries a noindex header.
 
+### IndexNow
+
+The manual Node CLI follows the [official IndexNow protocol](https://www.indexnow.org/documentation). It uses the existing XML parser and checks all 40 sitemap URLs against the locale routes and public HTML canonicals. Only exact canonical sitemap URLs are permitted; replay/query URLs, fragments, private data, assets and other hosts cannot be submitted. Nothing is added to browser scripts, tracking, Git hooks or scheduled jobs. No new dependencies are needed. Node 24 is supported.
+
+The durable UTF-8 ownership file is `fac5ab115cb18f45db961c47cdde2f7b.txt` at the repository root, published at `https://ghost-draw.luopeike.com/fac5ab115cb18f45db961c47cdde2f7b.txt`. The build validates it and preserves identical copies in the Git-published root and `dist/`. Keep it published for future validation; do not regenerate it for each submission.
+
+After reviewing changes, build/test, commit the source and generated public files together, and push through the existing Git auto-publication workflow. Wait for that publication before manually submitting:
+
+```sh
+npm run indexnow                         # Offline dry run; lists all 40 URLs, sends nothing
+npm run indexnow -- --submit             # Initial notification, only after publication
+npm run indexnow -- --url https://ghost-draw.luopeike.com/help
+npm run indexnow -- --submit --url https://ghost-draw.luopeike.com/help
+```
+
+Repeat `--url URL` for multiple changed pages (at most 40 arguments, deduplicated). Omit `--submit` to preview the exact selection offline. After the initial notification, submit only when public content actually changes, and select only the changed canonical pages. Do not repeatedly notify unchanged pages or schedule periodic resubmission. No arbitrary URL-list input or automatic retries are supported.
+
+With `--submit`, the CLI first GETs the live root key with a timeout, rejecting redirects, non-200 responses, invalid UTF-8 or mismatched content before sending anything to IndexNow. It then sends one bounded JSON POST to `https://api.indexnow.org/indexnow`. HTTP 200 means the notification was received; HTTP 202 means received with key validation pending, not completed verification. Neither guarantees crawling, indexing, ranking or removal of Bing's warning. Other statuses fail with a nonzero exit code; 400/403/422/429 have explicit explanations. A timeout/network failure after POST leaves receipt unknown; investigate before manually retrying. Even after a successful local key check, IndexNow performs its own validation.
+
+This addresses IndexNow support only. Bing's separate insufficient-quality-inbound-links recommendation is not addressed; no backlinks are created or purchased.
+
 ### GEO
 
 `/llms.txt` links to canonical pages and all nine other language manifests. Each language has its own `llms.txt` and `index.md` summary, generated from the same descriptions, instructions, FAQs and privacy facts used in HTML. No extra product claims or private user data appear only in the agent summaries.

@@ -3,6 +3,7 @@ import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import {build} from 'esbuild';
 import {createHash} from 'node:crypto';
+import {KEY_FILE,readKey} from './indexnow.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=async file=>JSON.parse(await readFile(path.join(root,file),'utf8'));
@@ -21,6 +22,8 @@ await cp(path.join(root,'images'),path.join(out,'images'),{recursive:true});
 await cp(path.join(root,'favicon/app-icon.png'),path.join(out,'favicon.png'));
 await cp(path.join(root,'favicon'),path.join(out,'favicon'),{recursive:true});
 for(const file of await readdir(root))if(/^google[a-f0-9]+\.html$/.test(file))await cp(path.join(root,file),path.join(out,file));
+await readKey(root);
+await cp(path.join(root,KEY_FILE),path.join(out,KEY_FILE));
 await cp(path.join(root,'content'),path.join(out,'content'),{recursive:true});
 const llms=[];
 for(const language of languages){
