@@ -14,7 +14,7 @@ npm run test:e2e
 
 Default local URL: `http://127.0.0.1:8877/zh-Hans/`. Playwright uses the installed macOS Chrome because the Browser plugin was not available during implementation. Test screenshots/results are written under `/tmp`.
 
-`content/` holds independent copies of App translations, prompts and Featured replay JSON. Building this project does not require the parent App repo or network access. When App content changes, run `npm run import:app`; add `-- --refresh-replays` to refresh existing official replay payloads. User-created drawings and drafts use IndexedDB; clearing browser/site data removes them. They are not automatically synced with the App or iCloud.
+`content/` holds independent copies of App translations, prompts and Featured replay JSON. Building this project does not require the parent App repo or network access. When App content changes, run `npm run import:app`; add `-- --refresh-replays` to refresh existing official replay payloads. The importer reads this website's own locale registry from `content/site-copy.json`, preserves its website copy, and imports only native UI strings, challenge catalogs and Featured data. It does not invoke an old parent-repository website renderer. User-created drawings and drafts use IndexedDB; clearing browser/site data removes them. They are not automatically synced with the App or iCloud.
 
 ## Hosting And SEO
 
@@ -58,3 +58,15 @@ These files are optional aids, not access controls or guaranteed ranking signals
 ## Statistics
 
 Usage statistics are on by default with an explicit off switch. Turning off cancels sending and clears the queue; deletion of sent statistics is available. Local and automated test runs are excluded. Only predefined action values are sent, not drawings/titles/nicknames/hardware IDs. Browser and iOS metrics remain separate. See the parent `server/ANALYTICS.md` for the D1/dashboard details. The website is usable without downloading the App; App Store clicks are measured separately, never counted as installs.
+
+### Cloudflare-Injected Analytics
+
+The site's `_headers` deliberately restricts executable scripts to this origin. Cloudflare's separate zone-level Web Analytics/RUM configuration can still inject a `static.cloudflareinsights.com/beacon.min.js` tag into delivered HTML. The browser then blocks that tag and reports a CSP error. This is an extra performance/page-view beacon, not the drawing bundle, hosted replay service or the first-party statistics above. It does not make the drawing game fail, but that Cloudflare beacon cannot collect its browser-side metrics.
+
+Do not add external script permissions merely to hide the warning: that would enable a separate tracker outside the site's explicit statistics switch. Nor should a maintainer disable RUM for the entire parent zone just to change this one site. Any change must be scoped to `ghost-draw.luopeike.com` and verified on published HTML. The November 7 check found Pages project analytics unset, while zone-level automatic injection was enabled; the local deployment token did not permit RUM management. No zone-wide setting was changed. See [Cloudflare's CSP requirements](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/content-security-policies/).
+
+### IndexNow Receipt Versus Publication
+
+IndexNow is an optional update notification for participating search engines, not the deployment mechanism. A failed or unsent notification does not undo Git publication, take pages offline or invalidate the sitemap. Discovery can still use ordinary crawling and the sitemap, though fresh content may be noticed later. A successful notification likewise does not prove crawling, indexing or a ranking change. See the [official FAQ](https://www.indexnow.org/faq).
+
+The November 7 notification for 21 changed canonical pages stopped at a network timeout while checking the published key, before any POST. It was not rejected by a search engine, and no successful receipt is claimed. Check the actual failure stage before retrying: a failure after POST can have an unknown receipt outcome. Use the existing manual CLI with the changed URLs only; do not resubmit the unchanged sitemap or introduce automatic retry loops.

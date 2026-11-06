@@ -1,16 +1,13 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
-import { execFileSync,execFile } from 'node:child_process';
+import { execFile } from 'node:child_process';
 import {promisify} from 'node:util';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const app = resolve(process.argv[2] || resolve(root, '..'));
-const locales = JSON.parse(execFileSync('ruby', [resolve(app, 'scripts/render_localized_site.rb')], {
-  env: { ...process.env, GHOSTDRAW_EXPORT_SITE_COPY: '1' }, encoding: 'utf8'
-}));
+const locales = JSON.parse(await readFile(resolve(root, 'content/site-copy.json'), 'utf8'));
 await mkdir(resolve(root, 'content/challenges'), { recursive: true });
-await writeFile(resolve(root, 'content/site-copy.json'), JSON.stringify(locales, null, 2) + '\n');
 const strings = JSON.parse(await readFile(resolve(app, 'GhostDraw/Localizable.xcstrings'), 'utf8')).strings;
 const nativeKeys = {draw:'Draw',gallery:'Gallery',featured:'Featured',free:'Free',daily:'Daily',pencil:'Pen',circle:'Circle',square:'Box',star:'Star',color:'Color',size:'Brush size',brush:'Brush',smooth:'Smooth',marker:'Marker',highlighter:'Highlighter',crayon:'Crayon',neon:'Neon',clear:'Clear',replay:'Replay Again',shareImage:'Share Image',shareLink:'Share Link',close:'Close',cancel:'Cancel',delete:'Delete',done:'Done',discard:'Discard',emptyGallery:'No Ghosts Yet',emptyGalleryBody:'Reveal a drawing to save its result card here.',deleteConfirm:'Delete this saved drawing?',hiddenInk:'Hidden ink',revealing:'Ghost is drawing',revealed:'Revealed',watchReplay:'Watch Replay',challenge:'Challenge This Prompt'};
 const ui = {};
