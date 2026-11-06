@@ -86,6 +86,10 @@ Los eventos de uso se conservan hasta 90 días. Esto no hace caducar tus enlaces
 
 Desactivar las estadísticas no desactiva las solicitudes necesarias de repetición. Cloudflare puede procesar datos técnicos, como direcciones IP y errores, para seguridad y funcionamiento; no se guardan en nuestra tabla de eventos.
 
+## Cloudflare Web Analytics
+
+Este sitio también utiliza Cloudflare Web Analytics para medir visitas y rendimiento de carga. No enviamos el contenido de los dibujos a estas estadísticas. Este servicio independiente no se controla con el interruptor de eventos de uso ni con su botón de eliminación.
+
 ## Links
 
 - [Dibujar](https://ghost-draw.luopeike.com/es/)

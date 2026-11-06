@@ -24,6 +24,10 @@ Speichere Bilder in der Galerie, markiere Favoriten und spiele sie später erneu
 
 Zeichnen, Replays und lokale Partys funktionieren mit integrierten Themen offline. Themen-Updates, Empfehlungen und gehostete Replay-Links benötigen Internet. Ein Link lädt eine öffentliche Kopie hoch; eingereichte Werke werden vor der Veröffentlichung geprüft. Die optionale private iCloud-Galeriesynchronisierung erfordert iCloud und einen Apple Account. Ein separates Ghost-Draw-Konto ist nicht nötig. Browserbilder werden nicht automatisch mit der App synchronisiert.
 
+## Cloudflare Web Analytics
+
+Diese Website nutzt zusätzlich Cloudflare Web Analytics für Seitenaufrufe und Ladeleistung. Zeicheninhalte senden wir nicht an diese Statistik. Dieser unabhängige Dienst wird weder durch den Schalter für Produktnutzungsereignisse noch durch deren Löschfunktion gesteuert.
+
 ## Pages
 
 - [Zeichnen](https://ghost-draw.luopeike.com/de/): Gratis blindzeichnen im Browser: unsichtbare Linien, Tagesaufgaben und überraschende Bilder. Die iPhone- und iPad-App bietet lokale Partys für 2–8 und Replay-Videos.

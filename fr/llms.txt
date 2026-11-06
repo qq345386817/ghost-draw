@@ -24,6 +24,10 @@ Enregistrez vos œuvres dans la galerie, ajoutez des favoris et revoyez-les plus
 
 Le dessin, la relecture et Party en local fonctionnent hors ligne avec les sujets intégrés. Les mises à jour des sujets, la sélection et les liens hébergés nécessitent Internet. Créer un lien envoie une copie publique du dessin ; les contributions sont examinées avant publication. La synchronisation privée et facultative de la galerie via iCloud nécessite iCloud et un compte Apple. Aucun compte Ghost Draw séparé n’est requis. Les dessins du navigateur ne sont pas automatiquement synchronisés avec l’app.
 
+## Cloudflare Web Analytics
+
+Ce site utilise aussi Cloudflare Web Analytics pour mesurer les visites et les performances de chargement. Nous n’envoyons pas le contenu des dessins à ces statistiques. Ce service indépendant n’est pas contrôlé par l’interrupteur des événements d’utilisation ni par leur bouton de suppression.
+
 ## Pages
 
 - [Dessiner](https://ghost-draw.luopeike.com/fr/): Dessin à l’aveugle gratuit en ligne : traits cachés, défis du jour et surprises. L’app iPhone et iPad ajoute Party à 2–8 sur un appareil et les vidéos de relecture.

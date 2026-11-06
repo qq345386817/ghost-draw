@@ -7,6 +7,42 @@ const read=async path=>readFile(new URL(path,root),'utf8');
 const languages=JSON.parse(await read('content/site-copy.json'));
 const seo=JSON.parse(await read('content/seo.json'));
 const appCopy=JSON.parse(await read('content/app-intro.json'));
+const extraCopy=JSON.parse(await read('content/ui-extra.json'));
+
+test('CSP permits only the authorized Cloudflare hosts and keeps the other protections',async()=>{
+  const headers=await read('_headers');
+  assert.equal(headers,await read('dist/_headers'));
+  const policy=headers.split('\n').find(line=>line.trim().startsWith('Content-Security-Policy:')).trim().slice('Content-Security-Policy:'.length).trim();
+  const directives=new Map(policy.split(';').map(part=>part.trim().split(/\s+/)).filter(([name])=>name).map(([name,...values])=>[name,values]));
+  assert.deepEqual(directives.get('script-src'),["'self'",'https://static.cloudflareinsights.com']);
+  assert.deepEqual(directives.get('connect-src'),["'self'",'https://ghostdraw-api.luopeike.com','https://cloudflareinsights.com']);
+  assert.deepEqual(directives.get('default-src'),["'self'"]);
+  assert.deepEqual(directives.get('style-src'),["'self'"]);
+  assert.deepEqual(directives.get('frame-ancestors'),["'none'"]);
+  assert.deepEqual(directives.get('base-uri'),["'self'"]);
+  assert.deepEqual(directives.get('form-action'),["'self'"]);
+  assert.ok(!policy.includes('unsafe-inline')&&!policy.includes('unsafe-eval')&&!policy.includes('*'));
+});
+
+test('independent Cloudflare statistics are disclosed consistently in all ten languages',async()=>{
+  const disclosures=new Set();
+  for(const language of languages){
+    const prefix=language.path?language.path+'/':'',copy=extraCopy[language.code];
+    assert.ok(copy.cloudflareAnalytics.includes('Cloudflare Web Analytics'));
+    assert.ok(!disclosures.has(copy.cloudflareAnalytics),'Each locale needs its own disclosure');
+    disclosures.add(copy.cloudflareAnalytics);
+    const privacy=load(await read(prefix+'privacy-policy.html'));
+    assert.ok(privacy('main').text().includes(copy.cloudflareAnalytics));
+    assert.ok(privacy('h2').text().includes(copy.analyticsTitle));
+    assert.ok((await read(prefix+'index.md')).includes(copy.cloudflareAnalytics));
+    assert.ok((await read(prefix+'llms.txt')).includes(copy.cloudflareAnalytics));
+    const home=load(await read(prefix+'index.html'));
+    const config=JSON.parse(home('#game-config').text());
+    assert.equal(config.copy.cloudflareAnalytics,copy.cloudflareAnalytics);
+    assert.equal(config.copy.analyticsSwitch,copy.analyticsSwitch);
+    assert.equal(config.copy.analyticsClear,copy.analyticsClear);
+  }
+});
 
 test('native App facts remain localized, visible and separate from browser capabilities',async()=>{
   assert.deepEqual(Object.keys(appCopy).sort(),languages.map(l=>l.code).sort());

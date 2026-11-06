@@ -24,6 +24,10 @@ Save and favorite drawings in Gallery, replay them later, or share an image card
 
 Core drawing, replay and local Party work offline with bundled prompts. Catalog updates, Featured and hosted replay links need internet. Creating a link uploads a public copy; community submissions are reviewed before appearing. Optional private iCloud Gallery sync requires iCloud and an Apple Account. There is no separate Ghost Draw account, and browser drawings do not automatically sync with the app.
 
+## Cloudflare Web Analytics
+
+This website also uses Cloudflare Web Analytics for page visits and loading performance. We do not send drawing content to these metrics. This independent service is not controlled by the product-event switch or deletion action.
+
 ## Pages
 
 - [Draw](https://ghost-draw.luopeike.com/): Play a free blind drawing game online: hidden ink, daily prompts and surprising stroke reveals. Get the iPhone and iPad app for 2–8 player local Party and replay videos.

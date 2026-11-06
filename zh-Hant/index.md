@@ -86,6 +86,10 @@ iPhone 與 iPad App 可以將你自己的筆畫匯出為無聲 MP4 回放影片�
 
 關閉使用統計不會停用回放等必要請求。Cloudflare 可能為安全與服務運作處理 IP 位址、錯誤等技術請求資訊，這些資訊不會存入我們的使用事件表。
 
+## Cloudflare Web Analytics
+
+網站也使用 Cloudflare Web Analytics 統計頁面造訪與載入效能，不向這些統計傳送繪畫內容。這是獨立的統計服務，不受產品事件開關或刪除按鈕控制。
+
 ## Links
 
 - [繪圖](https://ghost-draw.luopeike.com/zh-Hant/)

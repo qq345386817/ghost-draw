@@ -24,6 +24,10 @@ Guarda obras en la galería, marca favoritas y vuelve a verlas. Comparte una tar
 
 El dibujo, la repetición y Party local funcionan sin conexión con los temas incluidos. Actualizar temas, ver destacados y crear enlaces alojados requiere Internet. Crear un enlace sube una copia pública; los envíos se revisan antes de publicarse. La sincronización privada y opcional de la galería con iCloud requiere iCloud y una cuenta de Apple. No hace falta una cuenta aparte de Ghost Draw. Los dibujos del navegador no se sincronizan automáticamente con la app.
 
+## Cloudflare Web Analytics
+
+Este sitio también utiliza Cloudflare Web Analytics para medir visitas y rendimiento de carga. No enviamos el contenido de los dibujos a estas estadísticas. Este servicio independiente no se controla con el interruptor de eventos de uso ni con su botón de eliminación.
+
 ## Pages
 
 - [Dibujar](https://ghost-draw.luopeike.com/es/): Dibujo a ciegas gratis en línea: trazos ocultos, retos diarios y sorpresas. La app para iPhone y iPad añade Party de 2 a 8 en un dispositivo y vídeos de repetición.

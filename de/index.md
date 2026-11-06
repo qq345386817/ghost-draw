@@ -86,6 +86,10 @@ Nutzungsereignisse werden bis zu 90 Tage gespeichert. Öffentliche Replay-Links 
 
 Das Ausschalten der Statistik stoppt nicht notwendige Replay-Anfragen. Cloudflare kann technische Anfragedaten einschließlich IP-Adressen und Fehlern für Sicherheit und Betrieb verarbeiten; sie werden nicht in unserer Nutzungstabelle gespeichert.
 
+## Cloudflare Web Analytics
+
+Diese Website nutzt zusätzlich Cloudflare Web Analytics für Seitenaufrufe und Ladeleistung. Zeicheninhalte senden wir nicht an diese Statistik. Dieser unabhängige Dienst wird weder durch den Schalter für Produktnutzungsereignisse noch durch deren Löschfunktion gesteuert.
+
 ## Links
 
 - [Zeichnen](https://ghost-draw.luopeike.com/de/)

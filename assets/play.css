@@ -168,7 +168,7 @@ footer a:hover { color: var(--link); }
 .replay-board { display: block; width: min(100%, 320px); aspect-ratio: 3/4; align-self: center; max-height: 55dvh; object-fit: contain; border-radius: 6px; }
 .link-field { width: 100%; }
 .switch-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 44px; font-weight: 600; }
-.switch-row input { width: 24px; height: 24px; accent-color: var(--link); }
+.switch-row input { width: 24px; height: 24px; flex-shrink: 0; accent-color: var(--link); }
 .muted { color: var(--muted); }
 .small { font-size: 13px; }
 .result-verdict { font-size: 17px; }

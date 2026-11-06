@@ -86,6 +86,10 @@ iPhone 和 iPad App 可以将你自己的笔画导出为无声 MP4 回放视频�
 
 关闭使用统计不会停用回放等必要请求。Cloudflare 可能为安全和服务运行处理 IP 地址、错误等技术请求信息，这些信息不会存入我们的使用事件表。
 
+## Cloudflare Web Analytics
+
+网站还使用 Cloudflare Web Analytics 统计页面访问和加载性能，不向这些统计发送绘画内容。这是一套独立的统计服务，不受产品事件开关或删除按钮控制。
+
 ## Links
 
 - [绘画](https://ghost-draw.luopeike.com/zh-Hans/)

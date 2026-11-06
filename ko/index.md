@@ -86,6 +86,10 @@ iPhone 및 iPad 앱에서는 직접 그린 선을 무음 MP4 리플레이 영상
 
 통계를 꺼도 리플레이에 필요한 요청은 중단되지 않습니다. Cloudflare는 보안과 서비스 운영을 위해 IP 주소와 오류 등의 기술 정보를 처리할 수 있습니다. 이 정보는 사용 이벤트 테이블에 저장하지 않습니다.
 
+## Cloudflare Web Analytics
+
+이 웹사이트는 Cloudflare Web Analytics로 페이지 방문과 로딩 성능도 측정하며, 여기에 그림 내용을 보내지 않습니다. 이 독립적인 통계 서비스는 제품 이벤트 스위치나 삭제 버튼으로 제어되지 않습니다.
+
 ## Links
 
 - [그리기](https://ghost-draw.luopeike.com/ko/)

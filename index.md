@@ -86,6 +86,10 @@ Usage events are retained for up to 90 days. This does not expire your public re
 
 Turning off usage statistics does not disable essential replay requests. Cloudflare may process technical request information, including IP addresses and errors, for security and service operation; this is not stored in our usage-event table.
 
+## Cloudflare Web Analytics
+
+This website also uses Cloudflare Web Analytics for page visits and loading performance. We do not send drawing content to these metrics. This independent service is not controlled by the product-event switch or deletion action.
+
 ## Links
 
 - [Draw](https://ghost-draw.luopeike.com/)

@@ -24,6 +24,10 @@ Salve desenhos na galeria, marque favoritos e veja os replays depois. Compartilh
 
 Desenho, replay e Festa local funcionam offline com os temas incluídos. Atualizações de temas, destaques e links de replay hospedados precisam de internet. Criar um link envia uma cópia pública; obras enviadas passam por análise antes de aparecerem. A sincronização privada e opcional da galeria pelo iCloud exige iCloud e uma Conta Apple. Não é necessária uma conta separada do Ghost Draw. Desenhos do navegador não são sincronizados automaticamente com o app.
 
+## Cloudflare Web Analytics
+
+Este site também usa o Cloudflare Web Analytics para medir visitas e desempenho de carregamento. Não enviamos o conteúdo dos desenhos para essas estatísticas. Esse serviço independente não é controlado pelo interruptor de eventos de uso nem pelo botão de exclusão desses eventos.
+
 ## Pages
 
 - [Desenhar](https://ghost-draw.luopeike.com/pt-BR/): Desenho às cegas grátis online: traços ocultos, desafios diários e surpresas. O app para iPhone e iPad traz Festa para 2 a 8 no mesmo aparelho e vídeos de replay.

@@ -109,3 +109,60 @@ test('native App introduction fits every language and remains readable without J
     await expect(noJS.locator('a[data-store-link]')).toHaveAttribute('href','https://apps.apple.com/app/id6773654307');
   }finally{await context.close();}
 });
+
+test('authorized Cloudflare beacon and collectors pass CSP while unrelated scripts stay blocked',async({page})=>{
+  const headers=await readFile(new URL('../../_headers',import.meta.url),'utf8');
+  const policy=headers.split('\n').find(line=>line.trim().startsWith('Content-Security-Policy:')).trim().slice('Content-Security-Policy:'.length).trim();
+  let scripts=0,externalReports=0,localReports=0,untrustedRequests=0;
+  const consoleErrors=[];page.on('console',message=>{if(message.type()==='error')consoleErrors.push(message.text());});
+  // Synthetic beacon fixtures exercise the browser's CSP without sending real metrics.
+  await page.route('https://static.cloudflareinsights.com/**',route=>{
+    scripts++;return route.fulfill({contentType:'text/javascript',body:`window.cfFixtureLoaded=true;fetch('https://cloudflareinsights.com/cdn-cgi/rum',{method:'POST',body:'synthetic-test-only'}).then(r=>{window.cfFixtureReported=r.ok;});navigator.sendBeacon('/cdn-cgi/rum','synthetic-test-only');`});
+  });
+  await page.route('https://cloudflareinsights.com/cdn-cgi/rum',route=>{externalReports++;return route.fulfill({status:204,headers:{'Access-Control-Allow-Origin':'*'}});});
+  await page.route('**/cdn-cgi/rum',route=>{
+    if(new URL(route.request().url()).hostname==='cloudflareinsights.com')return route.fallback();
+    localReports++;return route.fulfill({status:204});
+  });
+  await page.route('https://untrusted.example/**',route=>{untrustedRequests++;return route.fulfill({contentType:'text/javascript',body:'window.untrustedFixtureRan=true;'});});
+  await page.route('**/zh-Hans/',async route=>{
+    const response=await route.fetch(),html=await response.text(),responseHeaders={...response.headers(),'content-security-policy':policy};
+    delete responseHeaders['content-length'];
+    await route.fulfill({response,headers:responseHeaders,body:html.replace('</body>','<script defer src="https://static.cloudflareinsights.com/beacon.min.js/csp-fixture"></script></body>')});
+  });
+  const response=await page.goto('/zh-Hans/');expect(response.headers()['content-security-policy']).toBe(policy);
+  await expect(page.locator('#reveal')).toBeVisible();
+  await expect.poll(()=>page.evaluate(()=>window.cfFixtureLoaded===true&&window.cfFixtureReported===true)).toBe(true);
+  expect(scripts).toBe(1);expect(externalReports).toBe(1);await expect.poll(()=>localReports).toBe(1);
+  expect(consoleErrors).toEqual([]);
+  await page.evaluate(()=>{const script=document.createElement('script');script.src='https://untrusted.example/fixture.js';document.head.append(script);});
+  await expect.poll(()=>consoleErrors.some(message=>message.includes('untrusted.example')&&message.includes('Content Security Policy'))).toBe(true);
+  expect(untrustedRequests).toBe(0);expect(await page.evaluate(()=>window.untrustedFixtureRan)).toBeUndefined();
+  await draw(page);await page.locator('#reveal').click();await expect(page.locator('dialog')).toBeVisible();expect(errors).toEqual([]);
+});
+
+test('privacy controls disclose independent Cloudflare metrics and fit all languages',async({page})=>{
+  test.setTimeout(120000);
+  const languages=JSON.parse(await readFile(new URL('../../content/site-copy.json',import.meta.url),'utf8'));
+  const copies=JSON.parse(await readFile(new URL('../../content/ui-extra.json',import.meta.url),'utf8'));
+  await page.route('**/api/analytics/delete',route=>route.fulfill({status:204,headers:{'Access-Control-Allow-Origin':'*','Access-Control-Allow-Methods':'POST, OPTIONS','Access-Control-Allow-Headers':'content-type'}}));
+  for(const width of [320,1440]){
+    await page.setViewportSize({width,height:844});
+    for(const language of languages){
+      const copy=copies[language.code];await page.goto(`/${language.path?language.path+'/':''}`);
+      await expect(page.locator('#reveal')).toBeVisible();await page.locator('#privacy-button').click();
+      const dialog=page.locator('dialog');await expect(dialog.getByText(copy.cloudflareAnalytics,{exact:true})).toBeVisible();
+      await expect(page.locator('#analytics-toggle')).toHaveAccessibleName(copy.analyticsSwitch);
+      expect(await dialog.evaluate(element=>element.scrollWidth<=element.clientWidth+1)).toBe(true);
+      const toggle=await page.locator('#analytics-toggle').boundingBox();expect(toggle.width).toBe(24);expect(toggle.height).toBe(24);
+      await page.locator('#analytics-toggle').uncheck();expect(await page.evaluate(()=>localStorage.getItem('gd.analytics.enabled'))).toBe('false');
+      const clear=dialog.getByRole('button',{name:copy.analyticsClear,exact:true});
+      await clear.click();await expect(page.locator('#toast')).toHaveText(copy.analyticsCleared);await expect(clear).toBeEnabled();
+      await expect(page.locator('#analytics-toggle')).not.toBeChecked();
+      if(language.code==='zh-Hans'){
+        await dialog.evaluate(element=>{element.scrollTop=0;});await page.screenshot({path:`/tmp/ghostdraw-cloudflare-privacy-${width}.png`});
+      }
+    }
+  }
+  expect(errors).toEqual([]);
+});

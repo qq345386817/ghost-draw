@@ -86,6 +86,10 @@ Les événements d’utilisation sont conservés jusqu’à 90 jours. Vos liens 
 
 Désactiver les statistiques ne bloque pas les requêtes nécessaires aux relectures. Cloudflare peut traiter des informations techniques, dont les adresses IP et les erreurs, pour la sécurité et le fonctionnement ; elles ne figurent pas dans notre table d’événements.
 
+## Cloudflare Web Analytics
+
+Ce site utilise aussi Cloudflare Web Analytics pour mesurer les visites et les performances de chargement. Nous n’envoyons pas le contenu des dessins à ces statistiques. Ce service indépendant n’est pas contrôlé par l’interrupteur des événements d’utilisation ni par leur bouton de suppression.
+
 ## Links
 
 - [Dessiner](https://ghost-draw.luopeike.com/fr/)

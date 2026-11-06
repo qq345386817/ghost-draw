@@ -13,9 +13,12 @@ document.getElementById('language').addEventListener('change',e=>{const url=new 
 for(const link of document.querySelectorAll('[data-store-link]'))link.addEventListener('click',()=>analytics.track('app_store_click',{kind:'app'}));
 document.getElementById('privacy-button').addEventListener('click',()=>{
   const body=node('div','dialog-body'),label=node('label','switch-row'),toggle=node('input');toggle.type='checkbox';toggle.checked=analytics.enabled;toggle.id='analytics-toggle';
-  label.append(node('span',null,copy.analyticsSwitch),toggle);body.append(label,node('p','muted',copy.analyticsBody),node('p','muted',copy.analyticsRetention));
+  label.append(node('span',null,copy.analyticsSwitch),toggle);body.append(label,node('p','muted',copy.analyticsBody),node('p','muted',copy.analyticsRetention),node('p','muted',copy.cloudflareAnalytics));
   toggle.addEventListener('change',()=>analytics.setEnabled(toggle.checked));
-  body.append(button(copy.analyticsClear,async e=>{e.currentTarget.disabled=true;try{await analytics.deleteHistory();toggle.checked=false;toast(copy.analyticsCleared);}catch{toast(copy.loadError);}finally{e.currentTarget.disabled=false;}},{symbol:'trash'}));
+  body.append(button(copy.analyticsClear,async e=>{
+    const target=e.currentTarget;target.disabled=true;
+    try{await analytics.deleteHistory();toggle.checked=false;toast(copy.analyticsCleared);}catch{toast(copy.loadError);}finally{target.disabled=false;}
+  },{symbol:'trash'}));
   openDialog(copy.privacyStats,body,copy);
 });
 const savedDraft=game?storage.loadDraft().catch(()=>null):Promise.resolve(null);
