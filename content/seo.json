@@ -1,9 +1,9 @@
 {
   "en": {
     "homeTitle": "Free blind drawing game & daily challenges",
-    "homeDescription": "Play a free blind drawing game online. Draw with hidden ink, reveal every stroke, try daily drawing challenges and share replays with friends. No download or account.",
-    "helpTitle": "Blind drawing guide for web & iPhone | Ghost Draw",
-    "helpDescription": "Learn blind drawing in the browser or iPhone app: free drawing, daily prompts, stroke replay, local gallery and sharing the same challenge with friends.",
+    "homeDescription": "Play a free blind drawing game online: hidden ink, daily prompts and surprising stroke reveals. Get the iPhone and iPad app for 2–8 player local Party and replay videos.",
+    "helpTitle": "Blind drawing, Party & replay guide | Ghost Draw",
+    "helpDescription": "Learn the free browser game and iPhone/iPad app: blind drawing, daily prompts, same-device Party, silent replay videos, offline play and optional private iCloud sync.",
     "privacyDescription": "Ghost Draw privacy: browser-local drawings and drafts, optional iCloud in the app, public replay sharing and usage statistics with an off switch.",
     "steps": [
       [
@@ -40,9 +40,9 @@
   },
   "zh-Hans": {
     "homeTitle": "免费在线盲画小游戏与每日绘画挑战",
-    "homeDescription": "在浏览器里免费玩幽灵画手：看不见笔迹的画画小游戏，支持自由绘画、每日绘画挑战、逐笔揭晓、本地画廊和回放分享。和朋友挑战同一个题目，无需下载或注册。",
-    "helpTitle": "在线盲画与 iPhone 使用帮助 | 幽灵画手",
-    "helpDescription": "了解幽灵画手的网页版和 iPhone App：自由绘画、每日题目、隐藏笔迹、幽灵回放、本地画廊，以及邀请朋友挑战同题的方法。",
+    "homeDescription": "免费在线玩幽灵画手：隐藏笔迹、每日绘画挑战，让幽灵逐笔揭晓意外结果。网页版无需下载或注册；iPhone 与 iPad App 还支持 2–8 人同机派对、整活规则与回放视频分享。",
+    "helpTitle": "盲画、同机派对与回放分享指南 | 幽灵画手",
+    "helpDescription": "了解幽灵画手网页版与 iPhone、iPad App：自由盲画、每日题目、逐笔揭晓、同机派对、无声回放视频，以及离线玩法与私有 iCloud 同步的区别。",
     "privacyDescription": "幽灵画手隐私说明：浏览器本地画作与草稿、App 可选的 iCloud 同步、公开回放分享，以及可关闭和删除的使用统计。",
     "steps": [
       [
@@ -79,10 +79,10 @@
   },
   "zh-Hant": {
     "homeTitle": "免費線上盲畫小遊戲與每日繪畫挑戰",
-    "homeDescription": "在瀏覽器免費玩 Ghost Draw：看不見筆跡的繪畫小遊戲，支援自由繪畫、每日挑戰、逐筆揭曉、本機畫廊與回放分享。和朋友挑戰相同題目，無需下載或註冊。",
-    "helpTitle": "線上盲畫與 iPhone 使用說明 | Ghost Draw",
-    "helpDescription": "了解 Ghost Draw 網頁版與 iPhone App：自由繪畫、每日題目、隱藏筆跡、回放、本機畫廊，以及邀請朋友挑戰同題的方法。",
-    "privacyDescription": "Ghost Draw 隱私說明：瀏覽器本機作品與草稿、App 選用的 iCloud 同步、公開回放分享，以及可關閉與刪除的使用統計。",
+    "homeDescription": "免費線上玩靈魂畫手：隱藏筆跡、每日繪畫挑戰，讓幽靈逐筆揭曉意外結果。網頁版無需下載或註冊；iPhone 與 iPad App 還支援 2–8 人同機派對、趣味規則與回放影片分享。",
+    "helpTitle": "盲畫、同機派對與回放分享指南 | 靈魂畫手",
+    "helpDescription": "了解靈魂畫手網頁版與 iPhone、iPad App：自由盲畫、每日題目、逐筆揭曉、同機派對、無聲回放影片，以及離線玩法與私人 iCloud 同步的差異。",
+    "privacyDescription": "靈魂畫手隱私說明：瀏覽器本機作品與草稿、App 選用的 iCloud 同步、公開回放分享，以及可關閉與刪除的使用統計。",
     "steps": [
       [
         "1. 選一個創意",
@@ -118,9 +118,9 @@
   },
   "ja": {
     "homeTitle": "無料のブラインドお絵描きゲーム・毎日のお題",
-    "homeDescription": "ブラウザで無料のブラインドお絵描き。見えない線で自由に描き、毎日のお題に挑戦し、一筆ずつ公開。リプレイを友だちと共有できます。ダウンロード・登録不要。",
-    "helpTitle": "ブラウザと iPhone のお絵描きガイド | Ghost Draw",
-    "helpDescription": "Ghost Draw の自由描画、毎日のお題、見えない線の公開、ローカルギャラリー、友だちとの同じお題の共有について。ブラウザと iPhone に対応。",
+    "homeDescription": "無料のブラインドお絵描きゲーム。ブラウザで見えない線を描き、毎日のお題と予想外の公開を楽しもう。iPhone・iPad アプリなら2〜8人の同じ端末でのパーティーやリプレイ動画も。",
+    "helpTitle": "お絵描き・パーティー・リプレイのガイド | Ghost Draw",
+    "helpDescription": "無料のブラウザゲームと iPhone・iPad アプリの使い方。見えない線、毎日のお題、同じ端末でのパーティー、無音動画、オフラインと非公開 iCloud 同期の違いを説明します。",
     "privacyDescription": "Ghost Draw のプライバシー：ブラウザ内の絵と下書き、アプリの任意の iCloud 同期、公開リプレイ、オフにできる利用状況の統計。",
     "steps": [
       [
@@ -157,9 +157,9 @@
   },
   "ko": {
     "homeTitle": "무료 블라인드 그림 게임과 매일 그림 챌린지",
-    "homeDescription": "브라우저에서 무료로 블라인드 그림을 그려 보세요. 자유 그림, 매일 주제, 숨긴 선의 공개, 로컬 갤러리와 친구에게 보내는 리플레이 링크. 다운로드나 가입이 필요 없습니다.",
-    "helpTitle": "웹 및 iPhone 블라인드 그림 가이드 | Ghost Draw",
-    "helpDescription": "Ghost Draw의 자유 그림, 매일 주제, 숨긴 선의 공개, 리플레이, 로컬 갤러리와 친구에게 같은 주제를 공유하는 방법을 알아보세요.",
+    "homeDescription": "무료 온라인 블라인드 그림 게임. 숨긴 선과 매일 주제를 즐기고 뜻밖의 결과를 공개하세요. iPhone·iPad 앱에서는 한 기기로 2–8명 파티와 리플레이 영상 공유도 가능합니다.",
+    "helpTitle": "블라인드 그림·파티·리플레이 가이드 | Ghost Draw",
+    "helpDescription": "무료 브라우저 게임과 iPhone·iPad 앱의 사용법: 숨긴 선, 매일 주제, 한 기기 파티, 무음 리플레이 영상, 오프라인 이용과 비공개 iCloud 동기화의 차이.",
     "privacyDescription": "Ghost Draw 개인정보 안내: 브라우저의 그림과 초안, 앱의 선택적 iCloud 동기화, 공개 리플레이 공유, 끄거나 삭제할 수 있는 사용 통계.",
     "steps": [
       [
@@ -196,9 +196,9 @@
   },
   "de": {
     "homeTitle": "Blindzeichnen online: Spiel und tägliche Aufgaben",
-    "homeDescription": "Kostenloses Blindzeichen-Spiel im Browser: unsichtbare Linien, freie Zeichnungen, tägliche Aufgaben und Replays zum Teilen mit Freunden. Ohne Download oder Konto.",
-    "helpTitle": "Blindzeichnen im Web und auf dem iPhone | Ghost Draw",
-    "helpDescription": "So funktioniert Ghost Draw: frei zeichnen, Tagesaufgaben lösen, unsichtbare Linien enthüllen, lokal speichern und dasselbe Thema mit Freunden teilen.",
+    "homeDescription": "Gratis blindzeichnen im Browser: unsichtbare Linien, Tagesaufgaben und überraschende Bilder. Die iPhone- und iPad-App bietet lokale Partys für 2–8 und Replay-Videos.",
+    "helpTitle": "Blindzeichnen, Party und Replays erklärt | Ghost Draw",
+    "helpDescription": "Anleitung für Browser und iPhone/iPad: Blindzeichnen, Tagesaufgaben, Partys auf einem Gerät, stumme Replay-Videos, Offline-Spiel und private iCloud-Synchronisierung.",
     "privacyDescription": "Ghost Draw Datenschutz: lokale Browser-Zeichnungen, optionales iCloud in der App, öffentliche Replay-Links und abschaltbare Nutzungsstatistik.",
     "steps": [
       [
@@ -235,9 +235,9 @@
   },
   "fr": {
     "homeTitle": "Jeu de dessin à l’aveugle et défis quotidiens",
-    "homeDescription": "Un jeu de dessin à l’aveugle gratuit dans le navigateur : dessin libre, défis quotidiens, révélation des traits et relectures à partager. Sans téléchargement ni compte.",
-    "helpTitle": "Guide du dessin à l’aveugle sur web et iPhone | Ghost Draw",
-    "helpDescription": "Découvrez le dessin libre, les sujets du jour, les traits invisibles, la relecture, la galerie locale et les défis à partager entre amis dans Ghost Draw.",
+    "homeDescription": "Dessin à l’aveugle gratuit en ligne : traits cachés, défis du jour et surprises. L’app iPhone et iPad ajoute Party à 2–8 sur un appareil et les vidéos de relecture.",
+    "helpTitle": "Guide du dessin, de Party et des relectures | Ghost Draw",
+    "helpDescription": "Guide web et iPhone/iPad : dessin à l’aveugle, sujets du jour, Party sur un appareil, vidéos muettes, jeu hors ligne et synchronisation iCloud privée en option.",
     "privacyDescription": "Confidentialité de Ghost Draw : dessins locaux, iCloud facultatif dans l’app, liens publics de relecture et statistiques d’utilisation désactivables.",
     "steps": [
       [
@@ -274,9 +274,9 @@
   },
   "es": {
     "homeTitle": "Juego de dibujo a ciegas y retos diarios",
-    "homeDescription": "Juego gratis de dibujo a ciegas en el navegador: dibujo libre, retos diarios, revelado de trazos y repeticiones para compartir con amigos. Sin descargar ni registrarte.",
-    "helpTitle": "Guía de dibujo a ciegas en web y iPhone | Ghost Draw",
-    "helpDescription": "Conoce el dibujo libre, los temas diarios, los trazos invisibles, la repetición, la galería local y los retos con amigos de Ghost Draw.",
+    "homeDescription": "Dibujo a ciegas gratis en línea: trazos ocultos, retos diarios y sorpresas. La app para iPhone y iPad añade Party de 2 a 8 en un dispositivo y vídeos de repetición.",
+    "helpTitle": "Guía de dibujo, Party y repeticiones | Ghost Draw",
+    "helpDescription": "Guía web y iPhone/iPad: dibujo a ciegas, temas diarios, Party en un dispositivo, vídeos sin sonido, juego sin conexión y sincronización privada con iCloud opcional.",
     "privacyDescription": "Privacidad de Ghost Draw: dibujos locales, iCloud opcional en la app, enlaces públicos de repetición y estadísticas de uso que puedes desactivar.",
     "steps": [
       [
@@ -313,9 +313,9 @@
   },
   "pt-BR": {
     "homeTitle": "Jogo de desenho às cegas e desafios diários",
-    "homeDescription": "Jogo grátis de desenho às cegas no navegador: desenho livre, desafios diários, revelação dos traços e replays para compartilhar com amigos. Sem baixar ou criar conta.",
-    "helpTitle": "Guia de desenho às cegas na web e no iPhone | Ghost Draw",
-    "helpDescription": "Conheça o desenho livre, os temas diários, os traços invisíveis, o replay, a galeria local e os desafios com amigos do Ghost Draw.",
+    "homeDescription": "Desenho às cegas grátis online: traços ocultos, desafios diários e surpresas. O app para iPhone e iPad traz Festa para 2 a 8 no mesmo aparelho e vídeos de replay.",
+    "helpTitle": "Guia de desenho, Festa e replays | Ghost Draw",
+    "helpDescription": "Guia web e iPhone/iPad: desenho às cegas, temas diários, Festa em um aparelho, vídeos sem som, jogo offline e sincronização privada e opcional pelo iCloud.",
     "privacyDescription": "Privacidade do Ghost Draw: desenhos locais, iCloud opcional no app, links públicos de replay e estatísticas de uso que podem ser desativadas.",
     "steps": [
       [
@@ -352,9 +352,9 @@
   },
   "ru": {
     "homeTitle": "Рисование вслепую онлайн и ежедневные задания",
-    "homeDescription": "Бесплатная игра в рисование вслепую в браузере: свободные рисунки, задания дня, раскрытие штрихов и повторы для друзей. Без скачивания и регистрации.",
-    "helpTitle": "Рисование вслепую в браузере и на iPhone | Ghost Draw",
-    "helpDescription": "Как пользоваться Ghost Draw: свободное рисование, темы дня, невидимые линии, повтор, локальная галерея и задания на одну тему с друзьями.",
+    "homeDescription": "Рисуйте вслепую бесплатно в браузере: скрытые линии, темы дня и неожиданный результат. В приложении для iPhone и iPad: 2–8 игроков на одном устройстве и видеоповторы.",
+    "helpTitle": "Рисование, игра компанией и повторы | Ghost Draw",
+    "helpDescription": "Браузер и приложение iPhone/iPad: рисование вслепую, темы дня, игра на одном устройстве, видео без звука, офлайн-режим и частная синхронизация галереи через iCloud.",
     "privacyDescription": "Приватность Ghost Draw: рисунки в браузере, необязательный iCloud в приложении, публичные повторы и отключаемая статистика использования.",
     "steps": [
       [

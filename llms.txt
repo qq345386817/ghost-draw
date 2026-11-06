@@ -1,21 +1,39 @@
 # Ghost Draw
 
-> Play a free blind drawing game online. Draw with hidden ink, reveal every stroke, try daily drawing challenges and share replays with friends. No download or account.
+> Play a free blind drawing game online: hidden ink, daily prompts and surprising stroke reveals. Get the iPhone and iPad app for 2–8 player local Party and replay videos.
 
 Draw something without seeing the ink, then let the ghost reveal every stroke. Try a daily prompt or your own idea, and invite a friend to draw the same thing.
 
 The browser game needs JavaScript. You can still read the guide or get the iPhone and iPad app.
 
+## Ghost Draw for iPhone and iPad
+
+Draw without seeing your lines, then let the ghost reveal your own strokes. The app adds same-device Party, drawing twists and replay videos to turn surprising results into something to laugh about together.
+
+### 2–8 players, one device
+
+Pass the same iPhone or iPad around. Everyone draws the same prompt in timed turns, reveals their result and votes for someone else's drawing. No online opponents or separate devices are needed.
+
+### A new twist on each drawing
+
+Try six optional drawing twists, including one continuous stroke, mirror drawing and upside-down drawing. Pick brushes, shapes and colors, then switch the ghost's commentary style after the reveal. This replays your strokes, not an AI-generated picture.
+
+### Keep the moment, share the surprise
+
+Save and favorite drawings in Gallery, replay them later, or share an image card or silent replay video. Share Party results as a montage and save selected drawings individually; player names, votes and the full Party session are not saved.
+
+Core drawing, replay and local Party work offline with bundled prompts. Catalog updates, Featured and hosted replay links need internet. Creating a link uploads a public copy; community submissions are reviewed before appearing. Optional private iCloud Gallery sync requires iCloud and an Apple Account. There is no separate Ghost Draw account, and browser drawings do not automatically sync with the app.
+
 ## Pages
 
-- [Draw](https://ghost-draw.luopeike.com/): Play a free blind drawing game online. Draw with hidden ink, reveal every stroke, try daily drawing challenges and share replays with friends. No download or account.
-- [Help](https://ghost-draw.luopeike.com/help): Learn blind drawing in the browser or iPhone app: free drawing, daily prompts, stroke replay, local gallery and sharing the same challenge with friends.
+- [Draw](https://ghost-draw.luopeike.com/): Play a free blind drawing game online: hidden ink, daily prompts and surprising stroke reveals. Get the iPhone and iPad app for 2–8 player local Party and replay videos.
+- [Help](https://ghost-draw.luopeike.com/help): Learn the free browser game and iPhone/iPad app: blind drawing, daily prompts, same-device Party, silent replay videos, offline play and optional private iCloud sync.
 - [Privacy](https://ghost-draw.luopeike.com/privacy-policy): Ghost Draw privacy: browser-local drawings and drafts, optional iCloud in the app, public replay sharing and usage statistics with an off switch.
 - [Support](https://ghost-draw.luopeike.com/support)
 
 ## Product summary
 
-- [English](https://ghost-draw.luopeike.com/index.md): Play a free blind drawing game online. Draw with hidden ink, reveal every stroke, try daily drawing challenges and share replays with friends. No download or account.
+- [English](https://ghost-draw.luopeike.com/index.md): Play a free blind drawing game online: hidden ink, daily prompts and surprising stroke reveals. Get the iPhone and iPad app for 2–8 player local Party and replay videos.
 
 ## Optional
 
@@ -23,12 +41,12 @@ The browser game needs JavaScript. You can still read the guide or get the iPhon
 
 ## Languages
 
-- [Deutsch](https://ghost-draw.luopeike.com/de/llms.txt): Kostenloses Blindzeichen-Spiel im Browser: unsichtbare Linien, freie Zeichnungen, tägliche Aufgaben und Replays zum Teilen mit Freunden. Ohne Download oder Konto.
-- [Español](https://ghost-draw.luopeike.com/es/llms.txt): Juego gratis de dibujo a ciegas en el navegador: dibujo libre, retos diarios, revelado de trazos y repeticiones para compartir con amigos. Sin descargar ni registrarte.
-- [Français](https://ghost-draw.luopeike.com/fr/llms.txt): Un jeu de dessin à l’aveugle gratuit dans le navigateur : dessin libre, défis quotidiens, révélation des traits et relectures à partager. Sans téléchargement ni compte.
-- [日本語](https://ghost-draw.luopeike.com/ja/llms.txt): ブラウザで無料のブラインドお絵描き。見えない線で自由に描き、毎日のお題に挑戦し、一筆ずつ公開。リプレイを友だちと共有できます。ダウンロード・登録不要。
-- [한국어](https://ghost-draw.luopeike.com/ko/llms.txt): 브라우저에서 무료로 블라인드 그림을 그려 보세요. 자유 그림, 매일 주제, 숨긴 선의 공개, 로컬 갤러리와 친구에게 보내는 리플레이 링크. 다운로드나 가입이 필요 없습니다.
-- [Português (Brasil)](https://ghost-draw.luopeike.com/pt-BR/llms.txt): Jogo grátis de desenho às cegas no navegador: desenho livre, desafios diários, revelação dos traços e replays para compartilhar com amigos. Sem baixar ou criar conta.
-- [Русский](https://ghost-draw.luopeike.com/ru/llms.txt): Бесплатная игра в рисование вслепую в браузере: свободные рисунки, задания дня, раскрытие штрихов и повторы для друзей. Без скачивания и регистрации.
-- [简体中文](https://ghost-draw.luopeike.com/zh-Hans/llms.txt): 在浏览器里免费玩幽灵画手：看不见笔迹的画画小游戏，支持自由绘画、每日绘画挑战、逐笔揭晓、本地画廊和回放分享。和朋友挑战同一个题目，无需下载或注册。
-- [繁體中文](https://ghost-draw.luopeike.com/zh-Hant/llms.txt): 在瀏覽器免費玩 Ghost Draw：看不見筆跡的繪畫小遊戲，支援自由繪畫、每日挑戰、逐筆揭曉、本機畫廊與回放分享。和朋友挑戰相同題目，無需下載或註冊。
+- [Deutsch](https://ghost-draw.luopeike.com/de/llms.txt): Gratis blindzeichnen im Browser: unsichtbare Linien, Tagesaufgaben und überraschende Bilder. Die iPhone- und iPad-App bietet lokale Partys für 2–8 und Replay-Videos.
+- [Español](https://ghost-draw.luopeike.com/es/llms.txt): Dibujo a ciegas gratis en línea: trazos ocultos, retos diarios y sorpresas. La app para iPhone y iPad añade Party de 2 a 8 en un dispositivo y vídeos de repetición.
+- [Français](https://ghost-draw.luopeike.com/fr/llms.txt): Dessin à l’aveugle gratuit en ligne : traits cachés, défis du jour et surprises. L’app iPhone et iPad ajoute Party à 2–8 sur un appareil et les vidéos de relecture.
+- [日本語](https://ghost-draw.luopeike.com/ja/llms.txt): 無料のブラインドお絵描きゲーム。ブラウザで見えない線を描き、毎日のお題と予想外の公開を楽しもう。iPhone・iPad アプリなら2〜8人の同じ端末でのパーティーやリプレイ動画も。
+- [한국어](https://ghost-draw.luopeike.com/ko/llms.txt): 무료 온라인 블라인드 그림 게임. 숨긴 선과 매일 주제를 즐기고 뜻밖의 결과를 공개하세요. iPhone·iPad 앱에서는 한 기기로 2–8명 파티와 리플레이 영상 공유도 가능합니다.
+- [Português (Brasil)](https://ghost-draw.luopeike.com/pt-BR/llms.txt): Desenho às cegas grátis online: traços ocultos, desafios diários e surpresas. O app para iPhone e iPad traz Festa para 2 a 8 no mesmo aparelho e vídeos de replay.
+- [Русский](https://ghost-draw.luopeike.com/ru/llms.txt): Рисуйте вслепую бесплатно в браузере: скрытые линии, темы дня и неожиданный результат. В приложении для iPhone и iPad: 2–8 игроков на одном устройстве и видеоповторы.
+- [简体中文](https://ghost-draw.luopeike.com/zh-Hans/llms.txt): 免费在线玩幽灵画手：隐藏笔迹、每日绘画挑战，让幽灵逐笔揭晓意外结果。网页版无需下载或注册；iPhone 与 iPad App 还支持 2–8 人同机派对、整活规则与回放视频分享。
+- [繁體中文](https://ghost-draw.luopeike.com/zh-Hant/llms.txt): 免費線上玩靈魂畫手：隱藏筆跡、每日繪畫挑戰，讓幽靈逐筆揭曉意外結果。網頁版無需下載或註冊；iPhone 與 iPad App 還支援 2–8 人同機派對、趣味規則與回放影片分享。

@@ -130,6 +130,16 @@ main { max-width: 1280px; margin: auto; padding: 0 32px; }
 .guide p { font-size: 15px; line-height: 26px; color: var(--muted); margin: 0; }
 .store-button { flex-shrink: 0; max-width: 300px; }
 .store-button img { flex-shrink: 0; }
+.app-intro { border-top: 1px solid var(--line); padding: 32px 0; }
+.app-intro-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.app-intro-header>div { max-width: 740px; min-width: 0; }
+.app-intro h2 { font-size: 20px; line-height: 1.5; margin: 0 0 12px; overflow-wrap: anywhere; }
+.app-intro p { font-size: 15px; line-height: 1.8; color: var(--muted); margin: 0; }
+.app-features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin: 28px 0; }
+.app-feature-icon { display: inline-flex; color: var(--ink); margin-bottom: 8px; }
+.app-features h3 { font-size: 16px; line-height: 1.5; margin: 0 0 8px; overflow-wrap: anywhere; }
+.app-intro .app-availability { border-top: 1px solid var(--line); padding-top: 20px; font-size: 14px; }
+.document .app-intro-header { flex-direction: column; }
 .faq { max-width: 800px; padding: 0 0 32px; }
 .faq details, .document details { border-bottom: 1px solid var(--line); }
 .faq summary, .document summary { padding: 16px 0; min-height: 52px; cursor: pointer; font-size: 15px; font-weight: 600; line-height: 22px; }
@@ -172,6 +182,7 @@ footer a:hover { color: var(--link); }
   .swatches { grid-template-columns: repeat(4, 44px); justify-content: space-between; }
   .artwork-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .guide { align-items: flex-start; flex-direction: column; gap: 20px; }
+  .app-intro-header { flex-direction: column; }
 }
 @media (min-width: 641px) and (min-height: 600px) {
   .play-layout { grid-template-columns: 216px minmax(280px, min(400px, calc((100svh - 350px)*.75))) 200px; }
@@ -218,6 +229,9 @@ footer a:hover { color: var(--link); }
   .guide { padding: 24px 0; gap: 20px; }
   .guide h1 { font-size: 20px; line-height: 30px; }
   .guide p { font-size: 14px; line-height: 24px; }
+  .app-intro { padding: 24px 0; }
+  .app-intro p { font-size: 14px; }
+  .app-features { grid-template-columns: minmax(0, 1fr); gap: 24px; margin: 24px 0; }
   .faq summary { font-size: 14px; }
   footer { padding: 16px; gap: 4px 20px; }
   .game-dialog { padding: 20px; }

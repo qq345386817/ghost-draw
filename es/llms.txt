@@ -1,21 +1,39 @@
 # Ghost Draw
 
-> Juego gratis de dibujo a ciegas en el navegador: dibujo libre, retos diarios, revelado de trazos y repeticiones para compartir con amigos. Sin descargar ni registrarte.
+> Dibujo a ciegas gratis en línea: trazos ocultos, retos diarios y sorpresas. La app para iPhone y iPad añade Party de 2 a 8 en un dispositivo y vídeos de repetición.
 
 Dibuja sin ver los trazos y deja que el fantasma los revele uno a uno. Prueba el tema diario o una idea propia e invita a un amigo a dibujar lo mismo.
 
 El juego web necesita JavaScript. Puedes leer la guía o descargar la app para iPhone y iPad.
 
+## Ghost Draw para iPhone y iPad
+
+Dibuja sin ver tus líneas y deja que el fantasma revele tus propios trazos. La app añade Party en un solo dispositivo, reglas de dibujo y vídeos de repetición para convertir las sorpresas en risas compartidas.
+
+### De 2 a 8 jugadores, un dispositivo
+
+Pasad el mismo iPhone o iPad de mano en mano. Cada persona dibuja el mismo tema con tiempo limitado, revela el resultado y vota por el dibujo de otra persona. No hacen falta rivales en línea ni un dispositivo por jugador.
+
+### Reglas que cambian el resultado
+
+Prueba seis reglas opcionales, como dibujar de un solo trazo, en espejo o al revés. Elige pinceles, formas y colores y cambia el estilo de los comentarios del fantasma tras revelar el dibujo. Se reproducen tus trazos, no una imagen generada por IA.
+
+### Guarda el dibujo, comparte la sorpresa
+
+Guarda obras en la galería, marca favoritas y vuelve a verlas. Comparte una tarjeta de imagen o un vídeo de repetición sin sonido. Los resultados de Party se pueden compartir en un montaje y los dibujos elegidos se guardan por separado; no se conservan nombres, votos ni la sesión completa.
+
+El dibujo, la repetición y Party local funcionan sin conexión con los temas incluidos. Actualizar temas, ver destacados y crear enlaces alojados requiere Internet. Crear un enlace sube una copia pública; los envíos se revisan antes de publicarse. La sincronización privada y opcional de la galería con iCloud requiere iCloud y una cuenta de Apple. No hace falta una cuenta aparte de Ghost Draw. Los dibujos del navegador no se sincronizan automáticamente con la app.
+
 ## Pages
 
-- [Dibujar](https://ghost-draw.luopeike.com/es/): Juego gratis de dibujo a ciegas en el navegador: dibujo libre, retos diarios, revelado de trazos y repeticiones para compartir con amigos. Sin descargar ni registrarte.
-- [Ayuda](https://ghost-draw.luopeike.com/es/help): Conoce el dibujo libre, los temas diarios, los trazos invisibles, la repetición, la galería local y los retos con amigos de Ghost Draw.
+- [Dibujar](https://ghost-draw.luopeike.com/es/): Dibujo a ciegas gratis en línea: trazos ocultos, retos diarios y sorpresas. La app para iPhone y iPad añade Party de 2 a 8 en un dispositivo y vídeos de repetición.
+- [Ayuda](https://ghost-draw.luopeike.com/es/help): Guía web y iPhone/iPad: dibujo a ciegas, temas diarios, Party en un dispositivo, vídeos sin sonido, juego sin conexión y sincronización privada con iCloud opcional.
 - [Privacidad](https://ghost-draw.luopeike.com/es/privacy-policy): Privacidad de Ghost Draw: dibujos locales, iCloud opcional en la app, enlaces públicos de repetición y estadísticas de uso que puedes desactivar.
 - [Soporte](https://ghost-draw.luopeike.com/es/support)
 
 ## Product summary
 
-- [Español](https://ghost-draw.luopeike.com/es/index.md): Juego gratis de dibujo a ciegas en el navegador: dibujo libre, retos diarios, revelado de trazos y repeticiones para compartir con amigos. Sin descargar ni registrarte.
+- [Español](https://ghost-draw.luopeike.com/es/index.md): Dibujo a ciegas gratis en línea: trazos ocultos, retos diarios y sorpresas. La app para iPhone y iPad añade Party de 2 a 8 en un dispositivo y vídeos de repetición.
 
 ## Optional
 

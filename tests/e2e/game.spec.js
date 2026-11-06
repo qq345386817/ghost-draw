@@ -73,3 +73,39 @@ test('mobile size popover stays closed while the catalog is loading',async({page
   }finally{release();}
   await expect(page.locator('#reveal')).toBeVisible();await expect(page.locator('#size')).not.toBeVisible();expect(errors).toEqual([]);
 });
+
+test('native App introduction fits every language and remains readable without JavaScript',async({page,browser})=>{
+  test.setTimeout(120000);
+  const languages=JSON.parse(await readFile(new URL('../../content/site-copy.json',import.meta.url),'utf8'));
+  const appCopy=JSON.parse(await readFile(new URL('../../content/app-intro.json',import.meta.url),'utf8'));
+  const consoleErrors=[];page.on('console',message=>{if(message.type()==='error')consoleErrors.push(message.text());});
+  for(const width of [320,768,1440]){
+    await page.setViewportSize({width,height:1000});
+    for(const language of languages){
+      const prefix=language.path?`/${language.path}/`:'/',copy=appCopy[language.code];
+      await page.goto(prefix);await expect(page.locator('#reveal')).toBeVisible();
+      await expect(page.locator('#app-heading')).toHaveText(copy.heading);
+      await expect(page.locator('a[data-store-link]')).toHaveCount(1);
+      expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+      expect(await page.locator('.app-intro h2,.app-intro h3,.app-intro p,.app-intro .store-button').evaluateAll(elements=>elements.every(e=>e.scrollWidth<=e.clientWidth+1))).toBe(true);
+      await page.getByText(copy.faq[0][0],{exact:true}).click();
+      await expect(page.getByText(copy.faq[0][1],{exact:true})).toBeVisible();
+      if(language.code==='zh-Hans'&&width!==768){
+        await page.locator('#ios-app').scrollIntoViewIfNeeded();
+        await page.locator('#ios-app').screenshot({path:`/tmp/ghostdraw-app-intro-${width}.png`});
+      }
+    }
+  }
+  await page.emulateMedia({colorScheme:'dark'});await page.setViewportSize({width:390,height:844});
+  await page.goto('/zh-Hans/help');await expect(page.locator('.app-features svg')).toHaveCount(3);
+  await page.locator('#ios-app').screenshot({path:'/tmp/ghostdraw-app-intro-dark.png'});
+  expect(errors).toEqual([]);expect(consoleErrors).toEqual([]);
+  const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});
+  try{
+    const noJS=await context.newPage();await noJS.goto(new URL('/zh-Hans/',page.url()).href);
+    await expect(noJS.locator('#app-heading')).toBeVisible();
+    await noJS.getByText(appCopy['zh-Hans'].faq[1][0],{exact:true}).click();
+    await expect(noJS.getByText(appCopy['zh-Hans'].faq[1][1],{exact:true})).toBeVisible();
+    await expect(noJS.locator('a[data-store-link]')).toHaveAttribute('href','https://apps.apple.com/app/id6773654307');
+  }finally{await context.close();}
+});

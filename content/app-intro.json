@@ -1,0 +1,142 @@
+{
+  "en": {
+    "heading": "Ghost Draw for iPhone and iPad",
+    "intro": "Draw without seeing your lines, then let the ghost reveal your own strokes. The app adds same-device Party, drawing twists and replay videos to turn surprising results into something to laugh about together.",
+    "features": [
+      ["2–8 players, one device", "Pass the same iPhone or iPad around. Everyone draws the same prompt in timed turns, reveals their result and votes for someone else's drawing. No online opponents or separate devices are needed."],
+      ["A new twist on each drawing", "Try six optional drawing twists, including one continuous stroke, mirror drawing and upside-down drawing. Pick brushes, shapes and colors, then switch the ghost's commentary style after the reveal. This replays your strokes, not an AI-generated picture."],
+      ["Keep the moment, share the surprise", "Save and favorite drawings in Gallery, replay them later, or share an image card or silent replay video. Share Party results as a montage and save selected drawings individually; player names, votes and the full Party session are not saved."]
+    ],
+    "availability": "Core drawing, replay and local Party work offline with bundled prompts. Catalog updates, Featured and hosted replay links need internet. Creating a link uploads a public copy; community submissions are reviewed before appearing. Optional private iCloud Gallery sync requires iCloud and an Apple Account. There is no separate Ghost Draw account, and browser drawings do not automatically sync with the app.",
+    "faq": [
+      ["Is Party mode available in the browser?", "Party is an iPhone and iPad app feature for 2–8 players on one device, with timed turns, reveals and voting. In the browser, friends can instead open a shared replay link and draw the same prompt at their own pace; there is no live multiplayer room."],
+      ["Can I share the drawing as a video?", "The iPhone and iPad app exports a silent MP4 replay of your recorded strokes. The browser game supports image sharing and public replay links, but does not export videos."]
+    ]
+  },
+  "zh-Hans": {
+    "heading": "iPhone 与 iPad 上的幽灵画手",
+    "intro": "看不见笔迹，才更容易画出意外。让幽灵逐笔揭晓你的画作，再用 App 里的同机派对、整活规则和回放视频，把这份惊喜变成大家的笑点。",
+    "features": [
+      ["2–8 人，一台设备轮流玩", "传递同一台 iPhone 或 iPad，围绕同一个题目限时作画，再依次揭晓、为别人的作品投票。不需要线上对手，也不用每人准备一台设备。"],
+      ["给每一幅画加点意外", "试试一笔到底、镜像画、倒着画等六种可选整活规则，搭配画笔、形状与颜色。揭晓后还能切换幽灵的点评风格。回放的是你自己的笔画，不是 AI 生成的图片。"],
+      ["留住作品，也分享笑点", "在画廊保存、收藏和回放作品，分享图片卡片或无声回放视频。派对结果可以拼成一张图分享，也能逐幅保存选中的画作；不会保存玩家昵称、投票或整场派对记录。"]
+    ],
+    "availability": "使用内置题目时，核心绘画、回放和同机派对可离线进行。题库更新、精选与云端回放链接需要联网。生成链接会上传一份公开副本；投稿经过审核后才会公开展示。可选的私有 iCloud 画廊同步需要 iCloud 和 Apple 账户，无需另建幽灵画手账户。浏览器画作不会自动同步到 App。",
+    "faq": [
+      ["网页版也能玩派对模式吗？", "派对模式是 iPhone 和 iPad App 的功能，支持 2–8 人在同一台设备上限时轮流作画、揭晓和投票。网页版可以把回放链接发给朋友，让大家各自在方便的时候挑战同题，不是实时多人房间。"],
+      ["能把绘画过程分享成视频吗？", "iPhone 和 iPad App 可以将你自己的笔画导出为无声 MP4 回放视频。网页版支持分享图片和公开回放链接，目前不支持视频导出。"]
+    ]
+  },
+  "zh-Hant": {
+    "heading": "iPhone 與 iPad 上的靈魂畫手",
+    "intro": "看不見筆跡，更容易畫出意外。讓幽靈逐筆揭曉你的作品，再用 App 裡的同機派對、趣味規則與回放影片，把驚喜變成大家的笑點。",
+    "features": [
+      ["2–8 人，一台裝置輪流玩", "傳遞同一台 iPhone 或 iPad，圍繞相同題目限時作畫，再依序揭曉、為別人的作品投票。不需要線上對手，也不用每人準備一台裝置。"],
+      ["為每幅畫加點意外", "試試一筆到底、鏡像繪畫、倒著畫等六種可選趣味規則，搭配畫筆、形狀與顏色。揭曉後還能切換幽靈的點評風格。回放的是你自己的筆畫，不是 AI 生成的圖片。"],
+      ["留下作品，也分享笑點", "在畫廊儲存、收藏與回放作品，分享圖片卡片或無聲回放影片。派對結果能拼成一張圖分享，也能逐幅儲存選中的作品；不會儲存玩家暱稱、投票或整場派對紀錄。"]
+    ],
+    "availability": "使用內建題目時，核心繪畫、回放與同機派對可離線進行。題庫更新、精選與雲端回放連結需要連網。建立連結會上傳一份公開副本；投稿通過審核後才會公開展示。選用的私人 iCloud 畫廊同步需要 iCloud 與 Apple 帳號，無須另建靈魂畫手帳號。瀏覽器作品不會自動同步至 App。",
+    "faq": [
+      ["網頁版也能玩派對模式嗎？", "派對模式是 iPhone 與 iPad App 的功能，支援 2–8 人在同一台裝置上限時輪流作畫、揭曉與投票。網頁版可以將回放連結傳給朋友，讓大家各自在方便的時間挑戰同題，不是即時多人房間。"],
+      ["能將繪畫過程分享成影片嗎？", "iPhone 與 iPad App 可以將你自己的筆畫匯出為無聲 MP4 回放影片。網頁版支援分享圖片與公開回放連結，目前不支援影片匯出。"]
+    ]
+  },
+  "ja": {
+    "heading": "iPhone・iPad で遊ぶ Ghost Draw",
+    "intro": "見えない線で描いたら、ゴーストが自分の筆跡を一筆ずつ公開。アプリなら同じ端末を回して遊ぶパーティー、描き方のルール、リプレイ動画で、予想外の絵をみんなで楽しめます。",
+    "features": [
+      ["2〜8人で、1台を回して遊ぶ", "同じ iPhone・iPad を順番に回し、同じお題を制限時間内に描きます。作品を公開したら、ほかの人の絵に投票。オンラインの対戦相手や人数分の端末は必要ありません。"],
+      ["いつものお絵描きにひと工夫", "一筆書き、鏡映し、逆さまなど、6種類の追加ルールを選べます。ブラシ・図形・色を組み合わせ、公開後にはゴーストのコメントの雰囲気も変更できます。AI の生成画像ではなく、自分が描いた線のリプレイです。"],
+      ["作品も、笑った瞬間も残す", "ギャラリーに保存してお気に入りに登録し、あとから再生。画像カードや無音のリプレイ動画を共有できます。パーティーの結果は1枚の画像にまとめて共有でき、選んだ絵は個別に保存できます。参加者名・投票・パーティー全体の記録は保存されません。"]
+    ],
+    "availability": "内蔵のお題を使う描画・リプレイ・同じ端末でのパーティーはオフラインで遊べます。お題の更新・注目作品・公開リプレイのリンクには通信が必要です。リンクを作ると作品の公開用コピーがアップロードされ、投稿作品は審査後に掲載されます。任意の非公開 iCloud ギャラリー同期には iCloud と Apple Account が必要です。Ghost Draw 専用アカウントは不要で、ブラウザの絵はアプリへ自動同期されません。",
+    "faq": [
+      ["ブラウザでもパーティーモードで遊べますか？", "パーティーは iPhone・iPad アプリの機能です。2〜8人が1台で制限時間内に順番に描き、公開して投票します。ブラウザではリプレイのリンクを送り、友だちが好きな時間に同じお題に挑戦できます。リアルタイムの対戦ルームではありません。"],
+      ["描いた過程を動画で共有できますか？", "iPhone・iPad アプリでは、自分が描いた線を無音の MP4 リプレイ動画として書き出せます。ブラウザ版は画像と公開リプレイリンクの共有に対応しており、動画の書き出しには対応していません。"]
+    ]
+  },
+  "ko": {
+    "heading": "iPhone과 iPad에서 즐기는 Ghost Draw",
+    "intro": "선이 보이지 않는 상태로 그린 뒤, 유령이 직접 그린 선을 하나씩 공개합니다. 앱에서는 한 기기로 즐기는 파티, 특별한 그리기 규칙, 리플레이 영상으로 뜻밖의 결과를 함께 즐겨 보세요.",
+    "features": [
+      ["2–8명이 한 기기로", "같은 iPhone이나 iPad를 돌아가며 사용해 같은 주제를 제한 시간 안에 그립니다. 결과를 공개하고 다른 사람의 그림에 투표하세요. 온라인 상대나 사람 수만큼의 기기는 필요 없습니다."],
+      ["그릴 때마다 새로운 재미", "한 획으로 그리기, 거울처럼 그리기, 거꾸로 그리기 등 여섯 가지 선택 규칙을 시도해 보세요. 브러시, 도형, 색상을 고르고 공개 후 유령의 감상평 스타일도 바꿀 수 있습니다. AI가 만든 이미지가 아니라 직접 그린 선을 재생합니다."],
+      ["그림과 웃음을 함께 나누기", "갤러리에 저장하고 즐겨찾기에 추가해 나중에 다시 보세요. 이미지 카드나 무음 리플레이 영상을 공유할 수 있습니다. 파티 결과를 한 장의 이미지로 공유하거나 선택한 그림을 개별 저장할 수 있으며, 참가자 이름·투표·파티 전체 기록은 저장되지 않습니다."]
+    ],
+    "availability": "내장 주제로 그리기, 리플레이, 한 기기 파티는 오프라인에서 이용할 수 있습니다. 주제 업데이트, 추천 작품, 공개 리플레이 링크에는 인터넷이 필요합니다. 링크를 만들면 그림의 공개 사본이 업로드되며, 제출한 작품은 검토 후 공개됩니다. 선택적인 비공개 iCloud 갤러리 동기화에는 iCloud와 Apple 계정이 필요합니다. 별도의 Ghost Draw 계정은 필요하지 않으며, 브라우저 그림은 앱과 자동으로 동기화되지 않습니다.",
+    "faq": [
+      ["브라우저에서도 파티 모드를 할 수 있나요?", "파티는 iPhone 및 iPad 앱 기능으로, 2–8명이 한 기기에서 제한 시간 동안 돌아가며 그리고 결과를 공개한 뒤 투표합니다. 브라우저에서는 리플레이 링크를 보내 친구가 편한 시간에 같은 주제에 도전할 수 있으며, 실시간 멀티플레이 방은 아닙니다."],
+      ["그리는 과정을 영상으로 공유할 수 있나요?", "iPhone 및 iPad 앱에서는 직접 그린 선을 무음 MP4 리플레이 영상으로 내보낼 수 있습니다. 브라우저 게임은 이미지와 공개 리플레이 링크 공유를 지원하지만 영상 내보내기는 지원하지 않습니다."]
+    ]
+  },
+  "de": {
+    "heading": "Ghost Draw für iPhone und iPad",
+    "intro": "Zeichne mit unsichtbaren Linien und lass den Geist deine eigenen Striche enthüllen. Mit dem Partymodus auf einem Gerät, Zeichenregeln und Replay-Videos macht die App aus überraschenden Ergebnissen gemeinsame Lacher.",
+    "features": [
+      ["2–8 Personen, ein Gerät", "Gebt dasselbe iPhone oder iPad reihum. Alle zeichnen dasselbe Thema mit Zeitlimit, enthüllen ihr Ergebnis und stimmen für ein anderes Bild ab. Ihr braucht weder Online-Gegner noch ein Gerät pro Person."],
+      ["Neue Regeln, neue Überraschungen", "Wählt aus sechs optionalen Zeichenregeln, etwa ohne Absetzen, gespiegelt oder auf dem Kopf. Kombiniert Pinsel, Formen und Farben und ändert nach der Enthüllung den Kommentarstil des Geistes. Abgespielt werden eure eigenen Striche, kein KI-generiertes Bild."],
+      ["Bilder behalten, Überraschungen teilen", "Speichere Bilder in der Galerie, markiere Favoriten und spiele sie später erneut ab. Teile eine Bildkarte oder ein stummes Replay-Video. Party-Ergebnisse lassen sich als Collage teilen und ausgewählte Bilder einzeln speichern; Spielernamen, Stimmen und die gesamte Partyrunde werden nicht gespeichert."]
+    ],
+    "availability": "Zeichnen, Replays und lokale Partys funktionieren mit integrierten Themen offline. Themen-Updates, Empfehlungen und gehostete Replay-Links benötigen Internet. Ein Link lädt eine öffentliche Kopie hoch; eingereichte Werke werden vor der Veröffentlichung geprüft. Die optionale private iCloud-Galeriesynchronisierung erfordert iCloud und einen Apple Account. Ein separates Ghost-Draw-Konto ist nicht nötig. Browserbilder werden nicht automatisch mit der App synchronisiert.",
+    "faq": [
+      ["Gibt es den Partymodus auch im Browser?", "Party ist eine Funktion der iPhone- und iPad-App: 2–8 Personen zeichnen mit Zeitlimit auf einem Gerät, enthüllen ihre Bilder und stimmen ab. Im Browser können Freunde über einen Replay-Link dasselbe Thema in ihrem eigenen Tempo zeichnen. Es gibt keinen Live-Mehrspielerraum."],
+      ["Kann ich den Zeichenprozess als Video teilen?", "Die iPhone- und iPad-App exportiert deine eigenen Striche als stummes MP4-Replay. Das Browserspiel unterstützt das Teilen von Bildern und öffentlichen Replay-Links, aber keinen Videoexport."]
+    ]
+  },
+  "fr": {
+    "heading": "Ghost Draw sur iPhone et iPad",
+    "intro": "Dessinez sans voir vos traits, puis laissez le fantôme rejouer votre propre dessin. Sur l’app, le mode Party sur un seul appareil, les règles de dessin et les vidéos de relecture transforment les surprises en fous rires partagés.",
+    "features": [
+      ["2 à 8 joueurs, un seul appareil", "Passez le même iPhone ou iPad de main en main. Chacun dessine le même sujet dans un temps limité, révèle son résultat et vote pour le dessin d’un autre joueur. Aucun adversaire en ligne ni appareil supplémentaire n’est nécessaire."],
+      ["Des règles pour surprendre", "Essayez six règles facultatives, comme dessiner d’un seul trait, en miroir ou à l’envers. Choisissez pinceaux, formes et couleurs, puis changez le style des commentaires du fantôme après la révélation. Ce sont vos traits qui sont rejoués, pas une image générée par IA."],
+      ["Gardez les dessins, partagez les surprises", "Enregistrez vos œuvres dans la galerie, ajoutez des favoris et revoyez-les plus tard. Partagez une carte-image ou une vidéo de relecture muette. Les résultats Party peuvent être partagés en montage et les dessins sélectionnés enregistrés individuellement ; les noms, votes et sessions complètes ne sont pas conservés."]
+    ],
+    "availability": "Le dessin, la relecture et Party en local fonctionnent hors ligne avec les sujets intégrés. Les mises à jour des sujets, la sélection et les liens hébergés nécessitent Internet. Créer un lien envoie une copie publique du dessin ; les contributions sont examinées avant publication. La synchronisation privée et facultative de la galerie via iCloud nécessite iCloud et un compte Apple. Aucun compte Ghost Draw séparé n’est requis. Les dessins du navigateur ne sont pas automatiquement synchronisés avec l’app.",
+    "faq": [
+      ["Le mode Party est-il disponible dans le navigateur ?", "Party est une fonction de l’app iPhone et iPad pour 2 à 8 joueurs sur un appareil, avec tours chronométrés, révélations et votes. Dans le navigateur, un lien de relecture permet plutôt aux amis de dessiner le même sujet chacun à son rythme. Il n’y a pas de salon multijoueur en direct."],
+      ["Puis-je partager mon dessin en vidéo ?", "L’app iPhone et iPad exporte vos propres traits sous forme de vidéo MP4 muette. Le jeu dans le navigateur permet de partager des images et des liens de relecture publics, mais pas d’exporter des vidéos."]
+    ]
+  },
+  "es": {
+    "heading": "Ghost Draw para iPhone y iPad",
+    "intro": "Dibuja sin ver tus líneas y deja que el fantasma revele tus propios trazos. La app añade Party en un solo dispositivo, reglas de dibujo y vídeos de repetición para convertir las sorpresas en risas compartidas.",
+    "features": [
+      ["De 2 a 8 jugadores, un dispositivo", "Pasad el mismo iPhone o iPad de mano en mano. Cada persona dibuja el mismo tema con tiempo limitado, revela el resultado y vota por el dibujo de otra persona. No hacen falta rivales en línea ni un dispositivo por jugador."],
+      ["Reglas que cambian el resultado", "Prueba seis reglas opcionales, como dibujar de un solo trazo, en espejo o al revés. Elige pinceles, formas y colores y cambia el estilo de los comentarios del fantasma tras revelar el dibujo. Se reproducen tus trazos, no una imagen generada por IA."],
+      ["Guarda el dibujo, comparte la sorpresa", "Guarda obras en la galería, marca favoritas y vuelve a verlas. Comparte una tarjeta de imagen o un vídeo de repetición sin sonido. Los resultados de Party se pueden compartir en un montaje y los dibujos elegidos se guardan por separado; no se conservan nombres, votos ni la sesión completa."]
+    ],
+    "availability": "El dibujo, la repetición y Party local funcionan sin conexión con los temas incluidos. Actualizar temas, ver destacados y crear enlaces alojados requiere Internet. Crear un enlace sube una copia pública; los envíos se revisan antes de publicarse. La sincronización privada y opcional de la galería con iCloud requiere iCloud y una cuenta de Apple. No hace falta una cuenta aparte de Ghost Draw. Los dibujos del navegador no se sincronizan automáticamente con la app.",
+    "faq": [
+      ["¿Puedo jugar a Party en el navegador?", "Party es una función de la app para iPhone y iPad: de 2 a 8 jugadores comparten un dispositivo, con turnos cronometrados, revelaciones y votos. En el navegador, los amigos pueden abrir un enlace de repetición y dibujar el mismo tema a su ritmo. No hay una sala multijugador en directo."],
+      ["¿Puedo compartir el proceso de dibujo en vídeo?", "La app para iPhone y iPad exporta tus propios trazos como un vídeo MP4 sin sonido. El juego del navegador permite compartir imágenes y enlaces públicos de repetición, pero no exporta vídeos."]
+    ]
+  },
+  "pt-BR": {
+    "heading": "Ghost Draw para iPhone e iPad",
+    "intro": "Desenhe sem ver os traços e deixe o fantasma revelar o que você desenhou. No app, o modo Festa em um só aparelho, as regras de desenho e os vídeos de replay transformam resultados inesperados em risadas em grupo.",
+    "features": [
+      ["2 a 8 pessoas, um aparelho", "Passem o mesmo iPhone ou iPad de mão em mão. Todos desenham o mesmo tema com tempo limitado, revelam o resultado e votam no desenho de outra pessoa. Não é preciso ter adversários online nem um aparelho por jogador."],
+      ["Novas regras, novas surpresas", "Experimente seis regras opcionais, como desenhar sem tirar o dedo, no espelho ou de cabeça para baixo. Escolha pincéis, formas e cores e mude o estilo dos comentários do fantasma após a revelação. O replay mostra seus próprios traços, não uma imagem gerada por IA."],
+      ["Guarde o desenho, compartilhe a surpresa", "Salve desenhos na galeria, marque favoritos e veja os replays depois. Compartilhe um cartão de imagem ou vídeo de replay sem som. Os resultados da Festa podem virar uma montagem, e desenhos escolhidos podem ser salvos individualmente; nomes, votos e a sessão completa não são salvos."]
+    ],
+    "availability": "Desenho, replay e Festa local funcionam offline com os temas incluídos. Atualizações de temas, destaques e links de replay hospedados precisam de internet. Criar um link envia uma cópia pública; obras enviadas passam por análise antes de aparecerem. A sincronização privada e opcional da galeria pelo iCloud exige iCloud e uma Conta Apple. Não é necessária uma conta separada do Ghost Draw. Desenhos do navegador não são sincronizados automaticamente com o app.",
+    "faq": [
+      ["O modo Festa funciona no navegador?", "Festa é um recurso do app para iPhone e iPad: 2 a 8 pessoas usam um aparelho, com turnos cronometrados, revelações e votação. No navegador, amigos podem abrir um link de replay e desenhar o mesmo tema no seu próprio ritmo. Não há sala multijogador em tempo real."],
+      ["Posso compartilhar o desenho em vídeo?", "O app para iPhone e iPad exporta seus próprios traços em um vídeo MP4 sem som. O jogo no navegador permite compartilhar imagens e links públicos de replay, mas não exporta vídeos."]
+    ]
+  },
+  "ru": {
+    "heading": "Ghost Draw для iPhone и iPad",
+    "intro": "Рисуйте, не видя линий, а затем позвольте призраку показать ваши собственные штрихи. В приложении есть игра компанией на одном устройстве, необычные правила и видеоповторы, чтобы вместе посмеяться над неожиданным результатом.",
+    "features": [
+      ["2–8 игроков, одно устройство", "Передавайте один iPhone или iPad по кругу. Все рисуют на одну тему по очереди с ограничением времени, раскрывают рисунки и голосуют за чужие работы. Соперники в сети и отдельный экран для каждого не нужны."],
+      ["Новые правила — новые сюрпризы", "Попробуйте шесть дополнительных правил: например, рисование одним штрихом, зеркально или вверх ногами. Выбирайте кисти, фигуры и цвета, а после раскрытия меняйте стиль комментариев призрака. Это повтор ваших штрихов, а не картинка, созданная ИИ."],
+      ["Сохраните рисунок, поделитесь сюрпризом", "Сохраняйте работы в галерее, добавляйте в избранное и смотрите повторы. Делитесь карточкой или видеоповтором без звука. Итоги игры компанией можно отправить коллажем, а выбранные рисунки сохранить отдельно; имена игроков, голоса и вся игровая сессия не сохраняются."]
+    ],
+    "availability": "Рисование, повторы и игра компанией на одном устройстве работают офлайн со встроенными темами. Обновления тем, подборка работ и ссылки на повторы требуют интернета. При создании ссылки загружается общедоступная копия; присланные работы публикуются после проверки. Необязательная частная синхронизация галереи через iCloud требует iCloud и Аккаунт Apple. Отдельный аккаунт Ghost Draw не нужен. Рисунки из браузера не синхронизируются с приложением автоматически.",
+    "faq": [
+      ["Можно ли играть компанией в браузере?", "Режим для 2–8 игроков на одном устройстве с ходами на время, раскрытием рисунков и голосованием доступен в приложении для iPhone и iPad. В браузере можно отправить другу ссылку на повтор, чтобы он нарисовал ту же тему в удобное время. Комнаты для игры в реальном времени нет."],
+      ["Можно ли поделиться процессом рисования в видео?", "Приложение для iPhone и iPad экспортирует ваши штрихи в виде MP4 без звука. Браузерная игра позволяет делиться картинками и общедоступными ссылками на повторы, но не экспортирует видео."]
+    ]
+  }
+}

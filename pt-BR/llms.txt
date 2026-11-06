@@ -1,21 +1,39 @@
 # Ghost Draw
 
-> Jogo grátis de desenho às cegas no navegador: desenho livre, desafios diários, revelação dos traços e replays para compartilhar com amigos. Sem baixar ou criar conta.
+> Desenho às cegas grátis online: traços ocultos, desafios diários e surpresas. O app para iPhone e iPad traz Festa para 2 a 8 no mesmo aparelho e vídeos de replay.
 
 Desenhe sem ver os traços e deixe o fantasma revelar cada um. Experimente o tema do dia ou uma ideia sua e convide alguém para desenhar a mesma coisa.
 
 O jogo no navegador precisa de JavaScript. Você ainda pode ler o guia ou baixar o app para iPhone e iPad.
 
+## Ghost Draw para iPhone e iPad
+
+Desenhe sem ver os traços e deixe o fantasma revelar o que você desenhou. No app, o modo Festa em um só aparelho, as regras de desenho e os vídeos de replay transformam resultados inesperados em risadas em grupo.
+
+### 2 a 8 pessoas, um aparelho
+
+Passem o mesmo iPhone ou iPad de mão em mão. Todos desenham o mesmo tema com tempo limitado, revelam o resultado e votam no desenho de outra pessoa. Não é preciso ter adversários online nem um aparelho por jogador.
+
+### Novas regras, novas surpresas
+
+Experimente seis regras opcionais, como desenhar sem tirar o dedo, no espelho ou de cabeça para baixo. Escolha pincéis, formas e cores e mude o estilo dos comentários do fantasma após a revelação. O replay mostra seus próprios traços, não uma imagem gerada por IA.
+
+### Guarde o desenho, compartilhe a surpresa
+
+Salve desenhos na galeria, marque favoritos e veja os replays depois. Compartilhe um cartão de imagem ou vídeo de replay sem som. Os resultados da Festa podem virar uma montagem, e desenhos escolhidos podem ser salvos individualmente; nomes, votos e a sessão completa não são salvos.
+
+Desenho, replay e Festa local funcionam offline com os temas incluídos. Atualizações de temas, destaques e links de replay hospedados precisam de internet. Criar um link envia uma cópia pública; obras enviadas passam por análise antes de aparecerem. A sincronização privada e opcional da galeria pelo iCloud exige iCloud e uma Conta Apple. Não é necessária uma conta separada do Ghost Draw. Desenhos do navegador não são sincronizados automaticamente com o app.
+
 ## Pages
 
-- [Desenhar](https://ghost-draw.luopeike.com/pt-BR/): Jogo grátis de desenho às cegas no navegador: desenho livre, desafios diários, revelação dos traços e replays para compartilhar com amigos. Sem baixar ou criar conta.
-- [Ajuda](https://ghost-draw.luopeike.com/pt-BR/help): Conheça o desenho livre, os temas diários, os traços invisíveis, o replay, a galeria local e os desafios com amigos do Ghost Draw.
+- [Desenhar](https://ghost-draw.luopeike.com/pt-BR/): Desenho às cegas grátis online: traços ocultos, desafios diários e surpresas. O app para iPhone e iPad traz Festa para 2 a 8 no mesmo aparelho e vídeos de replay.
+- [Ajuda](https://ghost-draw.luopeike.com/pt-BR/help): Guia web e iPhone/iPad: desenho às cegas, temas diários, Festa em um aparelho, vídeos sem som, jogo offline e sincronização privada e opcional pelo iCloud.
 - [Privacidade](https://ghost-draw.luopeike.com/pt-BR/privacy-policy): Privacidade do Ghost Draw: desenhos locais, iCloud opcional no app, links públicos de replay e estatísticas de uso que podem ser desativadas.
 - [Suporte](https://ghost-draw.luopeike.com/pt-BR/support)
 
 ## Product summary
 
-- [Português (Brasil)](https://ghost-draw.luopeike.com/pt-BR/index.md): Jogo grátis de desenho às cegas no navegador: desenho livre, desafios diários, revelação dos traços e replays para compartilhar com amigos. Sem baixar ou criar conta.
+- [Português (Brasil)](https://ghost-draw.luopeike.com/pt-BR/index.md): Desenho às cegas grátis online: traços ocultos, desafios diários e surpresas. O app para iPhone e iPad traz Festa para 2 a 8 no mesmo aparelho e vídeos de replay.
 
 ## Optional
 

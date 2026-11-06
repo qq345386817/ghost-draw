@@ -1,6 +1,6 @@
 # Ghost Draw: Jogo de desenho às cegas e desafios diários
 
-> Jogo grátis de desenho às cegas no navegador: desenho livre, desafios diários, revelação dos traços e replays para compartilhar com amigos. Sem baixar ou criar conta.
+> Desenho às cegas grátis online: traços ocultos, desafios diários e surpresas. O app para iPhone e iPad traz Festa para 2 a 8 no mesmo aparelho e vídeos de replay.
 
 Desenhe sem ver os traços e deixe o fantasma revelar cada um. Experimente o tema do dia ou uma ideia sua e convide alguém para desenhar a mesma coisa.
 
@@ -23,6 +23,24 @@ Invoque o fantasma para reproduzir os traços em ordem. O resultado é seu desen
 ### 4. Guarde ou compartilhe
 
 A revelação salva os dados do desenho na galeria deste navegador. Compartilhe uma imagem ou um link público de replay; seus amigos poderão tentar o mesmo tema.
+
+## Ghost Draw para iPhone e iPad
+
+Desenhe sem ver os traços e deixe o fantasma revelar o que você desenhou. No app, o modo Festa em um só aparelho, as regras de desenho e os vídeos de replay transformam resultados inesperados em risadas em grupo.
+
+### 2 a 8 pessoas, um aparelho
+
+Passem o mesmo iPhone ou iPad de mão em mão. Todos desenham o mesmo tema com tempo limitado, revelam o resultado e votam no desenho de outra pessoa. Não é preciso ter adversários online nem um aparelho por jogador.
+
+### Novas regras, novas surpresas
+
+Experimente seis regras opcionais, como desenhar sem tirar o dedo, no espelho ou de cabeça para baixo. Escolha pincéis, formas e cores e mude o estilo dos comentários do fantasma após a revelação. O replay mostra seus próprios traços, não uma imagem gerada por IA.
+
+### Guarde o desenho, compartilhe a surpresa
+
+Salve desenhos na galeria, marque favoritos e veja os replays depois. Compartilhe um cartão de imagem ou vídeo de replay sem som. Os resultados da Festa podem virar uma montagem, e desenhos escolhidos podem ser salvos individualmente; nomes, votos e a sessão completa não são salvos.
+
+Desenho, replay e Festa local funcionam offline com os temas incluídos. Atualizações de temas, destaques e links de replay hospedados precisam de internet. Criar um link envia uma cópia pública; obras enviadas passam por análise antes de aparecerem. A sincronização privada e opcional da galeria pelo iCloud exige iCloud e uma Conta Apple. Não é necessária uma conta separada do Ghost Draw. Desenhos do navegador não são sincronizados automaticamente com o app.
 
 ## O Ghost Draw usa IA para desenhar por mim?
 
@@ -47,6 +65,14 @@ Sim. O jogo no navegador é grátis, sem download ou conta. Ele oferece desenho 
 ## Como os amigos podem participar do mesmo desafio?
 
 Desenhe um tema e compartilhe o link do replay. Seus amigos podem abrir o mesmo tema e criar sua própria versão. É um desafio em momentos diferentes, não uma sala multiplayer ao vivo.
+
+## O modo Festa funciona no navegador?
+
+Festa é um recurso do app para iPhone e iPad: 2 a 8 pessoas usam um aparelho, com turnos cronometrados, revelações e votação. No navegador, amigos podem abrir um link de replay e desenhar o mesmo tema no seu próprio ritmo. Não há sala multijogador em tempo real.
+
+## Posso compartilhar o desenho em vídeo?
+
+O app para iPhone e iPad exporta seus próprios traços em um vídeo MP4 sem som. O jogo no navegador permite compartilhar imagens e links públicos de replay, mas não exporta vídeos.
 
 ## Privacidade e estatísticas
 

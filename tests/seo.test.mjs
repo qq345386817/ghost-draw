@@ -6,6 +6,43 @@ const root=new URL('../',import.meta.url),site='https://ghost-draw.luopeike.com'
 const read=async path=>readFile(new URL(path,root),'utf8');
 const languages=JSON.parse(await read('content/site-copy.json'));
 const seo=JSON.parse(await read('content/seo.json'));
+const appCopy=JSON.parse(await read('content/app-intro.json'));
+
+test('native App facts remain localized, visible and separate from browser capabilities',async()=>{
+  assert.deepEqual(Object.keys(appCopy).sort(),languages.map(l=>l.code).sort());
+  for(const language of languages){
+    const prefix=language.path?language.path+'/':'',copy=appCopy[language.code];
+    const summary=await read(prefix+'index.md'),manifest=await read(prefix+'llms.txt');
+    for(const page of ['index','help']){
+      const $=load(await read(prefix+page+'.html')),section=$('section.app-intro');
+      assert.equal(section.length,1);
+      assert.equal(section.find('h2').text(),copy.heading);
+      assert.equal(section.find('.app-features h3').length,3);
+      assert.equal($('a[data-store-link]').length,1);
+      for(const text of [copy.heading,copy.intro,copy.availability,...copy.features.flat()]){
+        assert.ok(section.text().includes(text),`${language.code}/${page}: ${text}`);
+        assert.ok(summary.includes(text),`${language.code} Markdown: ${text}`);
+        assert.ok(manifest.includes(text),`${language.code} llms: ${text}`);
+      }
+      for(const [question,answer]of copy.faq){
+        assert.ok($('details').text().includes(question));
+        assert.ok($('details').text().includes(answer));
+        assert.ok(summary.includes(question)&&summary.includes(answer));
+      }
+      if(page==='index'){
+        assert.ok($('main').children().first().is('#draw-panel'),'Keep the usable game first');
+        const structured=$('script[type="application/ld+json"]').map((_,s)=>JSON.parse($(s).text())).get();
+        const browser=structured.find(s=>s['@type']==='WebApplication'),app=browser.isRelatedTo;
+        assert.equal(browser.operatingSystem,'Any');
+        assert.equal(app.operatingSystem,'iOS, iPadOS');
+        assert.equal(app.inLanguage,language.code);
+        assert.equal(app.description,copy.intro);
+        assert.deepEqual(app.featureList,copy.features.map(([heading,text])=>`${heading}: ${text}`));
+        assert.equal(browser.featureList,undefined,'Do not attach native-only features to the browser game');
+      }
+    }
+  }
+});
 
 test('all 40 Git-published pages have matching local metadata and crawlable links',async()=>{
   const titles=new Set();

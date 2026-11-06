@@ -1,21 +1,39 @@
 # Ghost Draw
 
-> Un jeu de dessin à l’aveugle gratuit dans le navigateur : dessin libre, défis quotidiens, révélation des traits et relectures à partager. Sans téléchargement ni compte.
+> Dessin à l’aveugle gratuit en ligne : traits cachés, défis du jour et surprises. L’app iPhone et iPad ajoute Party à 2–8 sur un appareil et les vidéos de relecture.
 
 Dessinez sans voir les traits, puis laissez le fantôme les révéler un à un. Essayez le sujet du jour ou votre propre idée, et invitez un ami à dessiner la même chose.
 
 Le jeu web nécessite JavaScript. Vous pouvez lire le guide ou télécharger l’app pour iPhone et iPad.
 
+## Ghost Draw sur iPhone et iPad
+
+Dessinez sans voir vos traits, puis laissez le fantôme rejouer votre propre dessin. Sur l’app, le mode Party sur un seul appareil, les règles de dessin et les vidéos de relecture transforment les surprises en fous rires partagés.
+
+### 2 à 8 joueurs, un seul appareil
+
+Passez le même iPhone ou iPad de main en main. Chacun dessine le même sujet dans un temps limité, révèle son résultat et vote pour le dessin d’un autre joueur. Aucun adversaire en ligne ni appareil supplémentaire n’est nécessaire.
+
+### Des règles pour surprendre
+
+Essayez six règles facultatives, comme dessiner d’un seul trait, en miroir ou à l’envers. Choisissez pinceaux, formes et couleurs, puis changez le style des commentaires du fantôme après la révélation. Ce sont vos traits qui sont rejoués, pas une image générée par IA.
+
+### Gardez les dessins, partagez les surprises
+
+Enregistrez vos œuvres dans la galerie, ajoutez des favoris et revoyez-les plus tard. Partagez une carte-image ou une vidéo de relecture muette. Les résultats Party peuvent être partagés en montage et les dessins sélectionnés enregistrés individuellement ; les noms, votes et sessions complètes ne sont pas conservés.
+
+Le dessin, la relecture et Party en local fonctionnent hors ligne avec les sujets intégrés. Les mises à jour des sujets, la sélection et les liens hébergés nécessitent Internet. Créer un lien envoie une copie publique du dessin ; les contributions sont examinées avant publication. La synchronisation privée et facultative de la galerie via iCloud nécessite iCloud et un compte Apple. Aucun compte Ghost Draw séparé n’est requis. Les dessins du navigateur ne sont pas automatiquement synchronisés avec l’app.
+
 ## Pages
 
-- [Dessiner](https://ghost-draw.luopeike.com/fr/): Un jeu de dessin à l’aveugle gratuit dans le navigateur : dessin libre, défis quotidiens, révélation des traits et relectures à partager. Sans téléchargement ni compte.
-- [Aide](https://ghost-draw.luopeike.com/fr/help): Découvrez le dessin libre, les sujets du jour, les traits invisibles, la relecture, la galerie locale et les défis à partager entre amis dans Ghost Draw.
+- [Dessiner](https://ghost-draw.luopeike.com/fr/): Dessin à l’aveugle gratuit en ligne : traits cachés, défis du jour et surprises. L’app iPhone et iPad ajoute Party à 2–8 sur un appareil et les vidéos de relecture.
+- [Aide](https://ghost-draw.luopeike.com/fr/help): Guide web et iPhone/iPad : dessin à l’aveugle, sujets du jour, Party sur un appareil, vidéos muettes, jeu hors ligne et synchronisation iCloud privée en option.
 - [Confidentialité](https://ghost-draw.luopeike.com/fr/privacy-policy): Confidentialité de Ghost Draw : dessins locaux, iCloud facultatif dans l’app, liens publics de relecture et statistiques d’utilisation désactivables.
 - [Assistance](https://ghost-draw.luopeike.com/fr/support)
 
 ## Product summary
 
-- [Français](https://ghost-draw.luopeike.com/fr/index.md): Un jeu de dessin à l’aveugle gratuit dans le navigateur : dessin libre, défis quotidiens, révélation des traits et relectures à partager. Sans téléchargement ni compte.
+- [Français](https://ghost-draw.luopeike.com/fr/index.md): Dessin à l’aveugle gratuit en ligne : traits cachés, défis du jour et surprises. L’app iPhone et iPad ajoute Party à 2–8 sur un appareil et les vidéos de relecture.
 
 ## Optional
 

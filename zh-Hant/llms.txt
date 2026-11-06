@@ -1,21 +1,39 @@
 # 靈魂畫手
 
-> 在瀏覽器免費玩 Ghost Draw：看不見筆跡的繪畫小遊戲，支援自由繪畫、每日挑戰、逐筆揭曉、本機畫廊與回放分享。和朋友挑戰相同題目，無需下載或註冊。
+> 免費線上玩靈魂畫手：隱藏筆跡、每日繪畫挑戰，讓幽靈逐筆揭曉意外結果。網頁版無需下載或註冊；iPhone 與 iPad App 還支援 2–8 人同機派對、趣味規則與回放影片分享。
 
 畫的時候看不見筆跡，召喚幽靈後，每一筆都會逐步揭曉。你可以挑戰每日題目，也可以自由發揮，再邀請朋友畫同一個題目。
 
 網頁版遊戲需要啟用 JavaScript。你仍然可以閱讀使用說明，或下載 iPhone 與 iPad App。
 
+## iPhone 與 iPad 上的靈魂畫手
+
+看不見筆跡，更容易畫出意外。讓幽靈逐筆揭曉你的作品，再用 App 裡的同機派對、趣味規則與回放影片，把驚喜變成大家的笑點。
+
+### 2–8 人，一台裝置輪流玩
+
+傳遞同一台 iPhone 或 iPad，圍繞相同題目限時作畫，再依序揭曉、為別人的作品投票。不需要線上對手，也不用每人準備一台裝置。
+
+### 為每幅畫加點意外
+
+試試一筆到底、鏡像繪畫、倒著畫等六種可選趣味規則，搭配畫筆、形狀與顏色。揭曉後還能切換幽靈的點評風格。回放的是你自己的筆畫，不是 AI 生成的圖片。
+
+### 留下作品，也分享笑點
+
+在畫廊儲存、收藏與回放作品，分享圖片卡片或無聲回放影片。派對結果能拼成一張圖分享，也能逐幅儲存選中的作品；不會儲存玩家暱稱、投票或整場派對紀錄。
+
+使用內建題目時，核心繪畫、回放與同機派對可離線進行。題庫更新、精選與雲端回放連結需要連網。建立連結會上傳一份公開副本；投稿通過審核後才會公開展示。選用的私人 iCloud 畫廊同步需要 iCloud 與 Apple 帳號，無須另建靈魂畫手帳號。瀏覽器作品不會自動同步至 App。
+
 ## Pages
 
-- [繪圖](https://ghost-draw.luopeike.com/zh-Hant/): 在瀏覽器免費玩 Ghost Draw：看不見筆跡的繪畫小遊戲，支援自由繪畫、每日挑戰、逐筆揭曉、本機畫廊與回放分享。和朋友挑戰相同題目，無需下載或註冊。
-- [幫助](https://ghost-draw.luopeike.com/zh-Hant/help): 了解 Ghost Draw 網頁版與 iPhone App：自由繪畫、每日題目、隱藏筆跡、回放、本機畫廊，以及邀請朋友挑戰同題的方法。
-- [隱私](https://ghost-draw.luopeike.com/zh-Hant/privacy-policy): Ghost Draw 隱私說明：瀏覽器本機作品與草稿、App 選用的 iCloud 同步、公開回放分享，以及可關閉與刪除的使用統計。
+- [繪圖](https://ghost-draw.luopeike.com/zh-Hant/): 免費線上玩靈魂畫手：隱藏筆跡、每日繪畫挑戰，讓幽靈逐筆揭曉意外結果。網頁版無需下載或註冊；iPhone 與 iPad App 還支援 2–8 人同機派對、趣味規則與回放影片分享。
+- [幫助](https://ghost-draw.luopeike.com/zh-Hant/help): 了解靈魂畫手網頁版與 iPhone、iPad App：自由盲畫、每日題目、逐筆揭曉、同機派對、無聲回放影片，以及離線玩法與私人 iCloud 同步的差異。
+- [隱私](https://ghost-draw.luopeike.com/zh-Hant/privacy-policy): 靈魂畫手隱私說明：瀏覽器本機作品與草稿、App 選用的 iCloud 同步、公開回放分享，以及可關閉與刪除的使用統計。
 - [支援](https://ghost-draw.luopeike.com/zh-Hant/support)
 
 ## Product summary
 
-- [繁體中文](https://ghost-draw.luopeike.com/zh-Hant/index.md): 在瀏覽器免費玩 Ghost Draw：看不見筆跡的繪畫小遊戲，支援自由繪畫、每日挑戰、逐筆揭曉、本機畫廊與回放分享。和朋友挑戰相同題目，無需下載或註冊。
+- [繁體中文](https://ghost-draw.luopeike.com/zh-Hant/index.md): 免費線上玩靈魂畫手：隱藏筆跡、每日繪畫挑戰，讓幽靈逐筆揭曉意外結果。網頁版無需下載或註冊；iPhone 與 iPad App 還支援 2–8 人同機派對、趣味規則與回放影片分享。
 
 ## Optional
 
