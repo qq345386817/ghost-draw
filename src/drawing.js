@@ -64,12 +64,38 @@ function variableLine(ctx, points, color, multiplier, alpha, cap='round') {
 
 function star(ctx,x,y,size){ctx.beginPath();for(let i=0;i<10;i++){const a=i*Math.PI/5-Math.PI/2,r=i%2?size*.42:size,px=x+Math.cos(a)*r,py=y+Math.sin(a)*r;if(i===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.closePath();}
 
+export const STUDIO_BRUSHES = ['ghostGlow','duotone'];
+const companion={ink:'ghostBlue',ghostBlue:'mint',mint:'gold',tomato:'gold',coral:'magenta',gold:'coral',lime:'ghostBlue',violet:'magenta',magenta:'ghostBlue',midnight:'ghostBlue'};
+
+// Store the gesture once; project effects into ordinary, hosted-player-compatible strokes.
+export function compatibleStrokes(stroke) {
+  if(!STUDIO_BRUSHES.includes(stroke.brush)||!stroke.points?.length)return [stroke];
+  let points=stroke.points;
+  if(points.length>650){const step=(points.length-1)/649;points=Array.from({length:650},(_,i)=>points[Math.round(i*step)]);}
+  const base={...stroke,points},other=companion[stroke.color]||'mint';
+  if(stroke.brush==='ghostGlow')return [
+    {...base,brush:'neon'},
+    {...base,brush:'smooth',color:other,width:Math.max(1,stroke.width*.32)}
+  ];
+  const shifted=direction=>points.map((p,i)=>{
+    const before=points[Math.max(0,i-1)],after=points[Math.min(points.length-1,i+1)];
+    const dx=after.x-before.x,dy=after.y-before.y,length=Math.hypot(dx,dy)||1;
+    return {...p,x:clamp(p.x-direction*dy/length*stroke.width*.24,0,480),y:clamp(p.y+direction*dx/length*stroke.width*.24,0,640)};
+  });
+  return [
+    {...base,brush:'smooth',width:Math.max(1,stroke.width*.78),points:shifted(-1)},
+    {...base,brush:'smooth',color:other,width:Math.max(1,stroke.width*.78),points:shifted(1)}
+  ];
+}
+
 export function drawStroke(ctx, stroke) {
   if(!stroke.points?.length) return;
+  if(STUDIO_BRUSHES.includes(stroke.brush)){for(const layer of compatibleStrokes(stroke))drawStroke(ctx,layer);return;}
   const color=COLORS[stroke.color]||COLORS.ink, width=stroke.width||7;
   ctx.save();ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle=color;ctx.fillStyle=color;ctx.lineWidth=width;
   const points=stroke.points;
   if(stroke.tool==='star') {
+    if(stroke.brush==='neon'){ctx.shadowBlur=width*2;ctx.shadowColor=color;}
     let previous=null;
     for(const p of points) {if(previous&&Math.hypot(p.x-previous.x,p.y-previous.y)<Math.max(12,width*2))continue;star(ctx,p.x,p.y,Math.max(7,width*1.3));ctx.stroke();previous=p;}
   } else if(stroke.tool==='circle'||stroke.tool==='square') {
@@ -121,15 +147,17 @@ export function dailyChallenge(catalog, date = new Date()) {
 export function replayDuration(pointCount) { return Math.min(6000,Math.max(2200,pointCount*12)); }
 
 export function makeReplayPayload(record, locale, copy) {
+  if(record.strokes.reduce((n,s)=>n+compatibleStrokes(s).length,0)>180)throw new Error('too_large');
   let tolerance=.35;
   for(let attempt=0;attempt<9;attempt++) {
-    const strokes=record.strokes.map(s=>{
+    const strokes=record.strokes.flatMap(s=>{
+      if(STUDIO_BRUSHES.includes(s.brush))return compatibleStrokes(s).map(layer=>({width:layer.width,color:layer.color,tool:layer.tool,brush:layer.brush,points:layer.points.map(p=>({x:p.x,y:p.y,t:p.t}))}));
       let points=s.tool==='pen'||s.tool==='star'?simplify(s.points,tolerance,true):s.points;
       if(points.length>650){const step=(points.length-1)/649;points=Array.from({length:650},(_,i)=>points[Math.round(i*step)]);}
-      return {width:s.width,color:s.color,tool:s.tool,brush:s.brush,points:points.map(p=>({x:p.x,y:p.y,t:p.t}))};
+      return [{width:s.width,color:s.color,tool:s.tool,brush:s.brush,points:points.map(p=>({x:p.x,y:p.y,t:p.t}))}];
     });
     const payload={title:record.title||copy.defaultTitle,prompt:record.prompt||record.title||copy.defaultTitle,tag:record.tag||copy.free,
-      comment:copy.verdict,persona:'friendly',locale,challengeID:record.challengeID||'free-drawing',canvas:record.canvas||SOURCE_SIZE,strokes};
+      comment:record.mode==='paint'?copy.paintingVerdict:copy.verdict,persona:'friendly',locale,challengeID:record.challengeID||'free-drawing',canvas:record.canvas||SOURCE_SIZE,strokes};
     const bytes=new TextEncoder().encode(JSON.stringify(payload)).length;
     if(bytes<=180000&&strokes.reduce((n,s)=>n+s.points.length,0)<=20000) return payload;
     tolerance*=2;

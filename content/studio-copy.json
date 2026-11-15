@@ -1,0 +1,122 @@
+{
+  "en": {
+    "paint": "Doodle",
+    "blind": "Blind challenge",
+    "finishPainting": "Finish",
+    "ghostGlow": "Ghost glow",
+    "duotone": "Two-tone ink",
+    "visibleInk": "Ink visible",
+    "paintingTitle": "My doodle",
+    "paintingVerdict": "A little scribble, entirely yours."
+  },
+  "zh-Hans": {
+    "paint": "随手画",
+    "blind": "盲画挑战",
+    "finishPainting": "完成画作",
+    "ghostGlow": "幽光墨迹",
+    "duotone": "双色墨迹",
+    "visibleInk": "笔迹可见",
+    "paintingTitle": "我的涂鸦",
+    "paintingVerdict": "随手几笔，也有自己的样子。"
+  },
+  "zh-Hant": {
+    "paint": "隨手畫",
+    "blind": "盲畫挑戰",
+    "finishPainting": "完成作品",
+    "ghostGlow": "幽光筆跡",
+    "duotone": "雙色筆跡",
+    "visibleInk": "筆跡可見",
+    "paintingTitle": "我的塗鴉",
+    "paintingVerdict": "隨手幾筆，也有自己的樣子。"
+  },
+  "ja": {
+    "paint": "らくがき",
+    "blind": "ブラインド",
+    "finishPainting": "完成",
+    "ghostGlow": "ゴーストの光",
+    "duotone": "2色インク",
+    "visibleInk": "線を表示中",
+    "paintingTitle": "私のらくがき",
+    "paintingVerdict": "何気ない線にも、あなたらしさ。"
+  },
+  "ko": {
+    "paint": "자유 낙서",
+    "blind": "블라인드 도전",
+    "finishPainting": "완성",
+    "ghostGlow": "유령빛 잉크",
+    "duotone": "두 가지 색 잉크",
+    "visibleInk": "선이 보여요",
+    "paintingTitle": "나의 낙서",
+    "paintingVerdict": "가볍게 그린 선에도 나만의 느낌이 있어요."
+  },
+  "de": {
+    "paint": "Kritzeln",
+    "blind": "Blind zeichnen",
+    "finishPainting": "Fertig",
+    "ghostGlow": "Geisterleuchten",
+    "duotone": "Zweifarbige Tinte",
+    "visibleInk": "Linien sichtbar",
+    "paintingTitle": "Meine Kritzelei",
+    "paintingVerdict": "Ein paar Linien, ganz auf deine Art."
+  },
+  "fr": {
+    "paint": "Gribouiller",
+    "blind": "Défi à l’aveugle",
+    "finishPainting": "Terminer",
+    "ghostGlow": "Lueur fantôme",
+    "duotone": "Encre bicolore",
+    "visibleInk": "Traits visibles",
+    "paintingTitle": "Mon gribouillage",
+    "paintingVerdict": "Quelques traits, et déjà ta touche à toi."
+  },
+  "es": {
+    "paint": "Garabatear",
+    "blind": "Dibujo a ciegas",
+    "finishPainting": "Terminar",
+    "ghostGlow": "Brillo fantasma",
+    "duotone": "Tinta de dos tonos",
+    "visibleInk": "Trazos visibles",
+    "paintingTitle": "Mi garabato",
+    "paintingVerdict": "Unos trazos, con tu propio estilo."
+  },
+  "pt-BR": {
+    "paint": "Rabiscar",
+    "blind": "Desafio às cegas",
+    "finishPainting": "Concluir",
+    "ghostGlow": "Brilho fantasma",
+    "duotone": "Tinta de duas cores",
+    "visibleInk": "Traços visíveis",
+    "paintingTitle": "Meu rabisco",
+    "paintingVerdict": "Alguns traços, do seu jeito."
+  },
+  "ru": {
+    "paint": "Рисовать",
+    "blind": "Вслепую",
+    "finishPainting": "Готово",
+    "ghostGlow": "Призрачное сияние",
+    "duotone": "Двухцветные чернила",
+    "visibleInk": "Линии видны",
+    "paintingTitle": "Мой рисунок",
+    "paintingVerdict": "Несколько линий, и уже твой собственный стиль."
+  },
+  "hi": {
+    "paint": "मनचाहा चित्र",
+    "blind": "बिना देखे चुनौती",
+    "finishPainting": "पूरा करें",
+    "ghostGlow": "भूतिया चमक",
+    "duotone": "दो रंगों की स्याही",
+    "visibleInk": "स्याही दिख रही है",
+    "paintingTitle": "मेरा मनचाहा चित्र",
+    "paintingVerdict": "थोड़ी टेढ़ी-मेढ़ी रेखाएँ, लेकिन पूरी तरह आपकी।"
+  },
+  "ar": {
+    "paint": "رسم حر",
+    "blind": "تحدٍ دون رؤية",
+    "finishPainting": "إنهاء",
+    "ghostGlow": "وهج الشبح",
+    "duotone": "حبر بلونين",
+    "visibleInk": "الحبر ظاهر",
+    "paintingTitle": "رسمتي الحرة",
+    "paintingVerdict": "خربشة صغيرة، لكنها لك وحدك."
+  }
+}

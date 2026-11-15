@@ -12,7 +12,7 @@ export async function resultImage(record,copy,config){
   lines.forEach((line,i)=>ctx.fillText(line,20,36+i*28));
   const image=document.createElement('canvas');image.width=648;image.height=864;renderArtwork(image,record,{fit:.92});
   ctx.drawImage(image,18,90,324,432);ctx.fillStyle='#5f6874';ctx.font='14px system-ui,sans-serif';
-  ctx.fillText(config.appName,20,549);wrap(ctx,copy.verdict,320).slice(0,2).forEach((line,i)=>ctx.fillText(line,20,570+i*18));
+  ctx.fillText(config.appName,20,549);wrap(ctx,record.mode==='paint'?copy.paintingVerdict:copy.verdict,320).slice(0,2).forEach((line,i)=>ctx.fillText(line,20,570+i*18));
   return new Promise(resolve=>canvas.toBlob(blob=>resolve(new File([blob],filename(record.title)+'.png',{type:'image/png'})),'image/png'));
 }
 

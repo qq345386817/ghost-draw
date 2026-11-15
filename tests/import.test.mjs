@@ -28,7 +28,7 @@ test('App import preserves independent website copy and needs no legacy Ruby ren
     await writeFile(path.join(app,'GhostDraw/FeaturedCatalog/featured.json'),JSON.stringify({items:[]}));
     for(let attempt=0;attempt<2;attempt++){
       const {stdout}=await exec(process.execPath,[path.join(site,'scripts/import-app-content.mjs'),app]);
-      assert.match(stdout,/Imported 10 website locales/);
+      assert.ok(stdout.includes(`Imported ${languages.length} website locales`));
       assert.equal(await readFile(path.join(site,'content/site-copy.json'),'utf8'),original);
     }
     const imported=JSON.parse(await readFile(path.join(site,'content/ui-native.json'),'utf8'));

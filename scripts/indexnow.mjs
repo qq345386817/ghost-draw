@@ -6,8 +6,9 @@ import {load} from 'cheerio';
 export const SITE='https://ghost-draw.luopeike.com';
 export const ENDPOINT='https://api.indexnow.org/indexnow';
 export const KEY_FILE='fac5ab115cb18f45db961c47cdde2f7b.txt';
-export const MAX_URLS=40;
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const localeRegistry=JSON.parse(await readFile(path.join(root,'content/site-copy.json'),'utf8'));
+export const MAX_URLS=localeRegistry.length*4;
 const decode=bytes=>new TextDecoder('utf-8',{fatal:true}).decode(bytes);
 
 export function parseOptions(args){
@@ -18,7 +19,7 @@ export function parseOptions(args){
     else if(args[i]==='--help')options.help=true;
     else throw new Error('Invalid arguments. Use --help; --submit is required to send.');
   }
-  if(options.urls.length>MAX_URLS)throw new Error('At most 40 --url arguments are allowed.');
+  if(options.urls.length>MAX_URLS)throw new Error(`At most ${MAX_URLS} --url arguments are allowed.`);
   return options;
 }
 
@@ -35,7 +36,7 @@ export function sitemapURLs(xml,canonicalURLs){
   const $=load(xml,{xml:true}),urlset=$.root().children();
   if(urlset.length!==1||urlset[0].name!=='urlset'||urlset.attr('xmlns')!=='http://www.sitemaps.org/schemas/sitemap/0.9')throw new Error('Expected a sitemap urlset.');
   const entries=urlset.children('url');
-  if(entries.length!==MAX_URLS||urlset.children().length!==MAX_URLS||new Set(canonicalURLs).size!==MAX_URLS)throw new Error('Expected exactly 40 canonical sitemap URLs.');
+  if(entries.length!==MAX_URLS||urlset.children().length!==MAX_URLS||new Set(canonicalURLs).size!==MAX_URLS)throw new Error(`Expected exactly ${MAX_URLS} canonical sitemap URLs.`);
   const urls=entries.map((_,entry)=>{
     const loc=$(entry).children('loc');
     if(loc.length!==1||loc.children().length)throw new Error('Each sitemap entry needs one text loc.');
@@ -48,7 +49,7 @@ export function sitemapURLs(xml,canonicalURLs){
 }
 
 export async function createPlan({directory=root,urls=[]}={}){
-  if(urls.length>MAX_URLS)throw new Error('At most 40 URLs are allowed.');
+  if(urls.length>MAX_URLS)throw new Error(`At most ${MAX_URLS} URLs are allowed.`);
   const languages=JSON.parse(await readFile(path.join(directory,'content/site-copy.json'),'utf8'));
   const canonicalURLs=languages.flatMap(language=>{
     if(typeof language.path!=='string'||!/^(?:[a-z]{2}(?:-[A-Za-z]+)?)?$/.test(language.path))throw new Error('Invalid locale path.');
@@ -86,7 +87,7 @@ async function verifyLiveKey(plan,fetchImpl){
 export async function run(args,{directory=root,fetchImpl=fetch,log=console.log}={}){
   const options=parseOptions(args);
   if(options.help){
-    log('Usage: npm run indexnow -- [--submit] [--url CANONICAL_URL ...]\nDefault: offline dry run of all 40 sitemap URLs. Repeat --url to select changed pages only.\n--submit: verify the published root key, then send one POST. No automatic retries.');
+    log(`Usage: npm run indexnow -- [--submit] [--url CANONICAL_URL ...]\nDefault: offline dry run of all ${MAX_URLS} sitemap URLs. Repeat --url to select changed pages only.\n--submit: verify the published root key, then send one POST. No automatic retries.`);
     return;
   }
   const plan=await createPlan({directory,urls:options.urls});

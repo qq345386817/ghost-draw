@@ -1,4 +1,4 @@
-import {renderArtwork,validateReplay} from './drawing.js';
+import {renderArtwork,validateReplay,compatibleStrokes} from './drawing.js';
 import {button,node,openDialog,confirmAction,toast} from './ui.js';
 const cache=new Map();
 export async function loadPayload(url){
@@ -10,6 +10,7 @@ export async function loadPayload(url){
 }
 function visible(strokes,count){const output=[];for(const stroke of strokes){if(count<=0)break;const n=Math.min(count,stroke.points.length);count-=n;if(n===stroke.points.length)output.push(stroke);else output.push({...stroke,points:stroke.points.slice(0,n)});}return output;}
 export function playOnCanvas(canvas,record,onEnd,{loop=false}={}){
+  record={...record,strokes:record.strokes.flatMap(compatibleStrokes)};
   const count=record.strokes.reduce((n,s)=>n+s.points.length,0),duration=Math.max(4200,Math.min(9000,count*85));
   let id,start=performance.now(),stopped=false;
   const motion=matchMedia('(prefers-reduced-motion: reduce)').matches;

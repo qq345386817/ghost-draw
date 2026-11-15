@@ -54,3 +54,5 @@ This website also uses Cloudflare Web Analytics for page visits and loading perf
 - [Русский](https://ghost-draw.luopeike.com/ru/llms.txt): Рисуйте вслепую бесплатно в браузере: скрытые линии, темы дня и неожиданный результат. В приложении для iPhone и iPad: 2–8 игроков на одном устройстве и видеоповторы.
 - [简体中文](https://ghost-draw.luopeike.com/zh-Hans/llms.txt): 免费在线玩幽灵画手：隐藏笔迹、每日绘画挑战，让幽灵逐笔揭晓意外结果。网页版无需下载或注册；iPhone 与 iPad App 还支持 2–8 人同机派对、整活规则与回放视频分享。
 - [繁體中文](https://ghost-draw.luopeike.com/zh-Hant/llms.txt): 免費線上玩靈魂畫手：隱藏筆跡、每日繪畫挑戰，讓幽靈逐筆揭曉意外結果。網頁版無需下載或註冊；iPhone 與 iPad App 還支援 2–8 人同機派對、趣味規則與回放影片分享。
+- [हिन्दी](https://ghost-draw.luopeike.com/hi/llms.txt): ऑनलाइन मुफ़्त बिना देखे चित्र बनाएँ: छिपी स्याही, रोज़ के विषय और मज़ेदार खुलासे। iPhone और iPad ऐप में 2–8 खिलाड़ियों की स्थानीय पार्टी और रीप्ले वीडियो पाएँ।
+- [العربية](https://ghost-draw.luopeike.com/ar/llms.txt): العب الرسم دون رؤية مجانًا: حبر مخفي ومواضيع يومية ومفاجآت مرحة. احصل على تطبيق iPhone وiPad لحفلات محلية من 2–8 لاعبين وفيديوهات الإعادة.

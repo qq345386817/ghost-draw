@@ -11,12 +11,12 @@ export class WebAnalytics {
     this.config=config;this.enabled=read(ENABLED,true)!==false;this.sessionID=crypto.randomUUID();this.lastEvent=Date.now();
     const stored=read(QUEUE,[]);this.queue=(Array.isArray(stored)?stored:[]).filter(e=>e&&uuid(e.id)&&uuid(e.sessionID)&&safe(e.name,e.properties)&&Date.now()-Date.parse(e.occurredAt)<30*86400000).slice(-200).map(e=>({id:e.id,name:e.name,occurredAt:e.occurredAt,properties:e.properties,sessionID:e.sessionID,locale:e.locale||config.locale,version:e.version||config.version,build:e.build||config.build}));
     const installation=read(INSTALL,null);this.installationID=uuid(installation)?installation:crypto.randomUUID();write(INSTALL,this.installationID);
-    this.production=location.hostname==='ghost-draw.luopeike.com'&&!navigator.webdriver;
+    this.production=location.hostname==='ghost-draw.luopeike.com'&&!navigator.webdriver&&!config.experiment;
     document.addEventListener('visibilitychange',()=>{if(document.hidden)this.flush(true);});
     if(!this.enabled){this.queue=[];write(QUEUE,[]);}
   }
   start() {
-    if(!this.enabled) return;
+    if(!this.enabled||this.config.experiment) return;
     if(!read(FIRST,false)){this.track('first_open',{entry:'fresh'});write(FIRST,true);}
     this.track('app_open');
   }

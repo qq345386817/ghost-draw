@@ -24,7 +24,7 @@ async function fixture(t){
   return directory;
 }
 
-test('default dry run is offline, bounded to the 40 canonical sitemap URLs',async()=>{
+test('default dry run is offline, bounded to the registered canonical sitemap URLs',async()=>{
   const plan=await createPlan();
   assert.equal(plan.urlList.length,MAX_URLS);
   assert.deepEqual(Object.keys(plan).sort(),['host','key','keyLocation','urlList']);
@@ -32,7 +32,7 @@ test('default dry run is offline, bounded to the 40 canonical sitemap URLs',asyn
   assert.equal(plan.keyLocation,`${SITE}/${KEY_FILE}`);
   assert.equal(plan.key,await readKey());
   let requests=0;const logs=[];
-  assert.deepEqual(await run([],{fetchImpl:async()=>{requests++;throw new Error('Must be offline');},log:line=>logs.push(line)}),{status:'dry-run',count:40});
+  assert.deepEqual(await run([],{fetchImpl:async()=>{requests++;throw new Error('Must be offline');},log:line=>logs.push(line)}),{status:'dry-run',count:MAX_URLS});
   assert.equal(requests,0);
   assert.match(logs[0],/offline; nothing sent/);
   assert.deepEqual(logs[1].split('\n'),plan.urlList);
@@ -43,9 +43,9 @@ test('only exact sitemap URLs can be selected and repeated selections are dedupl
   assert.deepEqual((await createPlan({urls:[url,url]})).urlList,[url]);
   const invalid=[SITE+'/?replay=private',SITE+'/?title=private',SITE+'/help#private',SITE+'/help.html',SITE+'/help/',SITE+'/index.html',SITE+'/content/replays/private.json',SITE+'/src/app.js',SITE+'/scripts/indexnow.mjs',SITE+'/llms.txt',SITE+'/private','https://example.com/','http://ghost-draw.luopeike.com/','https://private@ghost-draw.luopeike.com/'];
   for(const url of invalid)await assert.rejects(createPlan({urls:[url]}),/Only exact canonical sitemap URLs/);
-  await assert.rejects(createPlan({urls:Array(41).fill(url)}),/At most 40/);
+  await assert.rejects(createPlan({urls:Array(MAX_URLS+1).fill(url)}),new RegExp(`At most ${MAX_URLS}`));
   assert.deepEqual(parseOptions(['--submit','--url',url]),{submit:true,urls:[url],help:false});
-  for(const args of [['--url'],['--submit=true'],['--submit','--submit'],['--dry-run'],[url],Array(41).fill(['--url',url]).flat()])assert.throws(()=>parseOptions(args));
+  for(const args of [['--url'],['--submit=true'],['--submit','--submit'],['--dry-run'],[url],Array(MAX_URLS+1).fill(['--url',url]).flat()])assert.throws(()=>parseOptions(args));
 });
 
 test('XML sitemap structure, allowlist, uniqueness and count are enforced',async()=>{
@@ -60,9 +60,9 @@ test('XML sitemap structure, allowlist, uniqueness and count are enforced',async
   const duplicate=load(xml,{xml:true});duplicate('loc').first().text(urls[1]);
   assert.throws(()=>sitemapURLs(duplicate.xml(),urls),/unique/);
   const missing=load(xml,{xml:true});missing('url').first().remove();
-  assert.throws(()=>sitemapURLs(missing.xml(),urls),/exactly 40/);
+  assert.throws(()=>sitemapURLs(missing.xml(),urls),new RegExp(`exactly ${MAX_URLS}`));
   const extra=load(xml,{xml:true});extra('urlset').append('<url><loc>'+SITE+'/</loc></url>');
-  assert.throws(()=>sitemapURLs(extra.xml(),urls),/exactly 40/);
+  assert.throws(()=>sitemapURLs(extra.xml(),urls),new RegExp(`exactly ${MAX_URLS}`));
   const nested=load(xml,{xml:true});nested('loc').first().html('<private>'+SITE+'/</private>');
   assert.throws(()=>sitemapURLs(nested.xml(),urls),/one text loc/);
   assert.throws(()=>sitemapURLs('<sitemapindex/>',urls),/urlset/);
@@ -130,7 +130,7 @@ test('error responses and network failures fail honestly with no retries',async(
 test('CLI works outside the repository; argument errors exit nonzero without disclosing input',async()=>{
   const script=new URL('../scripts/indexnow.mjs',import.meta.url).pathname;
   const {stdout}=await promisify(execFile)(process.execPath,[script],{cwd:'/tmp'});
-  assert.match(stdout,/Dry run \(offline; nothing sent\): 40/);
+  assert.ok(stdout.includes(`Dry run (offline; nothing sent): ${MAX_URLS}`));
   await assert.rejects(promisify(execFile)(process.execPath,[script,'--private=user-data'],{cwd:'/tmp'}),error=>{
     assert.equal(error.code,1);assert.match(error.stderr,/Invalid arguments/);assert.ok(!error.stderr.includes('user-data'));return true;
   });

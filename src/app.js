@@ -1,11 +1,16 @@
-import {BlindDrawing,COLORS,SOURCE_SIZE,renderArtwork,dailyChallenge,replayDuration} from './drawing.js';
+import {BlindDrawing,COLORS,SOURCE_SIZE,renderArtwork,dailyChallenge,replayDuration,compatibleStrokes,STUDIO_BRUSHES} from './drawing.js';
 import {drawingStorage as storage} from './storage.js';
 import {WebAnalytics} from './analytics.js';
 import {Sharing,downloadData} from './sharing.js';
 import {Library,loadPayload} from './library.js';
 import {button,node,openDialog,toast,installIcons} from './ui.js';
+import studioCopy from '../content/studio-copy.json';
 
 const {config,copy,game}=JSON.parse(document.getElementById('game-config').textContent);
+Object.assign(copy,studioCopy[config.locale]);
+const savedDraft=game?storage.loadDraft().catch(()=>null):Promise.resolve(null);
+const initialDraft=await savedDraft;
+config.experiment=game&&(new URLSearchParams(location.search).get('studio')==='1'||initialDraft?.mode==='paint');
 if(location.hostname!=='ghost-draw.luopeike.com')config.siteURL=new URL(location.pathname,location.origin).href;
 installIcons();
 const analytics=new WebAnalytics(config);analytics.start();
@@ -21,7 +26,6 @@ document.getElementById('privacy-button').addEventListener('click',()=>{
   },{symbol:'trash'}));
   openDialog(copy.privacyStats,body,copy);
 });
-const savedDraft=game?storage.loadDraft().catch(()=>null):Promise.resolve(null);
 if(game)await startGame();
 
 async function startGame(){
@@ -45,8 +49,19 @@ async function startGame(){
     if(challenge)reset('featured',challenge);else{reset('free');title.value=customTitle||'';}
     tab('draw');analytics.track('challenge_start',{mode:challenge?'featured':'free'});
   },prompts);
-  let mode='free',prompt=null,record=null,drawStarted=false,secondDrawing=false,tool='pen',color='ghostBlue',saveTimer,saveChain=Promise.resolve(),animation,playing=false;
-  const render=()=>renderArtwork(canvas,{canvas:SOURCE_SIZE,strokes:drawing.strokes},{fit:1,blank:drawing.state==='drawing'});
+  if(config.experiment){
+    document.body.classList.add('studio-experiment');
+    const robots=document.createElement('meta');robots.name='robots';robots.content='noindex,nofollow';document.head.append(robots);
+    const paint=button(copy.paint,null);paint.dataset.mode='paint';document.querySelector('.mode-controls').prepend(paint);
+    document.querySelector('[data-mode=free]').textContent=copy.blind;
+    const brushes=document.getElementById('brush'),group=node('optgroup');group.label=copy.paint;
+    for(const value of STUDIO_BRUSHES)group.append(new Option(copy[value],value));
+    brushes.prepend(group);brushes.value='ghostGlow';
+    document.getElementById('size').value='11';const output=document.getElementById('brush-size');if(output)output.value='11';
+  }
+  let mode='free',prompt=null,record=null,drawStarted=false,secondDrawing=false,tool='pen',color='ghostBlue',saveTimer,saveChain=Promise.resolve(),animation,paintFrame,playing=false;
+  const render=()=>renderArtwork(canvas,{canvas:SOURCE_SIZE,strokes:drawing.active?[...drawing.strokes,drawing.active]:drawing.strokes},{fit:1,blank:drawing.state==='drawing'&&mode!=='paint'});
+  const requestPaint=()=>{if(mode==='paint'&&!paintFrame)paintFrame=requestAnimationFrame(()=>{paintFrame=null;render();});};
   const undo=button(copy.undo,()=>{drawing.undo();changed();},{symbol:'undo',iconOnly:true});
   const redo=button(copy.redo,()=>{drawing.redo();changed();},{symbol:'redo',iconOnly:true});
   const clear=button(copy.clear,async()=>{if(drawing.strokes.length&&await ask(copy.clearConfirm,copy.clear)){drawing.clear();changed();}},{symbol:'trash',iconOnly:true});
@@ -60,30 +75,32 @@ async function startGame(){
   function display(){
     const revealed=drawing.state==='revealed',busy=drawing.state==='revealing';
     document.getElementById('draw-panel').dataset.state=drawing.state;
+    document.getElementById('draw-panel').dataset.drawingMode=mode;
     for(const element of document.querySelectorAll('#tools button,#tools select,#tools input,[data-mode]'))element.disabled=busy||revealed;
     undo.disabled=busy||revealed||!drawing.strokes.length;redo.disabled=busy||revealed||!drawing.redoStack.length;clear.disabled=busy||revealed||!drawing.strokes.length;
-    title.readOnly=mode!=='free'||busy||revealed;
-    status.textContent=busy?copy.revealing:revealed?copy.revealed:drawing.strokes.length?`${copy.hiddenInk} · ${drawing.strokes.length===1?copy.strokeOne:copy.strokeCount.replace('{count}',drawing.strokes.length)}`:'';
+    title.readOnly=!['free','paint'].includes(mode)||busy||revealed;
+    status.textContent=busy?(mode==='paint'?copy.finishPainting:copy.revealing):revealed?copy.revealed:drawing.strokes.length?`${mode==='paint'?copy.visibleInk:copy.hiddenInk} · ${drawing.strokes.length===1?copy.strokeOne:copy.strokeCount.replace('{count}',drawing.strokes.length)}`:'';
     actions.replaceChildren();
     if(revealed){actions.append(button(copy.share,()=>sharing.showResult(record),{symbol:'share',primary:true}),button(copy.replay,()=>play(false),{symbol:'play',iconOnly:true}),button(copy.again,async()=>{if(await canReset())reset(mode,prompt);},{symbol:'pencil'}));}
-    else{const reveal=button(copy.reveal,()=>play(true),{symbol:busy?'loading':'play',primary:true});reveal.disabled=busy||!drawing.strokes.length;reveal.id='reveal';actions.append(reveal);}
+    else{const paint=mode==='paint';const reveal=button(paint?copy.finishPainting:copy.reveal,()=>paint?finishPainting():play(true),{symbol:busy?'loading':paint?'check':'play',primary:true});reveal.disabled=busy||!drawing.strokes.length;reveal.id=paint?'finish-painting':'reveal';actions.append(reveal);}
   }
   function persistDraft(){
     if(drawing.state!=='drawing')return;
     const draft={mode,prompt,title:title.value,strokes:structuredClone(drawing.strokes),updatedAt:Date.now()};
     saveChain=saveChain.catch(()=>{}).then(()=>draft.strokes.length?storage.saveDraft(draft):storage.discardDraft()).catch(()=>toast(copy.storageError));
   }
-  function changed(){display();render();clearTimeout(saveTimer);saveTimer=setTimeout(persistDraft,200);}
+  function changed(){cancelAnimationFrame(paintFrame);paintFrame=null;display();render();clearTimeout(saveTimer);saveTimer=setTimeout(persistDraft,200);}
   title.addEventListener('input',()=>{clearTimeout(saveTimer);saveTimer=setTimeout(persistDraft,300);});
   function reset(nextMode='free',nextPrompt=null,persist=true){
     if(drawing.state==='revealed')secondDrawing=true;
-    cancelAnimationFrame(animation);drawing.clear();playing=false;mode=nextMode;prompt=nextPrompt;record=null;drawStarted=false;
-    title.value=prompt?.prompt||'';title.hidden=mode!=='free';title.closest('.title-field').hidden=mode!=='free';
-    const p=document.getElementById('prompt');p.textContent=prompt?.prompt||'';p.hidden=mode==='free';
+    cancelAnimationFrame(animation);cancelAnimationFrame(paintFrame);paintFrame=null;drawing.clear();playing=false;mode=nextMode;prompt=nextPrompt;record=null;drawStarted=false;
+    const freeForm=['free','paint'].includes(mode);
+    title.value=prompt?.prompt||'';title.placeholder=mode==='paint'?copy.paintingTitle:copy.defaultTitle;title.hidden=!freeForm;title.closest('.title-field').hidden=!freeForm;
+    const p=document.getElementById('prompt');p.textContent=prompt?.prompt||'';p.hidden=freeForm;
     for(const b of document.querySelectorAll('[data-mode]'))b.setAttribute('aria-pressed',String(b.dataset.mode===mode));
     display();render();if(persist){clearTimeout(saveTimer);persistDraft();}
   }
-  async function canReset(){if(playing)return false;if(drawing.state==='drawing'&&drawing.strokes.length)return ask(copy.clearConfirm,copy.discard);return true;}
+  async function canReset(){if(playing)return false;if(drawing.active){drawing.finish();cursor.hidden=true;changed();}if(drawing.state==='drawing'&&drawing.strokes.length)return ask(copy.clearConfirm,copy.discard);return true;}
   for(const b of document.querySelectorAll('[data-mode]'))b.addEventListener('click',async()=>{
     if(b.dataset.mode===mode||!await canReset())return;
     reset(b.dataset.mode,b.dataset.mode==='daily'?dailyChallenge(catalog):null);
@@ -93,23 +110,34 @@ async function startGame(){
   canvas.addEventListener('pointerdown',e=>{
     if(drawing.state!=='drawing'||e.button>0||drawing.active)return;e.preventDefault();
     if(!drawing.begin(point(e),{tool,color,brush:document.getElementById('brush').value,width:Number(document.getElementById('size').value)},performance.now()))return;
-    canvas.setPointerCapture(e.pointerId);showCursor(e);
+    canvas.setPointerCapture(e.pointerId);showCursor(e);requestPaint();
     if(!drawStarted){drawStarted=true;analytics.track('drawing_start',{mode});if(secondDrawing){analytics.track('draw_again',{mode});secondDrawing=false;}}display();
   });
-  canvas.addEventListener('pointermove',e=>{if(!drawing.active)return;for(const event of e.getCoalescedEvents?.()||[e])drawing.append(point(event),performance.now());showCursor(e);});
+  canvas.addEventListener('pointermove',e=>{if(!drawing.active)return;const events=e.getCoalescedEvents?.();for(const event of events?.length?events:[e])drawing.append(point(event),performance.now());showCursor(e);requestPaint();});
   function finish(e){if(drawing.finish()){cursor.hidden=true;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);changed();}}
   canvas.addEventListener('pointerup',finish);canvas.addEventListener('pointercancel',finish);canvas.addEventListener('lostpointercapture',finish);
-  document.addEventListener('visibilitychange',()=>{if(document.hidden){if(drawing.active)drawing.finish();persistDraft();}});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){if(drawing.active){drawing.finish();changed();}persistDraft();}});
+  async function saveResult(){
+    const fallback=mode==='paint'?copy.paintingTitle:copy.defaultTitle;
+    record={id:crypto.randomUUID(),title:title.value.trim()||prompt?.prompt||fallback,prompt:prompt?.prompt||title.value.trim()||fallback,challengeID:prompt?.id||'free-drawing',tag:prompt?.tag||(mode==='paint'?copy.paint:copy.free),mode,canvas:SOURCE_SIZE,strokes:structuredClone(drawing.strokes),createdAt:Date.now()};
+    await saveChain;
+    try{await storage.save(record);await storage.discardDraft();}catch{toast(copy.storageError);}
+  }
+  async function finishPainting(){
+    if(drawing.active)drawing.finish();
+    if(playing||!drawing.strokes.length)return;playing=true;cursor.hidden=true;clearTimeout(saveTimer);cancelAnimationFrame(paintFrame);paintFrame=null;
+    drawing.state='revealing';display();render();await saveResult();drawing.state='revealed';playing=false;render();display();
+  }
   async function play(first){
-    if(playing||!drawing.strokes.length)return;playing=true;cursor.hidden=true;clearTimeout(saveTimer);drawing.state='revealing';display();
+    if(drawing.active)drawing.finish();
+    if(playing||!drawing.strokes.length)return;playing=true;cursor.hidden=true;clearTimeout(saveTimer);cancelAnimationFrame(paintFrame);paintFrame=null;drawing.state='revealing';display();
     if(first){
-      record={id:crypto.randomUUID(),title:title.value.trim()||prompt?.prompt||copy.defaultTitle,prompt:prompt?.prompt||title.value.trim()||copy.defaultTitle,challengeID:prompt?.id||'free-drawing',tag:prompt?.tag||copy.free,mode,canvas:SOURCE_SIZE,strokes:structuredClone(drawing.strokes),createdAt:Date.now()};
       analytics.track('reveal_start',{mode});
-      await saveChain;
-      try{await storage.save(record);await storage.discardDraft();}catch{toast(copy.storageError);}
+      await saveResult();
     }
-    const start=performance.now(),duration=matchMedia('(prefers-reduced-motion: reduce)').matches?100:replayDuration(drawing.pointCount);
-    function frame(now){const progress=Math.min(1,(now-start)/duration);renderArtwork(canvas,{canvas:SOURCE_SIZE,strokes:drawing.visible(Math.floor(drawing.pointCount*progress))},{fit:1});
+    const playback=new BlindDrawing();playback.restore(drawing.strokes.flatMap(compatibleStrokes));
+    const start=performance.now(),duration=matchMedia('(prefers-reduced-motion: reduce)').matches?100:replayDuration(playback.pointCount);
+    function frame(now){const progress=Math.min(1,(now-start)/duration);renderArtwork(canvas,{canvas:SOURCE_SIZE,strokes:playback.visible(Math.floor(playback.pointCount*progress))},{fit:1});
       if(progress<1)animation=requestAnimationFrame(frame);else{drawing.state='revealed';playing=false;render();display();if(first){analytics.track('reveal_complete',{mode});sharing.showResult(record);}}
     }
     animation=requestAnimationFrame(frame);
@@ -121,10 +149,10 @@ async function startGame(){
   }
   for(const b of document.querySelectorAll('[data-tab]'))b.addEventListener('click',()=>tab(b.dataset.tab));
   library.renderFeatured(document.getElementById('featured-preview'),2);
-  reset('free',null,false);
+  reset(config.experiment?'paint':'free',null,false);
   // Load before offering recovery; never silently switch a new day to an old prompt.
   // reset() above must not remove an existing draft before this read.
-  const draft=await savedDraft;
+  const draft=initialDraft;
   const query=new URLSearchParams(location.search),challenge=prompts.find(p=>p.id===query.get('challenge'));
   if(challenge)reset('featured',challenge);
   else if(draft?.strokes?.length){

@@ -24,7 +24,7 @@ test('CSP permits only the authorized Cloudflare hosts and keeps the other prote
   assert.ok(!policy.includes('unsafe-inline')&&!policy.includes('unsafe-eval')&&!policy.includes('*'));
 });
 
-test('independent Cloudflare statistics are disclosed consistently in all ten languages',async()=>{
+test('independent Cloudflare statistics are disclosed consistently in every language',async()=>{
   const disclosures=new Set();
   for(const language of languages){
     const prefix=language.path?language.path+'/':'',copy=extraCopy[language.code];
@@ -80,7 +80,7 @@ test('native App facts remain localized, visible and separate from browser capab
   }
 });
 
-test('all 40 Git-published pages have matching local metadata and crawlable links',async()=>{
+test('all Git-published pages have matching local metadata and crawlable links',async()=>{
   const titles=new Set();
   for(const language of languages)for(const name of ['index','help','support','privacy-policy']){
     const path=`${language.path?language.path+'/':''}${name}.html`,html=await read(path),$=load(html);
@@ -88,7 +88,8 @@ test('all 40 Git-published pages have matching local metadata and crawlable link
     assert.equal(html,await read('dist/'+path),'Git output is stale: '+path);
     assert.equal($('html').attr('lang'),language.code);
     assert.equal($('link[rel=canonical]').attr('href'),canonical);
-    assert.equal($('link[rel=alternate][hreflang]').length,11);
+    assert.equal($('link[rel=alternate][hreflang]').length,languages.length+1);
+    assert.equal($('html').attr('dir'),language.code==='ar'?'rtl':undefined);
     assert.equal($('h1').length,1,path);
     const title=$('title').text(),description=$('meta[name=description]').attr('content');
     assert.ok(title.length>=6&&title.length<100,path);
@@ -101,7 +102,7 @@ test('all 40 Git-published pages have matching local metadata and crawlable link
     assert.match(script,/^\/assets\/app\.js\?v=[a-f0-9]{12}$/);
     assert.match(style,/^\/assets\/play\.css\?v=[a-f0-9]{12}$/);
     assert.equal(new URL(script,site).search,new URL(style,site).search,'Script and CSS must share the same content version');
-    assert.equal($('footer a[hreflang]').length,10);
+    assert.equal($('footer a[hreflang]').length,languages.length);
     if(name==='index'){
       assert.equal(description,seo[language.code].homeDescription);
       assert.ok($('h1').text().includes(seo[language.code].homeTitle));
@@ -137,7 +138,7 @@ test('llms manifests and Markdown summaries reflect the visible product facts in
 
 test('sitemap, assets, Search Console verification and crawl policy survive Git publishing',async()=>{
   const xml=load(await read('sitemap.xml'),{xml:true}),urls=xml('loc').map((_,el)=>xml(el).text()).get();
-  assert.equal(urls.length,40);assert.equal(new Set(urls).size,40);
+  assert.equal(urls.length,languages.length*4);assert.equal(new Set(urls).size,languages.length*4);
   assert.ok(urls.every(url=>url.startsWith(site+'/')&&!url.includes('?')&&!url.endsWith('.html')));
   const robots=await read('robots.txt'),headers=await read('_headers');
   assert.ok(robots.includes('Allow: /'));assert.ok(robots.includes('Disallow: /*?*replay='));
