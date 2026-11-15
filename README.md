@@ -1,6 +1,6 @@
 # Ghost Draw Web
 
-An independent, local-first blind-drawing game in ten languages. Free/daily drawing, hidden ink, stroke replay, a browser-local gallery, image export and hosted replay links are implemented without an account. It uses the actual App challenge IDs and Featured stroke data, not placeholder illustrations.
+An independent, local-first blind-drawing game in twelve languages, including Hindi (`hi`) and Arabic (`ar`, right-to-left). Free/daily drawing, hidden ink, stroke replay, a browser-local gallery, image export and hosted replay links are implemented without an account. It uses the actual App challenge IDs and Featured stroke data, not placeholder illustrations.
 
 ## Develop
 
@@ -14,6 +14,30 @@ npm run test:e2e
 
 Default local URL: `http://127.0.0.1:8877/zh-Hans/`. Playwright uses the installed macOS Chrome because the Browser plugin was not available during implementation. Test screenshots/results are written under `/tmp`.
 
+### Experimental Doodle Studio
+
+Open `http://127.0.0.1:8877/zh-Hans/?studio=1` for the opt-in prototype. It starts
+with visible ink, Ghost glow and Two-tone ink, while retaining blind/free and
+daily drawing. The normal URL still starts with hidden ink. All twelve languages
+have hand-authored experiment controls. Native App source also includes a Doodle
+mode; the website experiment is not assigned automatically and is not linked from
+the public navigation or sitemap.
+
+Finish saves the drawing to the browser gallery without a forced reveal or result
+modal. Draft recovery asks first and preserves the drawing mode, title and
+gestures. Effects keep one editable gesture per stroke and project into existing
+smooth/neon primitives for hosted sharing; no Worker update or new replay schema
+is required. Local rendering, replay and PNG export use the same projection.
+Oversized link payloads fail visibly without discarding the local drawing; PNG
+export remains available. Existing hosted links are reused.
+
+Prototype sessions do not send first-party production analytics or consume the
+normal first-open attribution flag. This does not control independently injected
+Cloudflare metrics. The prototype has no recruitment or conversion experiment
+results yet: first conduct observed usability sessions, then decide whether to
+add grouped production measurements and change the default experience. Local
+tests mock link uploads and recipient downloads; they do not publish drawings.
+
 `content/` holds independent copies of App translations, prompts and Featured replay JSON. Building this project does not require the parent App repo or network access. When App content changes, run `npm run import:app`; add `-- --refresh-replays` to refresh existing official replay payloads. The importer reads this website's own locale registry from `content/site-copy.json`, preserves its website copy, and imports only native UI strings, challenge catalogs and Featured data. It does not invoke an old parent-repository website renderer. User-created drawings and drafts use IndexedDB; clearing browser/site data removes them. They are not automatically synced with the App or iCloud.
 
 ## Hosting And SEO
@@ -22,7 +46,7 @@ Cloudflare Pages project `ghost-draw`; domain `https://ghost-draw.luopeike.com`.
 
 Run `npm ci` and `npm run build` locally before committing. The builder synchronizes only generated public HTML, CSS/JS assets, the icon, sitemap, robots, 404 page, localized `llms.txt` and Markdown summaries to the tracked root. Commit these generated files together with the source/content changes; pushing triggers the existing automatic release. `dist/` remains an ignored local preview/test copy. Google site-verification files and the favicon directory are preserved in both outputs.
 
-`content/seo.json` is the authoritative ten-language page metadata. `content/app-intro.json` holds hand-authored App descriptions, three feature explanations, availability/privacy boundaries and native-only FAQs in all ten languages. The builder reuses these facts in visible home/help sections, FAQ structured data, the related native SoftwareApplication, Markdown summaries and `llms.txt`. Update these sources rather than editing generated public files. Party and video export are explicitly native App features, not browser capabilities.
+`content/seo.json` is the authoritative twelve-language page metadata. `content/app-intro.json` holds hand-authored App descriptions, three feature explanations, availability/privacy boundaries and native-only FAQs in all twelve languages. The builder reuses these facts in visible home/help sections, FAQ structured data, the related native SoftwareApplication, Markdown summaries and `llms.txt`. Update these sources rather than editing generated public files. Party and video export are explicitly native App features, not browser capabilities.
 
 The playable browser game remains the first screen. Titles, descriptions, visible headings and FAQs cover free blind drawing, daily challenges, stroke reveal and same-prompt sharing, plus the native App's 2–8-player same-device Party, six drawing twists and silent replay videos. Offline bundled prompts, online catalogs/Featured/public links and optional private iCloud sync are distinguished. The site does not claim live multiplayer, AI image generation or automatic browser-to-App sync. All important explanations and links are available without JavaScript, and home keeps a single App Store download button. Canonical URLs use the actual clean documentation routes, not redirecting `.html` URLs. There are no fabricated ratings, keyword stuffing or ranking promises.
 
@@ -30,20 +54,20 @@ The site emits WebPage/WebApplication/FAQ structured data matching visible conte
 
 ### IndexNow
 
-The manual Node CLI follows the [official IndexNow protocol](https://www.indexnow.org/documentation). It uses the existing XML parser and checks all 40 sitemap URLs against the locale routes and public HTML canonicals. Only exact canonical sitemap URLs are permitted; replay/query URLs, fragments, private data, assets and other hosts cannot be submitted. Nothing is added to browser scripts, tracking, Git hooks or scheduled jobs. No new dependencies are needed. Node 24 is supported.
+The manual Node CLI follows the [official IndexNow protocol](https://www.indexnow.org/documentation). It uses the existing XML parser and checks all sitemap URLs (currently 48) against the locale routes and public HTML canonicals. The count follows the locale registry. Only exact canonical sitemap URLs are permitted; replay/query URLs, fragments, private data, assets and other hosts cannot be submitted. Nothing is added to browser scripts, tracking, Git hooks or scheduled jobs. No new dependencies are needed. Node 24 is supported.
 
 The durable UTF-8 ownership file is `fac5ab115cb18f45db961c47cdde2f7b.txt` at the repository root, published at `https://ghost-draw.luopeike.com/fac5ab115cb18f45db961c47cdde2f7b.txt`. The build validates it and preserves identical copies in the Git-published root and `dist/`. Keep it published for future validation; do not regenerate it for each submission.
 
 After reviewing changes, build/test, commit the source and generated public files together, and push through the existing Git auto-publication workflow. Wait for that publication before manually submitting:
 
 ```sh
-npm run indexnow                         # Offline dry run; lists all 40 URLs, sends nothing
+npm run indexnow                         # Offline dry run; lists all 48 URLs, sends nothing
 npm run indexnow -- --submit             # Initial notification, only after publication
 npm run indexnow -- --url https://ghost-draw.luopeike.com/help
 npm run indexnow -- --submit --url https://ghost-draw.luopeike.com/help
 ```
 
-Repeat `--url URL` for multiple changed pages (at most 40 arguments, deduplicated). Omit `--submit` to preview the exact selection offline. After the initial notification, submit only when public content actually changes, and select only the changed canonical pages. Do not repeatedly notify unchanged pages or schedule periodic resubmission. No arbitrary URL-list input or automatic retries are supported.
+Repeat `--url URL` for multiple changed pages (bounded to the registered page count, deduplicated). Omit `--submit` to preview the exact selection offline. After the initial notification, submit only when public content actually changes, and select only the changed canonical pages. Do not repeatedly notify unchanged pages or schedule periodic resubmission. No arbitrary URL-list input or automatic retries are supported.
 
 With `--submit`, the CLI first GETs the live root key with a timeout, rejecting redirects, non-200 responses, invalid UTF-8 or mismatched content before sending anything to IndexNow. It then sends one bounded JSON POST to `https://api.indexnow.org/indexnow`. HTTP 200 means the notification was received; HTTP 202 means received with key validation pending, not completed verification. Neither guarantees crawling, indexing, ranking or removal of Bing's warning. Other statuses fail with a nonzero exit code; 400/403/422/429 have explicit explanations. A timeout/network failure after POST leaves receipt unknown; investigate before manually retrying. Even after a successful local key check, IndexNow performs its own validation.
 
@@ -63,7 +87,7 @@ First-party product-event statistics are on by default with an explicit off swit
 
 The owner has explicitly authorized independent Cloudflare Web Analytics/RUM for visits and loading performance. The generated `_headers` allows scripts only from this origin and `https://static.cloudflareinsights.com`, and connections only to this origin, the existing replay API, and `https://cloudflareinsights.com`. Automatic injection can report to the same-origin `/cdn-cgi/rum`; the external collector is allowed for Cloudflare's documented alternative setup. No wildcard, inline-script exception or unrelated analytics provider is allowed.
 
-Cloudflare's metrics are separate from our product events: the product-event switch and deletion action do not control or delete Cloudflare's independently collected metrics. This distinction is disclosed in all ten languages in the privacy panel, privacy pages, Markdown summaries and `llms.txt`. Drawing content is not passed to that statistics service. Keep this disclosure accurate; do not describe the product-event switch as an all-provider opt-out.
+Cloudflare's metrics are separate from our product events: the product-event switch and deletion action do not control or delete Cloudflare's independently collected metrics. This distinction is disclosed in all twelve languages in the privacy panel, privacy pages, Markdown summaries and `llms.txt`. Drawing content is not passed to that statistics service. Keep this disclosure accurate; do not describe the product-event switch as an all-provider opt-out.
 
 The November 7 check found Pages project analytics unset, while automatic injection was enabled at the parent zone. Only this website's CSP has changed to allow it; no parent-zone setting, other website, token permission or native App configuration was changed. Injection can depend on visitor conditions, so a missing beacon in one HTTP response does not mean it has been disabled globally. See [Cloudflare's CSP requirements](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/content-security-policies/) and [data collection documentation](https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/). Test runs must mock beacon collection instead of sending synthetic metrics to the live service.
 

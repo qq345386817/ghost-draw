@@ -12,7 +12,7 @@ Use real Featured JSON artwork, no decorative simulated device chrome, charcoal 
 
 - Neutral workspace `#f4f6f8`, white controls, charcoal `#20242c`, primary cyan `#17c8e8`. Secondary copy `#53616c`, textual cyan `#006579`, control outlines `#7e919c`. Bright cyan carries dark ink, not white text. These foundations are mirrored in the local design-system artifact.
 - Dark workspace `#14171a`, surface `#20252a`, text `#f3f5f7`, muted `#b9c3cb`, links `#70e4f5`. Paper remains `#fafaf5` in both themes; rendering the artwork never depends on appearance.
-- System fonts only. Brand 26px desktop/22px mobile; controls 14px; compact labels 13px. Zero letter spacing. Native controls and their labels remain localized in all ten languages.
+- System fonts only. Brand 26px desktop/22px mobile; controls 14px; compact labels 13px. Zero letter spacing. Native controls and their labels remain localized in all twelve languages. Arabic pages use RTL layout; drawing coordinates and artwork are never mirrored.
 - One portrait 3:4 canvas is the framed primary tool. Tool rail is unframed. Individual artwork previews use 8px radius. No framed sections, nested cards, gradient decoration, or invented metrics.
 - Header: app icon and name, Draw/Gallery/Featured, language selection.
 - Desktop: left tools and palette; centered fixed-format board with mode/title/actions; two right-hand real Featured previews with localized challenge titles. Mobile: compact horizontal controls; previews continue below the drawing workbench.
@@ -27,3 +27,18 @@ Use real Featured JSON artwork, no decorative simulated device chrome, charcoal 
 Static, fully localized headings, plain-language explanation and FAQ follow the actual game. They support SEO and generative-search understanding; they do not guarantee rankings. Canonicals, hreflang, schema, sitemap and crawl rules match real routes.
 
 Statistics are enabled by default per the owner's decision, with an explicit off switch. They exclude drawings, titles and nicknames. Web/iOS events and App Store clicks remain separate from App installs. Local/debug automation must not pollute production events.
+
+## Opt-In Studio Prototype
+
+The `?studio=1` route explores immediate drawing feedback without replacing the
+ordinary blind-drawing entry point. The same stable board has three segmented
+modes: Doodle, Blind challenge and Daily. Doodle starts with Ghost glow; Two-tone
+ink is the second expressive preset in the existing brush menu. Keep the color
+palette, width control, undo and redo; do not add another toolbar or an onboarding
+overlay. Completing a doodle saves it without forcing a reveal animation.
+
+Effects must preserve the user's gesture and render consistently in the gallery,
+replay, exported image and hosted payload. The prototype is not an AI redraw,
+professional illustration editor or claim of measured growth. Its first-party
+events are excluded until a separate, reviewed experiment measurement design is
+ready. No automatic publication or native App change is part of this prototype.
